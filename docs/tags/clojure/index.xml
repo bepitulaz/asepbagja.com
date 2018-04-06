@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clojure on Asep&#39;s Notes</title>
-    <link>https://bepitulaz.github.io/tags/clojure/</link>
+    <link>http://asepbagja.com/tags/clojure/</link>
     <description>Recent content in Clojure on Asep&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 08 Dec 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://bepitulaz.github.io/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://asepbagja.com/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Simple, Cheap, and Scalable IoT Data Logging With Clojure</title>
-      <link>https://bepitulaz.github.io/posts/simple-and-cheap-iot-data-logging-with-clojure/</link>
+      <link>http://asepbagja.com/posts/simple-and-cheap-iot-data-logging-with-clojure/</link>
       <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://bepitulaz.github.io/posts/simple-and-cheap-iot-data-logging-with-clojure/</guid>
+      <guid>http://asepbagja.com/posts/simple-and-cheap-iot-data-logging-with-clojure/</guid>
       <description>I have a small green house in my home front yard, and I deployed some sensors like temperature, humidity, electrical conductivity (EC), and pH sensor there.
 After the development of the sensors completed, it was the time for me to develop the web service for logging the data. I considered to use NoSQL database for persistent data storage. Otherwise I dismissed that idea for the sake of cost efficiency.
 To use NoSQL database, I should open one or two servers in cloud provider for running it.</description>
@@ -24,10 +24,10 @@ To use NoSQL database, I should open one or two servers in cloud provider for ru
     
     <item>
       <title>Geekcamp Jakarta 2015. Programmable Music</title>
-      <link>https://bepitulaz.github.io/posts/geekcamp-jakarta-2015-programmable-music/</link>
+      <link>http://asepbagja.com/posts/geekcamp-jakarta-2015-programmable-music/</link>
       <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://bepitulaz.github.io/posts/geekcamp-jakarta-2015-programmable-music/</guid>
+      <guid>http://asepbagja.com/posts/geekcamp-jakarta-2015-programmable-music/</guid>
       <description>Geekcamp Jakarta 2015 is a technology and business conference organized by KMKLabs. This is my presentation about computer generated music using Clojure and Overtone. The talk is using Bahasa Indonesia, but here I try to give the English transcript.
  Transcript
 [00:20] I want to talk about music. Who loves music here? I&amp;rsquo;m sure many of you loves music.
@@ -36,28 +36,28 @@ To use NoSQL database, I should open one or two servers in cloud provider for ru
     
     <item>
       <title>Urban Farming with Clojure</title>
-      <link>https://bepitulaz.github.io/posts/urban-farming-with-clojure/</link>
+      <link>http://asepbagja.com/posts/urban-farming-with-clojure/</link>
       <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://bepitulaz.github.io/posts/urban-farming-with-clojure/</guid>
+      <guid>http://asepbagja.com/posts/urban-farming-with-clojure/</guid>
       <description>Currently, I&amp;rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house. You can check the project&amp;rsquo;s progress on my Hackaday&amp;rsquo;s page. The system should controls the lighting on and off at the correct time, logs the temperature and humidity and triggers the fan based on it, and sends the farm log to the server, so, I can predict the harvest time and the farm optimal condition in the future.</description>
     </item>
     
     <item>
       <title>Full Stack Clojure Project</title>
-      <link>https://bepitulaz.github.io/posts/full-stack-clojure-project/</link>
+      <link>http://asepbagja.com/posts/full-stack-clojure-project/</link>
       <pubDate>Tue, 26 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://bepitulaz.github.io/posts/full-stack-clojure-project/</guid>
+      <guid>http://asepbagja.com/posts/full-stack-clojure-project/</guid>
       <description>Why I&amp;rsquo;m deeply in love with Clojure? That&amp;rsquo;s because I can do full stack development only in one language. I can write HTML with the same Clojure data structure, then styling it by writing CSS in exactly the same data structure. When I need to do user interface development, I can use ClojureScript then compile it into JavaScript. Actually writing ClojureScript is more pleasant than writing vanilla JavaScript. How about the backend development?</description>
     </item>
     
     <item>
       <title>Integrating React Bootstrap and Reagent</title>
-      <link>https://bepitulaz.github.io/posts/integrating-react-bootstrap-and-reagent/</link>
+      <link>http://asepbagja.com/posts/integrating-react-bootstrap-and-reagent/</link>
       <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://bepitulaz.github.io/posts/integrating-react-bootstrap-and-reagent/</guid>
+      <guid>http://asepbagja.com/posts/integrating-react-bootstrap-and-reagent/</guid>
       <description>This weekend, I am experimenting to use React Bootstrap with ClojureScript. For whom that doesn&amp;rsquo;t know it yet, React Bootstrap is a Bootstrap 3 component built with ReactJS. I&amp;rsquo;m using Reagent library for interacting with React from ClojureScript, instead of Om.
 Integrating React Bootstrap and Reagent was confusing me at the first. It was non-trivial effort. I searched Google and got no relevant solutions for hours. So, this working solution is based on my trial and error experimentation.</description>
     </item>

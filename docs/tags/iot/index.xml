@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Iot on Asep&#39;s Notes</title>
-    <link>https://bepitulaz.github.io/tags/iot/</link>
+    <link>http://asepbagja.com/tags/iot/</link>
     <description>Recent content in Iot on Asep&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 08 Dec 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://bepitulaz.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://asepbagja.com/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Simple, Cheap, and Scalable IoT Data Logging With Clojure</title>
-      <link>https://bepitulaz.github.io/posts/simple-and-cheap-iot-data-logging-with-clojure/</link>
+      <link>http://asepbagja.com/posts/simple-and-cheap-iot-data-logging-with-clojure/</link>
       <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://bepitulaz.github.io/posts/simple-and-cheap-iot-data-logging-with-clojure/</guid>
+      <guid>http://asepbagja.com/posts/simple-and-cheap-iot-data-logging-with-clojure/</guid>
       <description>I have a small green house in my home front yard, and I deployed some sensors like temperature, humidity, electrical conductivity (EC), and pH sensor there.
 After the development of the sensors completed, it was the time for me to develop the web service for logging the data. I considered to use NoSQL database for persistent data storage. Otherwise I dismissed that idea for the sake of cost efficiency.
 To use NoSQL database, I should open one or two servers in cloud provider for running it.</description>
