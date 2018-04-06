@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Motivation on Asep&#39;s Notes</title>
+    <link>https://bepitulaz.github.io/tags/motivation/</link>
+    <description>Recent content in Motivation on Asep&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 04 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bepitulaz.github.io/tags/motivation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2016 Personal Challenges</title>
+      <link>https://bepitulaz.github.io/posts/2016-personal-challenges/</link>
+      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bepitulaz.github.io/posts/2016-personal-challenges/</guid>
+      <description>Happy new year 2016.
+Annually I challenged myself with some new skills and some targets. Few years ago, I challenged myself to learn Mandarin, because it is the most spoken language in Asia. Therefore, I took a Mandarin short course and also self-learning it via Youtube.
+I had also challenged myself to learn functional programming paradigm and tried to master one of the programming languages that used that paradigm. My choice was Clojure because it is using Lisp dialect.</description>
+    </item>
+    
+  </channel>
+</rss>
