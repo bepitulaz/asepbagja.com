@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Asep Bagja Priandana">
+    <meta name="description" content="My personal web">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="R.I.P All of My Fish. Postmortem of A Hardware Automation Project"/>
+<meta name="twitter:description" content="One of the biggest problem of having pet is filling its needs while the owner leaving the home.
+I had an aquarium which was filled with 7 fish, and the fish should be fed at least once a day or better twice a day in small portion. A week ago, I and my wife must left our home for celebrating Eid together at my parent&rsquo;s home in another town, thus it led me for creating an automation system to feed my fish."/>
+
+
+    <base href="http://asepbagja.com/posts/r-i-p-all-of-my-fish-postmortem-of-a-hardware-automation-project/">
+    <title>
+  R.I.P All of My Fish. Postmortem of A Hardware Automation Project · Asep&#39;s Notes
+</title>
+
+    <link rel="canonical" href="http://asepbagja.com/posts/r-i-p-all-of-my-fish-postmortem-of-a-hardware-automation-project/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://asepbagja.com/css/coder.min.8881182b3ec36ffd9c735306f7e16ce9b1129ebc650e069e7c4114827e9d9b23.css" integrity="sha256-iIEYKz7Db/2cc1MG9&#43;Fs6bESnrxlDgaefEEUgn6dmyM=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="http://asepbagja.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://asepbagja.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.55.0-DEV" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://asepbagja.com/">
+      Asep&#39;s Notes
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://asepbagja.com/posts/">Blog</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">R.I.P All of My Fish. Postmortem of A Hardware Automation Project</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2015-07-21T00:00:00Z'>
+                July 21, 2015
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://asepbagja.com/tags/arduino/">arduino</a>
+      <span class="separator">•</span>
+    <a href="http://asepbagja.com/tags/projects/">Projects</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p><em>One of the biggest problem of having pet is filling its needs while the owner leaving the home.</em></p>
+
+<p>I had an aquarium which was filled with 7 fish, and the fish should be fed at least once a day or better twice a day in small portion. A week ago, I and my wife must left our home for celebrating Eid together at my parent&rsquo;s home in another town, thus it led me for creating an automation system to feed my fish.</p>
+
+<p>Three days before the departure, I started to create it. I have an Arduino Uno R3, an ESP8266 wifi module, a Tower Pro SG90 micro servo, and a Starbucks&rsquo; juice bottle as a fish food container. My first design was making a system that can tell me via email if it successfully feeds the fish twice a day, but then I remembered that my current home doesn&rsquo;t has always-on-internet. So, I ditched the email feature and surely I didn&rsquo;t need to use ESP8266.</p>
+
+<p>Then I moved with second design. The Arduino would be rotating the servo twice a day without notified me whether it fed the fish successfully or not. I tested it several times, and 150% sure that this device worked with zero bug in code.</p>
+
+<p><img src="https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25203819/working-design-300x300.jpg" alt="working-design" /></p>
+
+<p>I left my home confidently.</p>
+
+<p>Yesterday, I arrived to my home. Open the door. Stank very bad smell. What the hell was going here? Oh my God! All the fish was floated up on the thicken water. I assessed they had died for 3 days because of ammonia and not by automation system failure.</p>
+
+<p>The catastrophic came from my prepaid home electricity. It showed 000 kwh (kilo watt hour), hence my aquarium pump and filter was turning off and couldn&rsquo;t cleaning up the food leftover. I miscalculated the power usage of all electricities in my home. I should bought more KWh before I left, but I didn&rsquo;t.</p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>The lessons that I learned here are:</p>
+
+<ol>
+<li>Prepare the automation system with backup battery. I have a plan to create mini solar powered battery system as a backup from the main electricity.</li>
+<li>Making a simple app that can calculate the amount of needed kwh for all home appliances.
+<em>Originally posted in <a href="https://notes.asep.co/r-i-p-all-of-my-fish-postmortem-of-a-hardware-automation-project-e7bc8c246966">Asep Notes</a></em></li>
+</ol>
+
+      </div>
+
+      <footer>
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

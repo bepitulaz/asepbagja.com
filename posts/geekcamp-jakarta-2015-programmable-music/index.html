@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Asep Bagja Priandana">
+    <meta name="description" content="My personal web">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Geekcamp Jakarta 2015. Programmable Music"/>
+<meta name="twitter:description" content="Geekcamp Jakarta 2015 is a technology and business conference organized by KMKLabs. This is my presentation about computer generated music using Clojure and Overtone. The talk is using Bahasa Indonesia, but here I try to give the English transcript.
+ Transcript
+[00:20] I want to talk about music. Who loves music here? I&rsquo;m sure many of you loves music.
+[00:27] Are there many programmers here? Because it will relates with code also."/>
+
+
+    <base href="http://asepbagja.com/posts/geekcamp-jakarta-2015-programmable-music/">
+    <title>
+  Geekcamp Jakarta 2015. Programmable Music · Asep&#39;s Notes
+</title>
+
+    <link rel="canonical" href="http://asepbagja.com/posts/geekcamp-jakarta-2015-programmable-music/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://asepbagja.com/css/coder.min.8881182b3ec36ffd9c735306f7e16ce9b1129ebc650e069e7c4114827e9d9b23.css" integrity="sha256-iIEYKz7Db/2cc1MG9&#43;Fs6bESnrxlDgaefEEUgn6dmyM=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="http://asepbagja.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://asepbagja.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.55.0-DEV" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://asepbagja.com/">
+      Asep&#39;s Notes
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://asepbagja.com/posts/">Blog</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Geekcamp Jakarta 2015. Programmable Music</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2015-11-04T00:00:00Z'>
+                November 4, 2015
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              4 minutes read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="http://asepbagja.com/tags/clojure/">clojure</a>
+      <span class="separator">•</span>
+    <a href="http://asepbagja.com/tags/music/">music</a>
+      <span class="separator">•</span>
+    <a href="http://asepbagja.com/tags/overtone/">overtone</a>
+      <span class="separator">•</span>
+    <a href="http://asepbagja.com/tags/programming/">Programming</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p><a href="http://geekcamp.id/">Geekcamp Jakarta 2015</a> is a technology and business conference organized by KMKLabs. This is my presentation about computer generated music using Clojure and Overtone. The talk is using Bahasa Indonesia, but here I try to give the English transcript.</p>
+
+<iframe class="vidio-embed" src="http://www.vidio.com/embed/178403-geekcamp-lambda-jakarta" width="560" height="317" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+
+<p><strong>Transcript</strong></p>
+
+<p>[00:20] I want to talk about music. Who loves music here? I&rsquo;m sure many of you loves music.</p>
+
+<p>[00:27] Are there many programmers here? Because it will relates with code also.</p>
+
+<p>[00:36] First, I will introduce myself. My daily job is a CTO in Froyo, it&rsquo;s my digital marketing agency, its office is located in Bintaro. I&rsquo;m also an organizer of Lambda Jakarta, it&rsquo;s functional programming meetup. We are discussing about Haskell, Clojure, Scala, F#, you name it. All about functional programming.</p>
+
+<p>[01:06] If you look at the bottom of the slide, you can see if actually I want to be a farmer. I have private greenhouse at my home and I&rsquo;m also a seasonal bedroom musician.</p>
+
+<p>[01:26] This is the usual way to play music. Oh, It is my favorite band, Dream Theater. You must be play using real instrument, such as guitar, keyboard, drum, and so on.</p>
+
+<p>[01:40] But, I think it will be more interesting if we can play music using a computer. We will use the programmer&rsquo;s way. Our instrument will be the text editor. Is it looking weird for you? Yes, it is. With the text editor, we can generate music with various sounds.</p>
+
+<p>[02:06] I&rsquo;m using Clojure for the programming language. Clojure is a Lisp implementation on top of Java Virtual Machine. Before we continue this talk, anybody here knows Lisp? Ok, you know it, you know it, ah you, my downline, must be know it.</p>
+
+<p>[02:26] Clojure is a slightly young Lisp implementation. Released in 2007, and created by Rich Hickey. Maybe if there&rsquo;s someone here who has not known it, this is the Clojure code looks like. 90% of Clojure code is like that. Just call function with argument, argument, whatever argument, and so on. 90%. The rest of 10% is knowing about symbol, keyword, string, vector, map, and atom if you need mutable. Because Clojure in default is actually immutable.</p>
+
+<p>[03:26] This is the simple sample code. <code>defn</code> is a function definition, parameter is a vector,<code>let</code> for local scope variable, <code>if</code> for condition, and it return true and the else is false. How to call the function? You just call the function name and put the parameter. That&rsquo;s it.</p>
+
+<p>[04:17] Then, for the sound engine we will use Overtone. It utilises SuperCollider engine. Maybe if any of you here is a game developer, there&rsquo;s a chance you have heard about it. You can use it for sound synthesizing and mimicking the real instrument.</p>
+
+<p>[04:53] Let&rsquo;s try hello world. The hello world is slightly different.</p>
+
+<p>[05:14] If you know about sound design or synthesizer, actually sound is coming from sine wave, square wave, saw wave, and triangle wave. Each of them has different timbre. Let&rsquo;s start from sine wave.</p>
+
+<p>[05:48] <em>typing</em></p>
+
+<p>[06:30] If you notice, in sine wave function you&rsquo;ll see frequency, attack, sustain, and release parameter. If any of you here is play in a band, there&rsquo;s a chance you have seen knobs on the keyboard or synthesizer to set those parameters. Attack to set how fast the tone will reach the peak, sustain to set how long the tone, and release to set how long the tone will disappear.</p>
+
+<p>[07:17] <em>trying the waveform one by one</em></p>
+
+<p>[08:37] There&rsquo;s also noise. Just a noise sound.</p>
+
+<p>[09:03] We can combine all of it to be more interesting sound like in subtractive synthesis technique.</p>
+
+<p>[09:16] Let&rsquo;s try the simple one. Frequency modulation synthesis. A waveform that modulated by another waveform. It is like Yamaha DX-7 synthesizer. It&rsquo;s a breakthrough sythesizer in 80&rsquo;s. Here it is.</p>
+
+<p>[10:28] The second sample. We can play the sampler. So, in Overtone we can also use recorded sound to be played.</p>
+
+<p>[10:57] <em>typing</em> Like this. Kick drum, snare drum, piano, or maybe guitar loop.</p>
+
+<p>[11:50] We can also play chords. But, it is insane to type line by line if you play in live situation. You won&rsquo;t make it.</p>
+
+<p>[12:09] So the better way is creating the sequencer. Sequencer is a tool to play sound loop. Now, I&rsquo;m trying to make piano and drum loop.</p>
+
+<p>[12:44] Left hand.</p>
+
+<p>[12:50] Then the right hand.</p>
+
+<p>[13:00] Then we add the drum loop.</p>
+
+<p>[13:18] It&rsquo;s no problem if we add a synth sound that we had created before it.</p>
+
+<p>[13:34] Ah I have to finish the demo, because the time is over now. Actually, you can use Overtone for recording, composing a song, or connect it to midi device.</p>
+
+<p>[14:28] At last, let&rsquo;s jamming on Github. So, jamming is not only in music studio, we can music jamming also in Github.</p>
+
+<p><strong>Slide and Sample Code</strong></p>
+
+<p>The slide is using English. You can read on <a href="http://www.slideshare.net/AsepBagja/geekcamp-id-2015-programmable-music">Slideshare</a>.</p>
+
+<p>You can also see the sample source code on <a href="https://github.com/bepitulaz/programmable-music">Github</a>.</p>
+
+      </div>
+
+      <footer>
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
