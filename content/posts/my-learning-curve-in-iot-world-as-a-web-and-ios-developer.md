@@ -35,5 +35,3 @@ I google-ed it. It is a new wifi module that people usually use it as a module f
 The USB TTY is used to program the micro controller. ESP8266 has 2 GPIO pins and working with 3.3 volt power. I can't use JavaScript for this hardware, thus it becomes my first time for writing my own firmware in C and deploy (flash) it to a hardware that don't have operating system. Now, I'm in progress for porting my aquarium system to use this coin size and cheap module.
 
 I will write the tutorial about how to use it in the next post.
-
-_Originally posted in [Asep Notes](https://notes.asep.co/my-learning-curve-in-iot-world-as-a-web-and-ios-developer-abe79dd3d45f)_

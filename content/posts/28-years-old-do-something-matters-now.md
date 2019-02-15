@@ -23,5 +23,3 @@ I'm in the progress to start this very soon with my partner. Oh, the name for th
 Apparently human population in earth is proliferating, but how about the food production? Can it balance the population? Starting from this background, I and my wife are just thinking how to produce our own food. Hence, we learnt hydroponic farming. We are living in dense city with no land for farming, but hydroponic can answer that challenge. No soil and can do vertically.
 
 Leveraging my coding skill, I add some computer and sensor automation to our hydroponic farm. Luckily, I and my wife have some friends who are in the same train with us. So, we are starting Tanibox to help the world produce more edible vegetables and fruits.
-
-_Originally posted in [Asep Notes](https://notes.asep.co/28-years-old-do-something-matters-now-3c3a4001de2e)_

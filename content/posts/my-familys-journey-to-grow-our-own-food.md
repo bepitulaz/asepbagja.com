@@ -35,5 +35,3 @@ We used to buy vegetables in supermarket - don't ask why we are not going to tra
 Despite that reason, successfully growing our own food is like getting a new life achievement. Maybe we are getting one step ahead to prepare our self for zombie apocalypse, nuclear war, or living on Mars.
 
 ![growing-lettuce](https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25210250/growing-lettuce.jpg) We are growing lettuce.
-
-_Originally posted in [Asep Notes](https://notes.asep.co/my-family-s-journey-to-grow-our-own-food-8a37c6844571)_

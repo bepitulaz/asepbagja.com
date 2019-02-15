@@ -33,5 +33,3 @@ A few days ago, he sent me an email (in Bahasa Indonesia) that I thought it was 
 > _Wassalamu'alaikum wr. wb._
 
 The last sentence is very bold. You want to be a startup forever or go into higher level. Thanks, my dad.
-
-_Originally posted in [Asep Notes](https://notes.asep.co/do-not-refuse-the-corporate-culture-ab435afe20d1)_

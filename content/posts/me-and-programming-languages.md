@@ -63,5 +63,3 @@ Clojure also has a sister. Her name is Clojurescript. She can builds Clojure cod
 That's my journey in programming world. So, there are 4 active girls beside me now. PHP is my true love and my lifetime partner for developing website, Javascript a little girl that helps me making interaction in the browser, Objective C will comes when I need to develop iOS application, and lastly Clojure the young girl who teaches me a lot about functional programming and also for developing system on top of JVM.
 
 P.S. because of Clojure, now I can adapt the functional programming paradigm also to my PHP and Javascript code.
-
-_Originally published in [Asep Notes](https://notes.asep.co/me-and-programming-languages-bf19f9be6b5)_

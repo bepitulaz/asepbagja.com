@@ -11,5 +11,3 @@ In the first place, if people know basic coding skill, he/she can develop his/he
 In spite of the benefits of having the ability to code, learning it also has some hurdles, such as too many programming languages out there. It will make newbie feel confuse to choose their very first programming language. One more example obstacle, books that teach about coding usually too technical and contain many technical jargons which can scare non-technical people at a glance.
 
 Many peoples that desire to make business in technology industry are not always coming from computer science background; they only have ideas, and also many computer science degree holders don't know how to make business by using their knowledge. Thereby, both of them should meet on one table if they desire to grow together. Thus, basic coding skill will be helpful to establish the communication between them in this circumstance.
-
-_Originally published in [Asep Notes](https://notes.asep.co/is-learning-to-code-necessary-for-everyone-e94481684d0)_

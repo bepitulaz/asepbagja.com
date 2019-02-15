@@ -212,7 +212,7 @@ Currying is a useful technique in functional programming. It can avoid repetitio
 
 **Summary and What's Next?**
 
-JavaScript supports higher-order function very well. It makes JavaScript suitable to apply some techniques from functional programming paradigm, and we can combine it with the knowledge that we had learned from the [part 1](https://asep.co/introduction-to-functional-programming-in-javascript-part-1/) of the article to make our code more brevity.
+JavaScript supports higher-order function very well. It makes JavaScript suitable to apply some techniques from functional programming paradigm, and we can combine it with the knowledge that we had learned from the [part 1](http://asepbagja.com/introduction-to-functional-programming-in-javascript-part-1/) of the article to make our code more brevity.
 
 Learning functional programming won't hurt you. I encourage you to learn a programming language that specifically designed for it because many techniques and concepts are hard to explain or do in JavaScript. You can pick Haskell, Clojure, Scala, Elixir, OCaml, etc. By knowing imperative programming and functional programming you will get the best of both worlds.
 

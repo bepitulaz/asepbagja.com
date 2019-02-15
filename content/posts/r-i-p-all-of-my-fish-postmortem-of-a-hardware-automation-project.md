@@ -26,4 +26,3 @@ The lessons that I learned here are:
 
 1.  Prepare the automation system with backup battery. I have a plan to create mini solar powered battery system as a backup from the main electricity.
 2.  Making a simple app that can calculate the amount of needed kwh for all home appliances.
-_Originally posted in [Asep Notes](https://notes.asep.co/r-i-p-all-of-my-fish-postmortem-of-a-hardware-automation-project-e7bc8c246966)_
