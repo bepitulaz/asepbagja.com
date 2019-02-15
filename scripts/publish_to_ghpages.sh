@@ -30,6 +30,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
+hugo version
 hugo
 
 echo "Updating gh-pages branch"
