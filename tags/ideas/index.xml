@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ideas on Asep&#39;s Notes</title>
-    <link>http://asepbagja.com/tags/ideas/</link>
+    <link>https://asepbagja.com/tags/ideas/</link>
     <description>Recent content in Ideas on Asep&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 04 Jan 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://asepbagja.com/tags/ideas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://asepbagja.com/tags/ideas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2016 Personal Challenges</title>
-      <link>http://asepbagja.com/posts/2016-personal-challenges/</link>
+      <link>https://asepbagja.com/posts/2016-personal-challenges/</link>
       <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://asepbagja.com/posts/2016-personal-challenges/</guid>
+      <guid>https://asepbagja.com/posts/2016-personal-challenges/</guid>
       <description>Happy new year 2016.
 Annually I challenged myself with some new skills and some targets. Few years ago, I challenged myself to learn Mandarin, because it is the most spoken language in Asia. Therefore, I took a Mandarin short course and also self-learning it via Youtube.
 I had also challenged myself to learn functional programming paradigm and tried to master one of the programming languages that used that paradigm. My choice was Clojure because it is using Lisp dialect.</description>
@@ -24,10 +24,10 @@ I had also challenged myself to learn functional programming paradigm and tried 
     
     <item>
       <title>My Family’s Journey to Grow Our Own Food</title>
-      <link>http://asepbagja.com/posts/my-familys-journey-to-grow-our-own-food/</link>
+      <link>https://asepbagja.com/posts/my-familys-journey-to-grow-our-own-food/</link>
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://asepbagja.com/posts/my-familys-journey-to-grow-our-own-food/</guid>
+      <guid>https://asepbagja.com/posts/my-familys-journey-to-grow-our-own-food/</guid>
       <description>My wife&amp;rsquo;s dream after we married was having a garden at home. But at that moment, we were living in an apartment with a very small balcony. It&amp;rsquo;s theoritically impossible to plant anything. So, we discovered a way to plant vegetable at small space and we found it. Hydroponic was the answer. We can plant without soil but only water.
 The Age of Farming in The Apartment
 At the first time, we were growing spinach.</description>
@@ -35,10 +35,10 @@ At the first time, we were growing spinach.</description>
     
     <item>
       <title>28 Years Old. Do Something Matters Now.</title>
-      <link>http://asepbagja.com/posts/28-years-old-do-something-matters-now/</link>
+      <link>https://asepbagja.com/posts/28-years-old-do-something-matters-now/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://asepbagja.com/posts/28-years-old-do-something-matters-now/</guid>
+      <guid>https://asepbagja.com/posts/28-years-old-do-something-matters-now/</guid>
       <description>Today, September 21, 2015, I&amp;rsquo;m officially 28 years old.
 Many people say 28 is the starting age to enter adulthood. In astrology, they call it Saturn Return. It is a period for Saturn completing its full orbit around the Sun, and Saturn is returning to the position when the people were born.
 Whatever people talk about the age of 28, I believe it is the age for starting something matters and meaningful in my life and my career.</description>
@@ -46,10 +46,10 @@ Whatever people talk about the age of 28, I believe it is the age for starting s
     
     <item>
       <title>Is Learning to Code Necessary for Everyone?</title>
-      <link>http://asepbagja.com/posts/is-learning-to-code-necessary-for-everyone/</link>
+      <link>https://asepbagja.com/posts/is-learning-to-code-necessary-for-everyone/</link>
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://asepbagja.com/posts/is-learning-to-code-necessary-for-everyone/</guid>
+      <guid>https://asepbagja.com/posts/is-learning-to-code-necessary-for-everyone/</guid>
       <description>Although coding is not a basic communication skill for human, I prefer to encourage people for learning it, especially for someone who wants to expresses and develops his/her idea in technology industry but doesn&amp;rsquo;t come from computer science background. There are couple of reasons according to that opinion.
 In the first place, if people know basic coding skill, he/she can develop his/her very beginning concept of software by his/her own hand, then his/her can show it to the more appropriate software engineer.</description>
     </item>

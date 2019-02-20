@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on Asep&#39;s Notes</title>
-    <link>http://asepbagja.com/tags/personal/</link>
+    <link>https://asepbagja.com/tags/personal/</link>
     <description>Recent content in Personal on Asep&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://asepbagja.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://asepbagja.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Me</title>
-      <link>http://asepbagja.com/about/</link>
+      <link>https://asepbagja.com/about/</link>
       <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://asepbagja.com/about/</guid>
+      <guid>https://asepbagja.com/about/</guid>
       <description>My name is Asep from Indonesia. I&amp;rsquo;m a software developer and entrepreneur for years. Nowadays, I mostly do web development and IoT solution development. I can code in several programming languages such as PHP, JavaScript, Clojure, C, and Go.
 I&amp;rsquo;m open with any opportunities.</description>
     </item>
     
     <item>
       <title>28 Years Old. Do Something Matters Now.</title>
-      <link>http://asepbagja.com/posts/28-years-old-do-something-matters-now/</link>
+      <link>https://asepbagja.com/posts/28-years-old-do-something-matters-now/</link>
       <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://asepbagja.com/posts/28-years-old-do-something-matters-now/</guid>
+      <guid>https://asepbagja.com/posts/28-years-old-do-something-matters-now/</guid>
       <description>Today, September 21, 2015, I&amp;rsquo;m officially 28 years old.
 Many people say 28 is the starting age to enter adulthood. In astrology, they call it Saturn Return. It is a period for Saturn completing its full orbit around the Sun, and Saturn is returning to the position when the people were born.
 Whatever people talk about the age of 28, I believe it is the age for starting something matters and meaningful in my life and my career.</description>
