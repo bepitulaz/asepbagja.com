@@ -1,4 +1,4 @@
-baseURL = "http://asepbagja.com/"
+baseURL = "https://asepbagja.com/"
 languageCode = "en-gb"
 title = "Asep's Notes"
 theme = "hugo-coder" # set the theme
