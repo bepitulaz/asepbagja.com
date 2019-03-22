@@ -6,4 +6,4 @@ tags: ["personal"]
 
 My name is Asep from Indonesia. I'm a software developer and entrepreneur for years. Nowadays, I mostly do web development and IoT solution development. I can code in several programming languages such as PHP, JavaScript, Clojure, C, and Go.
 
-I'm open with any opportunities.
+I'm open with any opportunities. Contact me at [bepitulaz@gmail.com](mailto:bepitulaz@gmail.com).
