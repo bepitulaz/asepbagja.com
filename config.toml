@@ -47,10 +47,15 @@ pygmentscodefencesguesssyntax = true
 # Menu links
 [[menu.main]]
     name = "Blog"
-    weight = 1
+    weight = 2
     url  = "/posts/"
 
 [[menu.main]]
-    name = "Merchandise"
-    weight = 2
-    url  = "https://www.redbubble.com/people/bepitulaz"
+    name = "About"
+    weight = 1
+    url  = "/about/"
+
+[[menu.main]]
+    name = "Shop"
+    weight = 3
+    url  = "/shop/"
