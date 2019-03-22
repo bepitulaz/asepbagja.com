@@ -2,6 +2,7 @@ baseURL = "https://asepbagja.com/"
 languageCode = "en-gb"
 title = "Asep's Notes"
 theme = "hugo-coder" # set the theme
+googleAnalytics = "UA-136771948-2"
 
 paginate = 20
 canonifyurls = true
@@ -48,3 +49,8 @@ pygmentscodefencesguesssyntax = true
     name = "Blog"
     weight = 1
     url  = "/posts/"
+
+[[menu.main]]
+    name = "Merchandise"
+    weight = 2
+    url  = "https://www.redbubble.com/people/bepitulaz"
