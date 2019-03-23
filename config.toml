@@ -11,6 +11,8 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+disqusShortname = "Asepnew"
+
 [params] # theme parameters
     author = "Asep Bagja Priandana" # author's name
     info = "A Software Developer and Entrepreneur" # author's job title or info
