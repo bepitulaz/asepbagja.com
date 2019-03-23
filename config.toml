@@ -10,7 +10,6 @@ canonifyurls = true
 pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
 disqusShortname = "Asepnew"
 
 [params] # theme parameters
