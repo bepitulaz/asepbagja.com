@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Asep&#39;s Notes</title>
+    <title>Posts on ASPBGJ</title>
     <link>https://asepbagja.com/posts/</link>
-    <description>Recent content in Posts on Asep&#39;s Notes</description>
+    <description>Recent content in Posts on ASPBGJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 04 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Mar 2019 11:30:54 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Going Back to My Personal Web</title>
+      <link>https://asepbagja.com/posts/going-back-to-my-personal-web/</link>
+      <pubDate>Sat, 23 Mar 2019 11:30:54 +0800</pubDate>
+      
+      <guid>https://asepbagja.com/posts/going-back-to-my-personal-web/</guid>
+      <description>It&amp;rsquo;s been a while since my last post on this website. Three years ago. It&amp;rsquo;s time to dust off and start writing again. I want to challenge my self, &amp;ldquo;how if I make this blog like a social media?&amp;rdquo; I will prioritise to post anything here instead of posting in social media whether it&amp;rsquo;s a short or long content.
+This blog post is the first attempt. Wish me luck with the idea!</description>
+    </item>
     
     <item>
       <title>Introduction to Functional Programming in JavaScript (Part 2)</title>
