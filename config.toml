@@ -1,6 +1,6 @@
 baseURL = "https://asepbagja.com/"
 languageCode = "en-gb"
-title = "Asep's Notes"
+title = "ASPBGJ"
 theme = "hugo-coder" # set the theme
 googleAnalytics = "UA-136771948-2"
 
