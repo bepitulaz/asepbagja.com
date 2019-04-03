@@ -20,7 +20,7 @@ We build open source software. Our early adopter is mostly a software or hardwar
 
 Some of the early adopters are the developer that wants to sell and distribute our software to the farmer in their country. Most of them told the same issue that is hard to convince the farmer to digitalise their operation because most of the farmers are old and not tech-savvy. We also get that issue when introducing the software here in Indonesia.
 
-One of the solutions for this is to approach the younger farmer because they are more open-minded than the old one.
+The solution for this is to approach the younger farmer because they are more open-minded than the old one and we must lower barriers to entry of the solution.
 
 **2. Digitalisation won't promise rich**
 
