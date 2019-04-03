@@ -16,7 +16,7 @@ My company [Tanibox](https://tanibox.com) is developing agriculture software for
 
 **1. Most farmers are old and not a tech-savvy**
 
-We build open source software. Our early adopter is mostly a software or hardware developer and tech enthusiast coming from several countries. The countries that I can notice because they are active in our forum: Indonesia, India, USA, UK, UAE, Hungary, Tajikistan, Canada, France, Sweden, Lithuania, and Brazil. Since we get nearly 250 downloads for this couple of years, perhaps there are more people from other countries, but they are not active in the forum so that I can't notice.
+We build open source software. Our early adopter is mostly a software or hardware developer and tech enthusiast coming from several countries. The countries that I can notice because they are active in our forum: Indonesia, India, USA, UK, UAE, Hungary, Tajikistan, Canada, France, Sweden, Lithuania, and Brazil. Since we get hundreds of download for this couple of years, perhaps there are more people from other countries, but they are not active in the forum so that I can't notice.
 
 Some of the early adopters are the developer that wants to sell and distribute our software to the farmer in their country. Most of them told the same issue that is hard to convince the farmer to digitalise their operation because most of the farmers are old and not tech-savvy. We also get that issue when introducing the software here in Indonesia.
 
@@ -32,7 +32,7 @@ Anyway, do you ask Microsoft with this type of question, "Hey, if I buy your Win
 
 If you want to target the global market, you have to think about the localisation of your software since day one. Our mistake was not doing this as early as possible, so our market penetration is a little bit slow. Lucky for us, there are not many open source software for agriculture in the market. We support localisation in Tania 2 years after launch in version 1.6.
 
-Even for the European market, most people including us are thinking of Europe as a single market. Yes, it is for a few aspects. But, Europe consists of many languages and most of the farmers, especially in the countryside, doesn't speak English.
+Even for the European market, most people including us are thinking of Europe as a single market. Yes, it is for a few aspects. But, Europe consists of many languages and most of the farmers, especially in the countryside, don't speak English.
 
 **4. Offline first**
 
