@@ -33,7 +33,7 @@ After we get distinctive between those 2 paradigms, now we will try to implement
 
 Immutable data means the data can't be modified after its creation to avoid side effects. JavaScript does not force us to use immutable data like any other programming language specifically designed for functional programming, therefore we should force our self to think about immutability when programming with the functional paradigm. Consider this mutable code:
 
-```
+```javascript
 // 1: simple mutable data sample
 let x = 10; // create the initial value
 x = x + 1;
@@ -53,7 +53,7 @@ It's hard to spot the bugs in a large code base with many mutable data. Do you r
 
 A pure function is a function that does not depend on and modifies the states of the variable out of its scope. It means the function always returns the result given same parameters and produces no side effects. I will give you an example to understand about "side effect".
 
-```
+```javascript
 let sample = [1, 2, 3]; // I want each element of this array add by 1.
 
 function impureFunction(data) {
@@ -70,7 +70,7 @@ console.log(sample); // But you get the side effect too. The value has been chan
 
 You can think the side effect in code is the same as the side effect in medicine. When you drink cough syrup, your cough maybe stops, but after that, you will feel sleepy. In a large code base, the impure function will hard to test and debug. So, we will rewrite that by using pure function and immutable data.
 
-```
+```javascript
 let sample = [1, 2, 3];
 
 function pureFunction(data, index, init) {
@@ -90,7 +90,7 @@ console.log(sample); // your original data does not mutate: [1, 2, 3]
 
 According to the code above, we are making a new array instead of mutating the original one. We also use recursion to avoid side effect. Let's scrutinize the `pureFunction` function to understand it.
 
-```
+```javascript
 // pureFunction takes 3 parameters: data, index, init
 // pureFunction will create a new array as a return value
 pureFunction(data, index, init) {

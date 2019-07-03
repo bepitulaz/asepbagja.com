@@ -14,7 +14,7 @@ According to Wikipedia, higher-order function is a function that does at least o
 
 JavaScript has the first-class function. It means the functions in JavaScript treats as a value, that we can assign it to the variable, pass it around, and return from another function. Therefore, JavaScript supports higher order function. I'm sure every JavaScript programmer ever used higher order function in their life. If you ever used jQuery, you must be familiar with these syntaxes:
 
-```
+```javascript
 $.get("my-api-url.com", function(res) {
   console.log(res);
 });
@@ -34,7 +34,7 @@ Those are the sample implementations. We passed the function as an argument to a
 
 `Map` takes a function and collection of items, runs the function on each item in the collection, and returns a new collection as the result. This is the simple example of `map`.
 
-```
+```javascript
 let sample = [1, 2, 3]; // I want add each item by 1
 
 // we pass an anonymous function to the map
@@ -50,7 +50,7 @@ So, actually, we did not need to implement it by our self like we did in part 1 
 
 Next is `filter`. It takes a function and a collection, runs the function on each item in the collection, returns a new collection when the function returns `true`. This is the simple example of `filter`.
 
-```
+```javascript
 let sample = [1, 2, 3]; // I want the even number only
 
 let filterResult = sample.filter((item) => {
@@ -63,7 +63,7 @@ console.log(sample); // the original data does not change: [1, 2, 3]
 
 The later is `reduce`. It takes a function and a collection of items,and returns the value by combining the items. This is the simple example of `reduce`.
 
-```
+```javascript
 let sample = [1, 2, 3]; // I want to sum all the items
 
 let reduceResult = sample.reduce((prev, current) => {
@@ -76,7 +76,7 @@ console.log(sample); // the original data does not change: [1, 2, 3]
 
 The advantage of using `map`, `filter`, and `reduce` is you can easily chain all those function with predictable behaviour. This is the sample case to use it all together.
 
-```
+```javascript
 let leads = [{
   name: "Acme Company",
   isDeal: true,
@@ -111,7 +111,9 @@ let getUsdOnlyWithDollar = leads.filter((item) => {
   };
 });
 
-console.log(getUsdOnlyWithDollar); // [ { name: 'Acme Company', isDeal: true, currency: '$', deal: 150 }, { name: 'Froyo Agency', isDeal: false, currency: '$', deal: 2000 } ]
+// [{ name: 'Acme Company', isDeal: true, currency: '$', deal: 150 },
+// { name: 'Froyo Agency', isDeal: false, currency: '$', deal: 2000 } ]
+console.log(getUsdOnlyWithDollar);
 
 // get all data with isDeal is false, convert all USD currency to IDR
 // 1 USD = IDR 13000, then sum all the amount of expected deal
@@ -142,7 +144,7 @@ console.log(calculateIt); // { deal: 29500000 }
 
 We won't cook that spicy and exotic cuisine for now. Currying is the process of transforming a function that takes multiple arguments into a function that takes only a single argument and returns another function if the arguments are still needed. Take a look at these two code snippets:
 
-```
+```javascript
 let greeting = (message, name) => {
   return message + " " + name;
 };
@@ -153,7 +155,7 @@ console.log(greeting("Hello", "Bagja")); // "Hello Bagja"
 
 We already familiar with that syntax, nothing wrong with that. Now the curried version for that greeting function.
 
-```
+```javascript
 let curriedGreeting = (message) => {
   return (name) => {
     return message + " " + name;
@@ -174,7 +176,7 @@ At the moment we invoke `curriedGreeting` with only one argument, it will return
 
 That looks so cool, but why we want to do that? It's not straightforward, is it? Ok, let me show you a use case that can be considered to use this technique.
 
-```
+```javascript
 let callAPI = () => {
   // Do the web service call here. Let's assume it returns an array of objects
   return [{

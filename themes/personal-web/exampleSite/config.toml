@@ -1,18 +1,17 @@
-baseURL = "https://asepbagja.com/"
-languageCode = "en-gb"
-title = "ASPBGJ"
-theme = "personal-web" # set the theme
-copyright="2019 © Asep Bagja Priandana"
-googleAnalytics = "UA-136771948-2"
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Edna West"
+theme = "personal-web"
+copyright="© Edna West"
+googleAnalytics = ""
 enableEmoji=true
 enableRobotsTXT=true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
-disqusShortname = "asepnew"
 
 [params.intro]
-  main = "Hi, I'm Asep :wave:"
-  sub = "A technology entrepreneur"
+  main = "Hi, I'm Edna :wave:"
+  sub = "I'm a Web Developer and Entrepreneur"
 
 [taxonomies]
   design = "designs"
@@ -24,7 +23,7 @@ disqusShortname = "asepnew"
 [params]
   breadcrumb = true
   accentColor = "#FD3519"
-  mainSections = ['post'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+  mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
 
 [params.notFound]
   gopher = "/images/gopher.png" # checkout https://gopherize.me/
@@ -38,22 +37,28 @@ disqusShortname = "asepnew"
   portfolio = "project"
 
 [params.sidebar]
-  backgroundImage = '/images/sidebar.jpg' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+  backgroundImage = '' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
   gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
-  logo = "/images/avatar.jpg" # - default "/images/edna-west.jpg"
+  logo = "" # - default "/images/edna-west.jpg"
 [params.assets]
   favicon = ""
   customCSS = ""
 
 [params.social]
-  github = "https://github.com/bepitulaz"
-  twitter = "https://twitter.com/bepituLaz"
-  linkedin = "https://www.linkedin.com/in/asepbagja"
-  instagram = "https://www.instagram.com/bepitulaz"
+  github = "https://github.com/"
+  twitter = "https://twitter.com/"
+  linkedin = "https://www.linkedin.com/in/"
+  medium = "https://medium.com/"
+  codepen = "https://codepen.io/"
+  facebook = "https://www.facebook.com/"
+  youtube = "https://www.youtube.com/"
+  instagram = "https://www.instagram.com/"
+  gitlab = "https://gitlab.com/"
+  keybase = "https://keybase.io/"
 
 [params.contact]
-  email = "asep.bagja.p@gmail.com"
-  text= "Send me an email 📧" # text of the contact link in the sidebar. If email params.contact.email is defined
+  email = ""
+  text= "" # text of the contact link in the sidebar. If email params.contact.email is defined
 
 
 [menu]
@@ -66,10 +71,17 @@ disqusShortname = "asepnew"
   weight = -120
 
 [[menu.main]]
+  identifier = "portfolio"
+  name = "Portfolio"
+  title = "Portfolio"
+  url = "/portfolio/"
+  weight = -110
+
+[[menu.main]]
   identifier = "blog"
-  name = "Posts"
+  name = "Post"
   title = "Blog section"
-  url = "/posts/"
+  url = "/post/"
   weight = -100
 
 [sitemap]

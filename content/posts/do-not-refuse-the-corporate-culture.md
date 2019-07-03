@@ -9,6 +9,7 @@ _A letter from my dad about how to make my company bigger._
 My dad was a government auditor for 35 years plus. He never expected me to be an entrepreneur. At the first, he did not support me, but now he is the one who regularly give me advices about running a company.
 
 A few days ago, he sent me an email (in Bahasa Indonesia) that I thought it was a very good advice and I would like to share it to another startup founder. Here is the email which I translate into English.
+
 > _Assalamu'alaikum wr. wb.,_
 > 
 > 

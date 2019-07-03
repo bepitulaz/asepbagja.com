@@ -1,0 +1,8 @@
+{{ partial "header" .}}
+
+<h1>{{ .Title | markdownify }}</h1>
+{{ .Content | markdownify }}
+
+{{ template "_internal/disqus.html" . }}
+
+{{ partial "footer" .}}
