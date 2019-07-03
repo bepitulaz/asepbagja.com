@@ -1,4 +1,5 @@
 <head>
+  {{ template "_internal/google_analytics_async.html" . }}
   <title>{{.Params.title}} - {{ $.Site.Title}}</title>
   <link rel='canonical' href='{{ .Permalink }}' />
   {{ partial "head/meta" .}}
