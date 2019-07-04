@@ -79,11 +79,11 @@ disqusShortname = "asepnew"
 
 [privacy]
   [privacy.googleAnalytics]
-    anonymizeIP = true
-    disable = true
+    anonymizeIP = false
+    disable = false
     respectDoNotTrack = true
     useSessionStorage = false
   [privacy.twitter]
     disable = false
-    enableDNT = true
+    enableDNT = false
     simple = false
