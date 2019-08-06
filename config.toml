@@ -12,7 +12,7 @@ disqusShortname = "asepnew"
 
 [params.intro]
   main = "Hi, I'm Asep :wave:"
-  sub = "A technology entrepreneur"
+  sub = "A digital &amp; parallel entrepreneur"
 
 [taxonomies]
   design = "designs"
