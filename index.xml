@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 19:03:43 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AR</title>
+      <link>https://asepbagja.com/ar/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://asepbagja.com/ar/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apa Itu Estonia e-Residency?</title>
