@@ -161,7 +161,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd D:\indah\SKRIPSI\3D\nista mandala\tekstur\nama pelinggih.jpg
+map_Kd nama pelinggih.jpg
 
 newmtl wastra_hijau
 Ns 96.078431
@@ -172,7 +172,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd D:\indah\SKRIPSI\3D\nista mandala\tekstur\wastra hijau.jpg
+map_Kd wastra hijau.jpg
 
 newmtl wastra_hijau_images.jpeg
 Ns 96.078431
@@ -183,4 +183,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd D:\indah\SKRIPSI\3D\nista mandala\tekstur\images.jpeg
+map_Kd images.jpeg
