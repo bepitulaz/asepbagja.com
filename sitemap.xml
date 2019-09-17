@@ -26,7 +26,8 @@
   <url>
     <loc>https://asepbagja.com/posts/</loc>
     <lastmod>2019-07-03T19:03:43+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -46,6 +47,13 @@
   <url>
     <loc>https://asepbagja.com/about/</loc>
     <lastmod>2019-02-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://asepbagja.com/posts/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia/</loc>
+    <lastmod>2017-08-03T17:00:33+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -178,12 +186,14 @@
   
   <url>
     <loc>https://asepbagja.com/designs/</loc>
-    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://asepbagja.com/techs/</loc>
-    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>
