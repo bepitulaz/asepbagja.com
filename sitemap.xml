@@ -3,6 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://asepbagja.com/</loc>
+    <lastmod>2019-09-19T17:07:43+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://asepbagja.com/posts/membangun-sistem-hft-sederhana/</loc>
+    <lastmod>2019-09-19T17:07:43+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://asepbagja.com/posts/</loc>
+    <lastmod>2019-09-19T17:07:43+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://asepbagja.com/ar/</loc>
     <lastmod>2019-08-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -10,21 +31,7 @@
   </url>
   
   <url>
-    <loc>https://asepbagja.com/</loc>
-    <lastmod>2019-08-07T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://asepbagja.com/posts/apa-itu-estonia-e-residency/</loc>
-    <lastmod>2019-07-03T19:03:43+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://asepbagja.com/posts/</loc>
     <lastmod>2019-07-03T19:03:43+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
