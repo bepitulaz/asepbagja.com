@@ -58,3 +58,15 @@ Di sini saya menggunakan PostgreSQL untuk melakukan penyimpanan data time series
 Sistem yang saya bangun ini belum lah sempurna (boleh dibilang HFT abal-abal haha) dan masih jauh dari sistem HFT di luar sana yang dengan kecepatan tinggi dapat melakukan *trading* dalam hitungan milidetik. Bahkan hingga membuat *[flash crash](https://en.wikipedia.org/wiki/2010_Flash_Crash)* pada pasar.
 
 Mari jika mau berdiskusi atau memberi saran bisa tinggalkan pesan di kolom komentar atau lewat email saya yang tercantum di menu sebelah kiri.
+
+<u>**Daftar API dan pustaka pemrograman yang digunakan**</u>
+
+- [Indodax](https://indodax.com). Bursa cryptocurrency Indonesia yang saya gunakan. Dokumentasi API-nya dapat dilihat [di sini](https://indodax.com/downloads/INDODAXCOM-API-DOCUMENTATION.pdf).
+- [TA-Lib](http://ta-lib.org/). Pustaka pemrograman pada bahasa C untuk melakukan analisa teknikal. Dapat digunakan untuk Python melalui *[wrapper](https://github.com/mrjbq7/ta-lib)*.
+- [Pandas](https://pandas.pydata.org/). Pustaka Python untuk melakukan analisa data.
+- [Numpy](https://numpy.org/). Pustaka Python untuk array dan matriks multi-dimensi yang besar.
+- [Backtrader](https://www.backtrader.com/). Framework untuk melakukan *backtesting* dengan menggunakan Python.
+- [Mosquitto MQTT Broker](http://mosquitto.org/). Pub/sub messaging untuk protokol MQTT. Ada MQTT kliennya untuk Ruby dan Python.
+- [MessagePack](https://msgpack.org/index.html). Serialisasi data dengan menggunakan format biner. Lebih kecil ukurannya dibanding JSON.
+- [Ruby on Rails](https://rubyonrails.org). Ruby web framework.
+- [Dokku](https://github.com/dokku/dokku). Platform-as-a-Service berbasis Docker. Anggap saja Heroku tapi di-*host* di server sendiri.  
