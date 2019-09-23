@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on ASPBGJ</title>
@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
-    <lastBuildDate>Thu, 19 Sep 2019 17:07:43 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Sep 2019 15:08:11 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mengakali Biaya Transfer Uang Antar Negara Dengan Jenius dan TransferWise</title>
+      <link>https://asepbagja.com/posts/transfer-uang-antar-negara-jenius-transferwise/</link>
+      <pubDate>Mon, 23 Sep 2019 15:08:11 +0800</pubDate>
+      
+      <guid>https://asepbagja.com/posts/transfer-uang-antar-negara-jenius-transferwise/</guid>
+      <description>Daftar isi artikel
+ Apa itu TransferWise Mari berkenalan dengan Jenius Kesimpulan  Internet membuat batas antar negara seakan tidak ada. Walaupun tinggal di Indonesia, kita bisa mencari peluang-peluang bisnis dan pasar-pasar baru di luar Indonesia untuk memasarkan produk. Seperti saya yang memanfaatkan Estonia e-Residency untuk membangun perusahaan di Eropa. Tentu saja memiliki bisnis di luar negeri artinya harus berurusan dengan mata uang asing. Untuk kasus saya, saya harus berurusan dengan mata uang Euro dan kadang-kadang US Dollar.</description>
+    </item>
     
     <item>
       <title>Membangun Sistem High Frequency Trading Sederhana</title>
