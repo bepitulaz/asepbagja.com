@@ -59,7 +59,7 @@ Dengan mengkombinasikan Jenius dengan TransferWise kita bisa transfer ke luar ne
 
 ![Debit Card](/blog-img/tw-step-2.png)
 
-Kamu bisa lihat digambar di atas, untuk mengirim 41€ dari Indonesia biayanya HANYA 0,14€. Jauh sekali dibandingkan *wire transfer* secara tradisional yang bisa menghabiskan Rp300.000-Rp400.000. Jadi skema pengirimannya akan seperti ini kira-kira.
+Kamu bisa lihat di gambar di atas, untuk mengirim 41€ dari Indonesia biayanya HANYA 0,14€. Jauh sekali dibandingkan *wire transfer* secara tradisional yang bisa menghabiskan Rp300.000-Rp400.000. Jadi skema pengirimannya akan seperti ini kira-kira.
 
 ![Sistem Jenius](/blog-img/sistem-jenius.jpg)
 
