@@ -71,7 +71,7 @@ Oh, iya, karena kartu debit Jenius ini menggunakan mata uang Rupiah, jadi Transf
 
 TransferWise memiliki kemampuan untuk mengirim uang dengan biaya murah ke 59 negara termasuk Indonesia dan cepat hanya dalam hitungan menit (selama dilakukan saat hari kerja.) Sedangkan Jenius memberi kemudahan untuk membayar transaksi di *merchant* luar negeri. Catatan penting:
 
-1. Pastikan setelah membuat akun di [Transferwise](https://transferwise.com/u/asepp1), kamu membuka *balance* untuk mata uang Euro. Karena saat ini hanya *balance* Euro yang bisa di-*top up* dengan menggunakan debit Visa/Mastercard. Semisal tujuan transfermu adalah bank di Amerika Serikat, kamu bisa kirim USD dari *balance* Euro dengan biaya yang masih tetap rendah.
+1. Pastikan setelah membuat akun di [TransferWise](https://transferwise.com/u/asepp1), kamu membuka *balance* untuk mata uang Euro. Karena saat ini hanya *balance* Euro yang bisa di-*top up* dengan menggunakan debit Visa/Mastercard. Semisal tujuan transfermu adalah bank di Amerika Serikat, kamu bisa kirim USD dari *balance* Euro dengan biaya yang masih tetap rendah.
 2. Kartu Jenius yang dapat digunakan di TransferWise adalah m-Card (kartu utama) karena saya sudah coba menggunakan e-Card (kartu virtual) dan selalu ditolak oleh sistem.
 
 Semoga artikel ini bermanfaat untuk teman-teman yang memiliki urusan bisnis di luar negeri atau mengirimkan uang ke kerabat di luar negeri.
