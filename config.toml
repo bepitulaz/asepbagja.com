@@ -1,89 +1,61 @@
 baseURL = "https://asepbagja.com/"
+DefaultContentLanguage = "en"
 languageCode = "en-gb"
-title = "ASPBGJ"
-theme = "personal-web" # set the theme
+theme = "bepitulaz" # set the theme
 copyright="2019 © Asep Bagja Priandana"
-googleAnalytics = "UA-136771948-2"
+#googleAnalytics = "UA-136771948-2"
+googleAnalytics = ""
 enableEmoji=true
 enableRobotsTXT=true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 disqusShortname = "asepnew"
 
-[params.intro]
-  main = "Hi, I'm Asep :wave:"
-  sub = "A digital &amp; parallel entrepreneur"
+[languages]
+  [languages.en]
+    title = "The Tech Entrepreneur and Consultant"
+    weight = 1
+    contentDir = "content/en"
+    languageName = "English"
+    staticDir = "static/en"
+    [languages.en.params]
+      main = "Hi, I'm Asep :wave:"
+      sub = "The Tech Entrepreneur and Consultant"
+    [languages.en.blackfriday]
+      angledQuotes = false
 
-[taxonomies]
-  design = "designs"
-  tech = "techs"
+  [[languages.en.menu.main]]
+    url    = "/"
+    name   = "Home"
+    weight = 0
+  [[languages.en.menu.about]]
+    url    = "/about"
+    name   = "About"
+    weight = 1
+  [[languages.en.menu.posts]]
+    url    = "/posts"
+    name   = "Posts"
+    weight = 2
 
-[blackfriday]
-  hrefTargetBlank = true
+  [languages.id]
+    title = "Pengusaha dan Konsultan Teknologi"
+    weight = 2
+    contentDir = "content/id"
+    languageName = "Bahasa Indonesia"
+    staticDir = "static"
+    [languages.id.params]
+      main = "Hai, saya Asep :wave:"
+      sub = "Pengusaha dan Konsultan Teknologi"
 
-[params]
-  breadcrumb = true
-  accentColor = "#FD3519"
-  mainSections = ['post'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
-
-[params.notFound]
-  gopher = "/images/gopher.png" # checkout https://gopherize.me/
-  h1 = 'Bummer!'
-  p = "It seems that this page doesn't exist."
-
-[params.sections]
-  # Define how your sections will be called
-  # when automatically pulled. For instance in the 404 page
-  post = "article"
-  portfolio = "project"
-
-[params.sidebar]
-  backgroundImage = '/images/sidebar.jpg' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
-  gradientOverlay = '' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
-  logo = "/images/avatar.jpg" # - default "/images/edna-west.jpg"
-[params.assets]
-  favicon = ""
-  customCSS = ""
-
-[params.social]
-  github = "https://github.com/bepitulaz"
-  twitter = "https://twitter.com/bepituLaz"
-  linkedin = "https://www.linkedin.com/in/asepbagja"
-  instagram = "https://www.instagram.com/bepitulaz"
-
-[params.contact]
-  email = "asep.bagja.p@gmail.com"
-  text= "Send me an email 📧" # text of the contact link in the sidebar. If email params.contact.email is defined
-
-
-[menu]
-
-[[menu.main]]
-  identifier = "about"
-  name = "About"
-  title = "About section"
-  url = "/about/"
-  weight = -120
-
-[[menu.main]]
-  identifier = "blog"
-  name = "Posts"
-  title = "Blog section"
-  url = "/posts/"
-  weight = -100
-
-[sitemap]
-  changefreq = "monthly"
-  filename = "sitemap.xml"
-  priority = 0.5
-
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = false
-    disable = false
-    respectDoNotTrack = true
-    useSessionStorage = false
-  [privacy.twitter]
-    disable = false
-    enableDNT = false
-    simple = false
+  [[languages.id.menu.main]]
+    url    = "/"
+    name   = "Beranda"
+    weight = 0
+  [[languages.id.menu.about]]
+    url    = "/tentang-saya"
+    name   = "Tentang Saya"
+    weight = 1
+  [[languages.id.menu.posts]]
+    url    = "/artikel"
+    name   = "Artikel"
+    weight = 2
