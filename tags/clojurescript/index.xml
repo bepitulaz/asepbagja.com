@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>clojurescript on The Tech Entrepreneur and Consultant</title>
+    <link>https://asepbagja.com/tags/clojurescript/</link>
+    <description>Recent content in clojurescript on The Tech Entrepreneur and Consultant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <lastBuildDate>Tue, 26 May 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://asepbagja.com/tags/clojurescript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Full Stack Clojure Project</title>
+      <link>https://asepbagja.com/posts/full-stack-clojure-project/</link>
+      <pubDate>Tue, 26 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://asepbagja.com/posts/full-stack-clojure-project/</guid>
+      <description>Why I&amp;rsquo;m deeply in love with Clojure? That&amp;rsquo;s because I can do full stack development only in one language. I can write HTML with the same Clojure data structure, then styling it by writing CSS in exactly the same data structure. When I need to do user interface development, I can use ClojureScript then compile it into JavaScript. Actually writing ClojureScript is more pleasant than writing vanilla JavaScript. How about the backend development?</description>
+    </item>
+    
+    <item>
+      <title>Integrating React Bootstrap and Reagent</title>
+      <link>https://asepbagja.com/posts/integrating-react-bootstrap-and-reagent/</link>
+      <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://asepbagja.com/posts/integrating-react-bootstrap-and-reagent/</guid>
+      <description>This weekend, I am experimenting to use React Bootstrap with ClojureScript. For whom that doesn&amp;rsquo;t know it yet, React Bootstrap is a Bootstrap 3 component built with ReactJS. I&amp;rsquo;m using Reagent library for interacting with React from ClojureScript, instead of Om.
+Integrating React Bootstrap and Reagent was confusing me at the first. It was non-trivial effort. I searched Google and got no relevant solutions for hours. So, this working solution is based on my trial and error experimentation.</description>
+    </item>
+    
+  </channel>
+</rss>

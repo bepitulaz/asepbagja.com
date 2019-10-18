@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>raspberry pi on The Tech Entrepreneur and Consultant</title>
+    <link>https://asepbagja.com/tags/raspberry-pi/</link>
+    <description>Recent content in raspberry pi on The Tech Entrepreneur and Consultant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <lastBuildDate>Sun, 09 Aug 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://asepbagja.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Urban Farming with Clojure</title>
+      <link>https://asepbagja.com/posts/urban-farming-with-clojure/</link>
+      <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://asepbagja.com/posts/urban-farming-with-clojure/</guid>
+      <description>Currently, I&amp;rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house. You can check the project&amp;rsquo;s progress on my Hackaday&amp;rsquo;s page. The system should controls the lighting on and off at the correct time, logs the temperature and humidity and triggers the fan based on it, and sends the farm log to the server, so, I can predict the harvest time and the farm optimal condition in the future.</description>
+    </item>
+    
+  </channel>
+</rss>
