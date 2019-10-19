@@ -7,21 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
-    <lastBuildDate>Mon, 04 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/tags/general/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>2016 Personal Challenges</title>
-      <link>https://asepbagja.com/posts/2016-personal-challenges/</link>
-      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://asepbagja.com/posts/2016-personal-challenges/</guid>
-      <description>Happy new year 2016.
-Annually I challenged myself with some new skills and some targets. Few years ago, I challenged myself to learn Mandarin, because it is the most spoken language in Asia. Therefore, I took a Mandarin short course and also self-learning it via Youtube.
-I had also challenged myself to learn functional programming paradigm and tried to master one of the programming languages that used that paradigm. My choice was Clojure because it is using Lisp dialect.</description>
-    </item>
     
     <item>
       <title>Is Learning to Code Necessary for Everyone?</title>
@@ -29,8 +18,7 @@ I had also challenged myself to learn functional programming paradigm and tried 
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/posts/is-learning-to-code-necessary-for-everyone/</guid>
-      <description>Although coding is not a basic communication skill for human, I prefer to encourage people for learning it, especially for someone who wants to expresses and develops his/her idea in technology industry but doesn&amp;rsquo;t come from computer science background. There are couple of reasons according to that opinion.
-In the first place, if people know basic coding skill, he/she can develop his/her very beginning concept of software by his/her own hand, then his/her can show it to the more appropriate software engineer.</description>
+      <description>Although coding is not a basic communication skill for human, I prefer to encourage people for learning it, especially for someone who wants to expresses and develops his/her idea in technology industry but doesn&amp;rsquo;t come from computer science background.</description>
     </item>
     
     <item>
@@ -39,9 +27,7 @@ In the first place, if people know basic coding skill, he/she can develop his/he
       <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/posts/me-and-programming-languages/</guid>
-      <description>This is the story of my life about my relationship with some programming languages from the first time I learnt computer programming until now. It was like finding a life partner.
-Pascal
-I met her around 2003 from my high school accounting teacher. She was my very first date in programming world. I tried to digest how to do programming and what I can do with programming. My relationship with Pascal was very short.</description>
+      <description>This is the story of my life about my relationship with some programming languages from the first time I learnt computer programming until now.</description>
     </item>
     
   </channel>

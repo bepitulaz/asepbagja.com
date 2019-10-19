@@ -7,42 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
-    <lastBuildDate>Wed, 03 Apr 2019 10:31:50 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Business</title>
-      <link>https://asepbagja.com/tags/business/</link>
-      <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
-      
-      <guid>https://asepbagja.com/tags/business/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opinion</title>
-      <link>https://asepbagja.com/tags/opinion/</link>
-      <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
-      
-      <guid>https://asepbagja.com/tags/opinion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ideas</title>
-      <link>https://asepbagja.com/tags/ideas/</link>
-      <pubDate>Sat, 23 Mar 2019 11:30:54 +0800</pubDate>
-      
-      <guid>https://asepbagja.com/tags/ideas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>personal</title>
       <link>https://asepbagja.com/tags/personal/</link>
-      <pubDate>Sat, 23 Mar 2019 11:30:54 +0800</pubDate>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/tags/personal/</guid>
       <description></description>
@@ -85,29 +58,11 @@
     </item>
     
     <item>
-      <title>docker</title>
-      <link>https://asepbagja.com/tags/docker/</link>
-      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
+      <title>Business</title>
+      <link>https://asepbagja.com/tags/business/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://asepbagja.com/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ssl</title>
-      <link>https://asepbagja.com/tags/ssl/</link>
-      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://asepbagja.com/tags/ssl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wordpress</title>
-      <link>https://asepbagja.com/tags/wordpress/</link>
-      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://asepbagja.com/tags/wordpress/</guid>
+      <guid>https://asepbagja.com/tags/business/</guid>
       <description></description>
     </item>
     
@@ -126,24 +81,6 @@
       <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/tags/investment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>general</title>
-      <link>https://asepbagja.com/tags/general/</link>
-      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://asepbagja.com/tags/general/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>motivation</title>
-      <link>https://asepbagja.com/tags/motivation/</link>
-      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://asepbagja.com/tags/motivation/</guid>
       <description></description>
     </item>
     
@@ -189,6 +126,15 @@
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/tags/hydroponic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ideas</title>
+      <link>https://asepbagja.com/tags/ideas/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://asepbagja.com/tags/ideas/</guid>
       <description></description>
     </item>
     
@@ -270,6 +216,15 @@
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>general</title>
+      <link>https://asepbagja.com/tags/general/</link>
+      <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://asepbagja.com/tags/general/</guid>
       <description></description>
     </item>
     

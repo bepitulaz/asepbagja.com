@@ -18,7 +18,7 @@
       <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/posts/urban-farming-with-clojure/</guid>
-      <description>Currently, I&amp;rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house. You can check the project&amp;rsquo;s progress on my Hackaday&amp;rsquo;s page. The system should controls the lighting on and off at the correct time, logs the temperature and humidity and triggers the fan based on it, and sends the farm log to the server, so, I can predict the harvest time and the farm optimal condition in the future.</description>
+      <description>Currently, I&amp;rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house.</description>
     </item>
     
   </channel>

@@ -7,9 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
+    <lastBuildDate>Mon, 23 Sep 2019 15:08:11 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/id/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tips dan Trik</title>
+      <link>https://asepbagja.com/id/categories/tips-dan-trik/</link>
+      <pubDate>Mon, 23 Sep 2019 15:08:11 +0800</pubDate>
+      
+      <guid>https://asepbagja.com/id/categories/tips-dan-trik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pemrograman</title>
+      <link>https://asepbagja.com/id/categories/pemrograman/</link>
+      <pubDate>Thu, 19 Sep 2019 17:07:43 +0800</pubDate>
+      
+      <guid>https://asepbagja.com/id/categories/pemrograman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bisnis</title>
+      <link>https://asepbagja.com/id/categories/bisnis/</link>
+      <pubDate>Wed, 03 Jul 2019 19:03:43 +0800</pubDate>
+      
+      <guid>https://asepbagja.com/id/categories/bisnis/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

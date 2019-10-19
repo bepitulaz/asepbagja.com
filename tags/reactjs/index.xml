@@ -18,8 +18,7 @@
       <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/posts/integrating-react-bootstrap-and-reagent/</guid>
-      <description>This weekend, I am experimenting to use React Bootstrap with ClojureScript. For whom that doesn&amp;rsquo;t know it yet, React Bootstrap is a Bootstrap 3 component built with ReactJS. I&amp;rsquo;m using Reagent library for interacting with React from ClojureScript, instead of Om.
-Integrating React Bootstrap and Reagent was confusing me at the first. It was non-trivial effort. I searched Google and got no relevant solutions for hours. So, this working solution is based on my trial and error experimentation.</description>
+      <description>This weekend, I am experimenting to use React Bootstrap with ClojureScript.</description>
     </item>
     
   </channel>

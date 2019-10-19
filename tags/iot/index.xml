@@ -18,9 +18,7 @@
       <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/posts/simple-and-cheap-iot-data-logging-with-clojure/</guid>
-      <description>I have a small green house in my home front yard, and I deployed some sensors like temperature, humidity, electrical conductivity (EC), and pH sensor there.
-After the development of the sensors completed, it was the time for me to develop the web service for logging the data. I considered to use NoSQL database for persistent data storage. Otherwise I dismissed that idea for the sake of cost efficiency.
-To use NoSQL database, I should open one or two servers in cloud provider for running it.</description>
+      <description>I have a small green house in my home front yard, and I deployed some sensors like temperature, humidity, electrical conductivity (EC), and pH sensor there.</description>
     </item>
     
   </channel>
