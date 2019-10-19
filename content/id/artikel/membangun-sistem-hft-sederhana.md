@@ -2,6 +2,9 @@
 title: "Membangun Sistem High Frequency Trading Sederhana"
 date: 2019-09-19T17:07:43+08:00
 draft: false
+coverImg: "/blog-img/candlestick.jpg"
+categories:
+- Pemrograman
 ---
 
 Dua minggu terakhir ini saya sibuk mengerjakan sebuah proyek sampingan pribadi yang berhubungan dengan pasar finansial, yaitu melakukan otomatisasi terhadap kegiatan perdagangan di bursa cryptocurrency. Saya yakin untuk yang sudah terbiasa melakukan kegiatan *trading* pasti sering mendengar istilah *robot trading*. Di mana perdagangan dilakukan secara otomatis oleh komputer.
@@ -69,4 +72,4 @@ Mari jika mau berdiskusi atau memberi saran bisa tinggalkan pesan di kolom komen
 - [Mosquitto MQTT Broker](http://mosquitto.org/). Pub/sub messaging untuk protokol MQTT. Ada MQTT kliennya untuk Ruby dan Python.
 - [MessagePack](https://msgpack.org/index.html). Serialisasi data dengan menggunakan format biner. Lebih kecil ukurannya dibanding JSON.
 - [Ruby on Rails](https://rubyonrails.org). Ruby web framework.
-- [Dokku](https://github.com/dokku/dokku). Platform-as-a-Service berbasis Docker. Anggap saja Heroku tapi di-*host* di server sendiri.  
+- [Dokku](https://github.com/dokku/dokku). Platform-as-a-Service berbasis Docker. Anggap saja Heroku tapi di-*host* di server sendiri.

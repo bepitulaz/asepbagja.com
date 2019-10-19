@@ -1,7 +1,9 @@
 ---
 title: Add Free SSL to Existing WordPress Site with Docker and Let's Encrypt
 date: 2016-06-24
-tags: ["docker","Programming","ssl","wordpress"]
+coverImg: "https://letsencrypt.org/images/le-logo-standard.png"
+categories:
+- Tips and Tricks
 ---
 
 Google announced that they use HTTPS as a ranking signal [on 2014](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html), and it becomes more standard in their search result. Therefore, I decide to use HTTPS also for this blog; and it looks pretty too for having a green lock icon on the browser. I'm a Docker devotee, so I'll show you how to do it by using Docker.
@@ -20,7 +22,7 @@ I assume you are at the home folder (/home/user/). You should create a directory
 /home/user/:$ mkdir certs
 ```
 
-Then, you will run Nginx as the proxy server for our WordPress container. I'm using Nginx proxy image which is maintained by [jwilder](https://github.com/jwilder/nginx-proxy). 
+Then, you will run Nginx as the proxy server for our WordPress container. I'm using Nginx proxy image which is maintained by [jwilder](https://github.com/jwilder/nginx-proxy).
 
 ```
 /home/user/:$ docker run -d -p 80:80 -p 443:443 \
@@ -38,7 +40,7 @@ If you look the command above, 3 writable volumes are declared:
 *   `/etc/nginx/vhost.d` is for changing the configuration of vhosts, and it's needed by Let's Encrypt
 *   `/usr/share/nginx/html` is for writing challenge files, so Let's Encrypt can verify your domain.
 
-After the Nginx proxy container is running, you will run Let's Encrypt container to create and renew the certificate for each domain that you want to add the SSL certificate. I will use the Let's Encrypt image which is maintained by [JrCs](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion). 
+After the Nginx proxy container is running, you will run Let's Encrypt container to create and renew the certificate for each domain that you want to add the SSL certificate. I will use the Let's Encrypt image which is maintained by [JrCs](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion).
 
 ```
 /home/user/:$ docker run -d \
@@ -54,7 +56,7 @@ Ensure those 2 containers are running by using `docker ps` command. Then you can
 /home/user/:$ docker run -e "VIRTUAL_HOST=yourdomain.com" \
   -e "LETSENCRYPT_HOST=yourdomain.com,www.yourdomain.com" \
   -e "LETSENCRYPT_EMAIL=your@youremail.com" \
-  ... # put the rest of the necessary settings here 
+  ... # put the rest of the necessary settings here
 ```
 
 The `LETSENCRYPT_HOST` and `LETSENCRYPT_EMAIL` are necessary, so Let's Encrypt service can automatically create and renew valid certificate for each virtual host.

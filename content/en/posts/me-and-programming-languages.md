@@ -2,6 +2,9 @@
 title: Me and Programming Languages
 date: 2014-11-12
 tags: ["basic","general","Programming"]
+categories:
+- Programming
+coverImg: "/blog-img/proglang-rel.jpg"
 ---
 
 _This is the story of my life about my relationship with some programming languages from the first time I learnt computer programming until now. It was like finding a life partner._

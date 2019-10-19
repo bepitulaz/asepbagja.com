@@ -2,6 +2,9 @@
 title: My Learning Curve In IoT World As A Web and iOS Developer
 date: 2015-03-16
 tags: ["arduino","esp8266","Programming"]
+categories:
+- Programming
+coverImg: "https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25200525/esp-8266.jpg"
 ---
 
 As a web developer and iOS developer, I didn't know much about hardware or bare metal programming. I only learned about resistor, capasitor, transistor, etc when I was still in junior high school, thus my electronic knowledge is very limited.

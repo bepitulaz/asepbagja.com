@@ -3,9 +3,12 @@ title: Introduction to Functional Programming in JavaScript (Part 2)
 date: 2016-07-04
 cdn: 'header-on'
 tags: ["basic","functional programming","javascript","Programming"]
+categories:
+- Programming
+coverImg: "/blog-img/js-img.jpg"
 ---
 
-In [part 1](https://asep.co/introduction-to-functional-programming-in-javascript-part-1/), we had learned about two important concepts in functional programming paradigm: immutable data and pure function. Now, we will learn another important concept in functional programming, that is higher order function.
+In [part 1](/posts/introduction-to-functional-programming-in-javascript-part-1/), we had learned about two important concepts in functional programming paradigm: immutable data and pure function. Now, we will learn another important concept in functional programming, that is higher order function.
 
 According to Wikipedia, higher-order function is a function that does at least one of the following:
 
@@ -54,7 +57,7 @@ Next is `filter`. It takes a function and a collection, runs the function on eac
 let sample = [1, 2, 3]; // I want the even number only
 
 let filterResult = sample.filter((item) => {
-  return item % 2 === 0;	
+  return item % 2 === 0;
 });
 
 console.log(filterResult); // [2]
@@ -218,4 +221,4 @@ JavaScript supports higher-order function very well. It makes JavaScript suitabl
 
 Learning functional programming won't hurt you. I encourage you to learn a programming language that specifically designed for it because many techniques and concepts are hard to explain or do in JavaScript. You can pick Haskell, Clojure, Scala, Elixir, OCaml, etc. By knowing imperative programming and functional programming you will get the best of both worlds.
 
-Hope you enjoy this series of introduction to functional programming.  
+Hope you enjoy this series of introduction to functional programming.

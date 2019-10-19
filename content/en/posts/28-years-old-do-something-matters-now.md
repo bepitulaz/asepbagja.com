@@ -2,7 +2,9 @@
 title: 28 Years Old. Do Something Matters Now.
 date: 2015-09-21
 publishDate: 2015-09-21
-tags: ["Ideas","personal"]
+coverImg: "/blog-img/birthday.jpg"
+categories:
+- Personal
 ---
 
 Today, September 21, 2015, I'm officially 28 years old.

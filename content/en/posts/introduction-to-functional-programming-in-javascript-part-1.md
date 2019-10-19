@@ -2,6 +2,9 @@
 title: Introduction to Functional Programming in JavaScript (Part 1)
 date: 2016-07-03
 tags: ["basic","functional programming","javascript","Programming"]
+categories:
+- Programming
+coverImg: "/blog-img/js-img.jpg"
 ---
 
 Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal. It focuses on how to perform actions to achieve the expected result. Otherwise, functional programming paradigm concentrates on computing results rather than performing actions. In another word, the imperative one is an annoying micromanager in your office, and the functional one is a macromanager who just describe what's the job to be done.
@@ -65,7 +68,7 @@ function impureFunction(data) {
 
 let result = impureFunction(sample);
 console.log(result); // You get what you want: [2, 3, 4]
-console.log(sample); // But you get the side effect too. The value has been changed :( 
+console.log(sample); // But you get the side effect too. The value has been changed :(
 ```
 
 You can think the side effect in code is the same as the side effect in medicine. When you drink cough syrup, your cough maybe stops, but after that, you will feel sleepy. In a large code base, the impure function will hard to test and debug. So, we will rewrite that by using pure function and immutable data.
@@ -80,7 +83,7 @@ function pureFunction(data, index, init) {
     return pureFunction(data, index + 1, result); // we use recursion instead of for loop
   } else {
     return init;
-  }  
+  }
 }
 
 let result = pureFunction(sample, 0, []);
@@ -121,7 +124,7 @@ pureFunction(data, index, init) {
   return result; // it is [2, 3]
 }
 
-// and so on  
+// and so on
 ```
 
 That is the explanation of pure function. What you give is what you get. It does not depend on to any variable outside its scope. So, we can test and debug the function easier.
@@ -130,4 +133,4 @@ That is the explanation of pure function. What you give is what you get. It does
 
 In this first part, we had changed our way of thinking to express our idea to achieve the result. We have learned about immutable data and pure function to avoid side effect and made our code more concise. Those are still basic things before we dive deeper to learn about functional programming in JavaScript (or in another language). Hope you enjoy it and see you in the next part.
 
-P.S. [The second part](http://asepbagja.com/introduction-to-functional-programming-in-javascript-part-2/) of this article has been published.
+P.S. [The second part](/posts/introduction-to-functional-programming-in-javascript-part-2/) of this article has been published.

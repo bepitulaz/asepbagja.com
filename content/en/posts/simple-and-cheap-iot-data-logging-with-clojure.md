@@ -2,6 +2,9 @@
 title: Simple, Cheap, and Scalable IoT Data Logging With Clojure
 date: 2015-12-08
 tags: ["clojure","iot","Programming"]
+categories:
+- Programming
+coverImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/500px-Clojure_logo.svg.png"
 ---
 
 I have a small green house in [my home front yard](https://asep.co/my-familys-journey-to-grow-our-own-food/), and I deployed some sensors like temperature, humidity, electrical conductivity (EC), and pH sensor there.
@@ -43,25 +46,25 @@ Here is the snippet code for writing and querying the data.
   (if (io/.exists (io/as-file file-name))
     ;; exist: append new hash map to vector.
     (let [existing-data (read-string (slurp file-name))]
-      (spit file-name 
+      (spit file-name
             (with-out-str
-              (pr 
+              (pr
                (conj existing-data (data-parser sensor-data))))))
     ;; not exist: create new file and insert the vector of hash map.
-    (spit file-name 
-          (with-out-str 
+    (spit file-name
+          (with-out-str
             (pr (conj [] (data-parser sensor-data)))))))
 
 (defn search-log
   "Search data between two times."
   [start-time end-time file-name]
-  ;; update the date time string to timestamp 
+  ;; update the date time string to timestamp
   (let [log-data (read-string (slurp file-name))
-        with-timestamp (map 
-                        #(update-in % [:datetime] coerce/to-long) 
+        with-timestamp (map
+                        #(update-in % [:datetime] coerce/to-long)
                         log-data)]
     ;; let's find the data!
-    (let [result (filter #(and 
+    (let [result (filter #(and
                            (> (:datetime %) (coerce/to-long start-time))
                            (< (:datetime %) (coerce/to-long end-time)))
                          with-timestamp)]

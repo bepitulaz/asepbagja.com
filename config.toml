@@ -10,6 +10,7 @@ enableRobotsTXT=true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 disqusShortname = "asepnew"
+summaryLength = 10
 
 [languages]
   [languages.en]
@@ -21,6 +22,8 @@ disqusShortname = "asepnew"
     [languages.en.params]
       main = "Hi, I'm Asep :wave:"
       sub = "The Tech Entrepreneur and Consultant"
+      postsTitle = "Posts"
+      postsReadMore = "READ MORE"
     [languages.en.blackfriday]
       angledQuotes = false
 
@@ -46,6 +49,8 @@ disqusShortname = "asepnew"
     [languages.id.params]
       main = "Hai, saya Asep :wave:"
       sub = "Pengusaha dan Konsultan Teknologi"
+      postsTitle = "Artikel"
+      postsReadMore = "BACA LEBIH BANYAK"
 
   [[languages.id.menu.main]]
     url    = "/"

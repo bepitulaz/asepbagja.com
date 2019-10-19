@@ -1,0 +1,54 @@
+{{ define "main" }}
+<section id="page-content">
+  <div class="container">
+    <!-- Page title -->
+    <div class="page-title">
+      <h1>{{ .Site.Params.postsTitle }}</h1>
+    </div>
+    <!-- end: Page title -->
+
+    <!-- Portfolio Filter -->
+    <nav class="grid-filter gf-outline" data-layout="#blog">
+      <ul>
+        <li class="active"><a href="#" data-category="*">Show All</a></li>
+        <li><a href="#" data-category=".business">Business</a></li>
+        <li><a href="#" data-category=".programming">Programming</a></li>
+        <li><a href="#" data-category=".tips-and-tricks">Tips and Tricks</a></li>
+        <li><a href="#" data-category=".personal">Personal</a></li>
+      </ul>
+      <div class="grid-active-title">Show All</div>
+    </nav>
+    <!-- end: Portfolio Filter -->
+
+    <div id="blog" class="grid-layout post-2-columns m-b-30" data-item="post-item">
+      {{ range .Pages }}
+      <!-- Post item-->
+      {{ $taxo := "categories" }}
+      <div class="post-item border{{ range .Param $taxo }}{{ $classname := . }}{{ with $.Site.GetPage (printf "/%s/%s" $taxo ($classname | urlize)) }} {{ ($classname | urlize) }}{{ end }}{{ end }}">
+        <div class="post-item-wrap">
+          <div class="post-image">
+            <a href="{{.Permalink}}">
+              <img alt="{{.Title}}" src="{{ .Params.coverImg }}">
+            </a>
+            <span class="post-meta-category">
+              {{ range .Param $taxo }}
+                {{ $name := . }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                  <a href="{{ .Permalink }}">{{ $name }}</a>
+                {{ end }}
+              {{ end }}
+            </span>
+          </div>
+          <div class="post-item-description">
+            <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{.Date.Format "Jan 2, 2006"}}</span>
+            <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+            <p>{{ .Summary }}</p>
+            <a href="{{.Permalink}}" class="item-link">{{ .Site.Params.postsReadMore }} <i class="fa fa-arrow-right"></i></a> </div>
+        </div>
+      </div>
+      <!-- end: Post item-->
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

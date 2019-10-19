@@ -2,13 +2,10 @@
 title: "Mengakali Biaya Transfer Uang Antar Negara Dengan Jenius dan TransferWise"
 date: 2019-09-23T15:08:11+08:00
 draft: false
+coverImg: "/blog-img/tw-step-3.png"
+categories:
+- Tips dan Trik
 ---
-
-**Daftar isi artikel**
-
-- [Apa itu TransferWise](#apa-itu-transferwise)
-- [Mari berkenalan dengan Jenius](#mari-berkenalan-dengan-jenius)
-- [Kesimpulan](#kesimpulan)
 
 Internet membuat batas antar negara seakan tidak ada. Walaupun tinggal di Indonesia, kita bisa mencari peluang-peluang bisnis dan pasar-pasar baru di luar Indonesia untuk memasarkan produk. Seperti saya yang memanfaatkan [Estonia e-Residency](/apa-itu-estonia-e-residency) untuk membangun perusahaan di Eropa. Tentu saja memiliki bisnis di luar negeri artinya harus berurusan dengan mata uang asing. Untuk kasus saya, saya harus berurusan dengan mata uang Euro dan kadang-kadang US Dollar.
 

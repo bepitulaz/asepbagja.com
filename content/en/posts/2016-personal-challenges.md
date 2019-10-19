@@ -1,7 +1,9 @@
 ---
 title: 2016 Personal Challenges
 date: 2016-01-04
-tags: ["general","Ideas","motivation"]
+coverImg: "/blog-img/aurora.jpg"
+categories:
+- Personal
 ---
 
 **Happy new year 2016.**

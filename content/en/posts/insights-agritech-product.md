@@ -1,12 +1,11 @@
-+++ 
++++
 draft = false
 date = 2019-04-03T10:31:50+08:00
 title = "Insights to Sell Agritech Product"
 description = "Some insights to sell agriculture technology product."
-slug = "insights-agritech-product" 
-tags = ["business", "opinion"]
-categories = []
-externalLink = ""
+slug = "insights-agritech-product"
+categories = ["Business"]
+coverImg = "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800"
 +++
 
 My company [Tanibox](https://tanibox.com) is developing agriculture software for two years. We focus on [Tania](https://usetania.org), our open source farm management software. We love growing plants, but we--all co-founders of Tanibox--never touch agriculture as an industry before Tanibox exist. So, we jumped to agriculture technology industry by trial and error. Here are some interesting insights from a couple of years building an open source software for agriculture to share with you.
@@ -43,4 +42,4 @@ The countryside and the rural area are farms mostly located. The online connecti
 In terms of volume, it means this type of farmer is the lucrative market. It spreads across the globe. But, chasing this type of farmer is challenging though because the small-holder farmer is usually price-sensitive. The cost of your solution should be as low as possible.
 
 ### Conclusion
-Agriculture is the slowest industry that adapts the new technology. I hope these insights are useful for anyone interested to jump in into building an agriculture technology solution.  
+Agriculture is the slowest industry that adapts the new technology. I hope these insights are useful for anyone interested to jump in into building an agriculture technology solution.
