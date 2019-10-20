@@ -2,7 +2,8 @@
 title: "Apa Itu Estonia e-Residency?"
 date: 2019-07-03T19:03:43+08:00
 draft: false
-coverImg: "/blog-img/running_remote.jpg"
+images:
+- "/blog-img/running_remote.jpg"
 categories:
 - Kewirausahaan
 ---

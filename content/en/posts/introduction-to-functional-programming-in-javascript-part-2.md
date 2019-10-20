@@ -5,7 +5,8 @@ cdn: 'header-on'
 tags: ["basic","functional programming","javascript","Programming"]
 categories:
 - Programming
-coverImg: "/blog-img/js-img.jpg"
+images:
+- "/blog-img/js-img.jpg"
 ---
 
 In [part 1](/posts/introduction-to-functional-programming-in-javascript-part-1/), we had learned about two important concepts in functional programming paradigm: immutable data and pure function. Now, we will learn another important concept in functional programming, that is higher order function.

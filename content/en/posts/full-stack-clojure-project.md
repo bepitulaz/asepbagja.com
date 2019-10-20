@@ -4,7 +4,8 @@ date: 2015-05-26
 tags: ["clojure","clojurescript","Programming"]
 categories:
 - Programming
-coverImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/500px-Clojure_logo.svg.png"
+images:
+- "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/500px-Clojure_logo.svg.png"
 ---
 
 Why I'm deeply in love with Clojure? That's because I can do full stack development only in one language. I can write HTML with the same Clojure data structure, then styling it by writing CSS in exactly the same data structure. When I need to do user interface development, I can use ClojureScript then compile it into JavaScript. Actually writing ClojureScript is more pleasant than writing vanilla JavaScript. How about the backend development? You don't say. Clojure was invented for that purpose.

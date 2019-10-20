@@ -4,7 +4,8 @@ date: 2015-01-28
 tags: ["coding","general","Ideas"]
 categories:
 - Programming
-coverImg: "/blog-img/code.jpg"
+images:
+- "/blog-img/code.jpg"
 ---
 
 Although coding is not a basic communication skill for human, I prefer to encourage people for learning it, especially for someone who wants to expresses and develops his/her idea in technology industry but doesn't come from computer science background. There are couple of reasons according to that opinion.

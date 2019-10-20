@@ -2,7 +2,8 @@
 title: My Family’s Journey to Grow Our Own Food
 date: 2015-10-27
 tags: ["hydroponic","Ideas","urban farming"]
-coverImg: "https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25210250/growing-lettuce.jpg"
+images:
+- "https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25210250/growing-lettuce.jpg"
 categories:
 - Personal
 ---

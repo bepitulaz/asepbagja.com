@@ -4,7 +4,8 @@ date: 2015-05-11
 tags: ["clojure","clojurescript","Programming","reactjs"]
 categories:
 - Programming
-coverImg: "https://raw.githubusercontent.com/cljs/logo/master/cljs-white.png"
+images:
+- "https://raw.githubusercontent.com/cljs/logo/master/cljs-white.png"
 ---
 
 This weekend, I am experimenting to use [React Bootstrap](http://react-bootstrap.github.io/) with ClojureScript. For whom that doesn't know it yet, React Bootstrap is a [Bootstrap 3](http://getbootstrap.com/) component built with [ReactJS](http://facebook.github.io/react/). I'm using [Reagent](https://reagent-project.github.io/) library for interacting with React from ClojureScript, instead of [Om](https://github.com/omcljs/om).

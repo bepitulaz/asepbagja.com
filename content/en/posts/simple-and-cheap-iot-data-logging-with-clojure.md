@@ -4,7 +4,8 @@ date: 2015-12-08
 tags: ["clojure","iot","Programming"]
 categories:
 - Programming
-coverImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/500px-Clojure_logo.svg.png"
+images:
+- "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/500px-Clojure_logo.svg.png"
 ---
 
 I have a small green house in [my home front yard](https://asep.co/my-familys-journey-to-grow-our-own-food/), and I deployed some sensors like temperature, humidity, electrical conductivity (EC), and pH sensor there.

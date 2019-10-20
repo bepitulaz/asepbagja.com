@@ -4,7 +4,8 @@ date: 2015-07-21
 tags: ["arduino","Projects"]
 categories:
 - Programming
-coverImg: "https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25203819/working-design-300x300.jpg"
+images:
+- "https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25203819/working-design-300x300.jpg"
 ---
 
 _One of the biggest problem of having pet is filling its needs while the owner leaving the home._

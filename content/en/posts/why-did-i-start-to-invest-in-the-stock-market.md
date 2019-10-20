@@ -2,7 +2,8 @@
 title: Why Did I Start to Invest in The Stock Market?
 date: 2016-05-13
 tags: ["Business","finance","investment"]
-coverImg: "/blog-img/candlestick.jpg"
+images:
+- "/blog-img/candlestick.jpg"
 categories:
 - Business
 ---

@@ -2,7 +2,8 @@
 title: "Membangun Sistem High Frequency Trading Sederhana"
 date: 2019-09-19T17:07:43+08:00
 draft: false
-coverImg: "/blog-img/candlestick.jpg"
+images:
+- "/blog-img/candlestick.jpg"
 categories:
 - Pemrograman
 ---

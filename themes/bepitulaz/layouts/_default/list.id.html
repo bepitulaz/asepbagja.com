@@ -29,7 +29,7 @@
         <div class="post-item-wrap">
           <div class="post-image">
             <a href="{{.Permalink}}">
-              <img alt="{{.Title}}" src="{{ .Params.coverImg }}">
+              <img alt="{{.Title}}" src="{{ range .Params.images }}{{ . }}{{ end }}">
             </a>
             <span class="post-meta-category">
               {{ range .Param $taxo }}

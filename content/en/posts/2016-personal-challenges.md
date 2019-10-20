@@ -1,7 +1,8 @@
 ---
 title: 2016 Personal Challenges
 date: 2016-01-04
-coverImg: "/blog-img/aurora.jpg"
+images:
+- "/blog-img/aurora.jpg"
 categories:
 - Personal
 ---

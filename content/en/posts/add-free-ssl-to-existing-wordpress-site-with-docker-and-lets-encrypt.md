@@ -1,7 +1,8 @@
 ---
 title: Add Free SSL to Existing WordPress Site with Docker and Let's Encrypt
 date: 2016-06-24
-coverImg: "https://letsencrypt.org/images/le-logo-standard.png"
+images:
+- "https://letsencrypt.org/images/le-logo-standard.png"
 categories:
 - Tips and Tricks
 ---

@@ -2,7 +2,8 @@
 title: "Mengakali Biaya Transfer Uang Antar Negara Dengan Jenius dan TransferWise"
 date: 2019-09-23T15:08:11+08:00
 draft: false
-coverImg: "/blog-img/tw-step-3.png"
+images:
+- "/blog-img/tw-step-3.png"
 categories:
 - Tips dan Trik
 ---

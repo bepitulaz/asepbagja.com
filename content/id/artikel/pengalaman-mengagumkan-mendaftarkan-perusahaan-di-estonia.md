@@ -2,7 +2,8 @@
 title: "Pengalaman Mengagumkan Mendaftarkan Perusahaan di Estonia"
 date: 2017-08-03T17:00:33+08:00
 draft: false
-coverImg: "/blog-img/card-in-use.jpeg"
+images:
+- "/blog-img/card-in-use.jpeg"
 categories:
 - Kewirausahaan
 ---
