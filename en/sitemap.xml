@@ -63,26 +63,6 @@
   </url>
   
   <url>
-    <loc>https://asepbagja.com/tags/personal/</loc>
-    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://asepbagja.com/tags/</loc>
-    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="https://asepbagja.com/id/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://asepbagja.com/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://asepbagja.com/tags/basic/</loc>
     <lastmod>2016-07-04T00:00:00+00:00</lastmod>
   </url>
@@ -110,6 +90,21 @@
   <url>
     <loc>https://asepbagja.com/tags/programming/</loc>
     <lastmod>2016-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://asepbagja.com/tags/</loc>
+    <lastmod>2016-07-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://asepbagja.com/id/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://asepbagja.com/tags/"
+                />
   </url>
   
   <url>

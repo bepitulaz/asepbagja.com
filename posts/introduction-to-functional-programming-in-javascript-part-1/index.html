@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en-gb"><head>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136771948-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <meta name="description" content="Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal.">
+
+    
+    <meta property="og:title" content="Introduction to Functional Programming in JavaScript (Part 1)" />
+<meta property="og:description" content="Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-1/" />
+<meta property="article:published_time" content="2016-07-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-07-03T00:00:00+00:00" /><meta property="og:site_name" content="The Tech Entrepreneur and Consultant" />
+
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to Functional Programming in JavaScript (Part 1)"/>
+<meta name="twitter:description" content="Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal."/>
+
+
+
+    <link href="/css/plugins.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+
+    <title>Introduction to Functional Programming in JavaScript (Part 1) - The Tech Entrepreneur and Consultant</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#efefef",
+          "text": "#404040"
+        },
+        "button": {
+          "background": "#8ec760",
+          "text": "#ffffff"
+        }
+      },
+      "position": "bottom"
+    })});
+    </script>
+</head>
+<body>
+    <div class="body-inner">
+<div id="topbar" class="topbar-fullwidth d-none d-xl-block d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-none d-sm-block">
+        <div class="social-icons social-icons-colored-hover">
+          <ul>
+            <li class="social-twitter"><a href="https://twitter.com/bepitulaz"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-linkedin"><a href="https://www.linkedin.com/in/asepbagja"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-youtube"><a href="https://www.youtube.com/channel/UCjGnuWk0n6BWx7rXshMysbw"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header id="header" data-fullwidth="true">
+  <div class="header-inner">
+    <div class="container">
+      
+      <div id="logo">
+        <a href="/" class="ASPBGJ logo">
+          ASPBGJ
+        </a>
+      </div>
+      
+
+      
+      <div class="header-extras">
+        <ul>
+          <li>
+            <div class="p-dropdown">
+              <a href="#"><i class="icon-flag11"></i></a>
+              <ul class="p-dropdown-content">
+                
+                <li><a href="https://asepbagja.com/">English</a></li>
+                
+                <li><a href="https://asepbagja.com/id/">Bahasa Indonesia</a></li>
+                
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+
+      
+      <div id="mainMenu-trigger">
+        <button class="lines-button x"> <span class="lines"></span> </button>
+      </div>
+      
+
+      
+      <div id="mainMenu">
+        <nav>
+          <ul><li class="">
+              <a href="/">Home</a>
+            </li>
+            <li class="">
+              <a href="/about">About</a>
+            </li>
+            <li class="">
+              <a href="/posts">Posts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+    </div>
+  </div>
+</header>
+
+<section id="page-content" class="sidebar-right">
+  <div class="container">
+    <div class="row">
+      
+      <div class="content col-lg-10 offset-lg-1">
+        
+        <div id="blog" class="single-post">
+          
+          <div class="post-item">
+            <div class="post-item-wrap">
+              <div class="post-item-description">
+                <h2>Introduction to Functional Programming in JavaScript (Part 1)</h2>
+                <div class="post-meta">
+                    
+                    <span class="post-meta-date"><i class="fa fa-calendar-o"></i>Jul, 3 2016</span>
+                    <span class="post-meta-category">
+                    
+                      
+                      
+                      <i class="fa fa-tag"></i> <a href="https://asepbagja.com/categories/programming/">Programming</a>
+                      
+                    
+                    </span>
+                    <div class="post-meta-share">
+                      
+
+
+<style>
+#share-buttons {display: inline-block; vertical-align: middle; }
+#share-buttons:after {content: ""; display: block; clear: both;}
+#share-buttons > div {
+position: relative;
+text-align: left;
+height: 36px;
+width: 32px;
+float: left;
+text-align: center;
+}
+#share-buttons > div > svg {height: 16px; fill: #d5d5d5; margin-top: 10px;}
+#share-buttons > div:hover {cursor: pointer;}
+#share-buttons > div.facebook:hover > svg {fill: #3B5998;}
+#share-buttons > div.twitter:hover > svg {fill: #55ACEE;}
+#share-buttons > div.linkedin:hover > svg {fill: #0077b5;}
+#share-buttons > div.pinterest:hover > svg {fill: #CB2027;}
+#share-buttons > div.gplus:hover > svg {fill: #dd4b39;}
+#share-buttons > div.mail:hover > svg {fill: #7D7D7D;}
+#share-buttons > div.instagram:hover > svg {fill: #C73B92;}
+#share-buttons > div.facebook > svg {height: 18px; margin-top: 9px;}
+#share-buttons > div.twitter > svg {height: 20px; margin-top: 8px;}
+#share-buttons > div.linkedin > svg {height: 19px; margin-top: 7px;}
+#share-buttons > div.pinterest > svg {height: 20px; margin-top: 9px;}
+#share-buttons > div.gplus > svg {height: 17px; margin-top: 9px; position: relative; left: 1px;}
+#share-buttons > div.mail > svg {height: 14px; margin-top: 11px;}
+</style>
+
+<div id="share-buttons">
+<div class="facebook" title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u=https:\/\/asepbagja.com\/\/posts\/introduction-to-functional-programming-in-javascript-part-1\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg></div>
+<div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/home?status=https:\/\/asepbagja.com\/\/posts\/introduction-to-functional-programming-in-javascript-part-1\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
+<div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/asepbagja.com\/\/posts\/introduction-to-functional-programming-in-javascript-part-1\/&title=&summary=&source=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></div>
+
+<div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=https:\/\/asepbagja.com\/\/posts\/introduction-to-functional-programming-in-javascript-part-1\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
+</div>
+
+                    </div>
+                </div>
+              </div>
+              <p>Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal. It focuses on how to perform actions to achieve the expected result. Otherwise, functional programming paradigm concentrates on computing results rather than performing actions. In another word, the imperative one is an annoying micromanager in your office, and the functional one is a macromanager who just describe what&rsquo;s the job to be done.</p>
+
+<p>Imagine this situation. You are asked by your boss to get 3 sales leads by the end of the week. The approach will be distinctive by those 2 paradigms.</p>
+
+<p>The imperative boss will micromanage you by telling you something like these:</p>
+
+<ol>
+<li>Open Craigslist</li>
+<li>Find the phone number</li>
+<li>If you find it, please dial that number</li>
+<li>Tell to the prospective client, &ldquo;Hello, I&rsquo;m from annoying company&hellip;bla&hellip;bla&hellip;&rdquo;</li>
+<li>If you can&rsquo;t find the phone number, you should seek the email address</li>
+<li>Send them an email with this sentence, &ldquo;Hello, I&rsquo;m from annoying company&hellip;bla&hellip;bla&hellip;&rdquo;</li>
+<li>When you can&rsquo;t find the contact in Craiglist, you should try open Yellow Pages</li>
+<li>Schedule a meeting at Wednesday afternoon with the prospective client</li>
+<li>&hellip;and so on, until you get 3 sales leads by the end of the week.</li>
+</ol>
+
+<p>The functional boss will tell something more descriptive without micromanaging you:</p>
+
+<ol>
+<li>That is a computer with internet connection on the desk, you can use it to find and contact some leads</li>
+<li>You can use office phone to call them</li>
+<li>Schedule a meeting whenever you feel it is necessary</li>
+<li>Return back to me after you get 3 sales leads by the end of the week.</li>
+</ol>
+
+<p>After we get distinctive between those 2 paradigms, now we will try to implement it in JavaScript. JavaScript currently is one of the hottest and mainstream programming languages which support multi-paradigms. So, we can use it to program in a functional way, while using the imperative features whenever necessary.</p>
+
+<p><strong>The first pillar of FP: think about immutable data</strong></p>
+
+<p>Immutable data means the data can&rsquo;t be modified after its creation to avoid side effects. JavaScript does not force us to use immutable data like any other programming language specifically designed for functional programming, therefore we should force our self to think about immutability when programming with the functional paradigm. Consider this mutable code:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 1: simple mutable data sample
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// create the initial value
+</span><span class="c1"></span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// now x&#39;s value is 11
+</span><span class="c1"></span>
+<span class="c1">// 2: the mutable loop
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// the i&#39;s value is changing on each iteration
+</span><span class="c1"></span>  <span class="nx">sample</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">sample</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// now sample&#39;s value is [2, 6, 4, 3]
+</span></code></pre></div>
+<p>It&rsquo;s hard to spot the bugs in a large code base with many mutable data. Do you remember the micromanaging boss? Yes, it&rsquo;s kinda like that. According to sample number 2 above, we will read the loop 4 times to track the current value of <code>sample</code>. Imagine if you have an array with 1000 elements inside it. Have fun with that.</p>
+
+<p><strong>The second pillar of FP: Pure Function</strong></p>
+
+<p>A pure function is a function that does not depend on and modifies the states of the variable out of its scope. It means the function always returns the result given same parameters and produces no side effects. I will give you an example to understand about &ldquo;side effect&rdquo;.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span> <span class="c1">// I want each element of this array add by 1.
+</span><span class="c1"></span>
+<span class="kd">function</span> <span class="nx">impureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">data</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">impureFunction</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// You get what you want: [2, 3, 4]
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// But you get the side effect too. The value has been changed :(
+</span></code></pre></div>
+<p>You can think the side effect in code is the same as the side effect in medicine. When you drink cough syrup, your cough maybe stops, but after that, you will feel sleepy. In a large code base, the impure function will hard to test and debug. So, we will rewrite that by using pure function and immutable data.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+
+<span class="kd">function</span> <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">init</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">index</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">result</span><span class="p">);</span> <span class="c1">// we use recursion instead of for loop
+</span><span class="c1"></span>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">init</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">sample</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[]);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// you get what you want: [2, 3, 4]
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// your original data does not mutate: [1, 2, 3]
+</span></code></pre></div>
+<p>According to the code above, we are making a new array instead of mutating the original one. We also use recursion to avoid side effect. Let&rsquo;s scrutinize the <code>pureFunction</code> function to understand it.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// pureFunction takes 3 parameters: data, index, init
+</span><span class="c1">// pureFunction will create a new array as a return value
+</span><span class="c1"></span><span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">init</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">init</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// The type signature of pureFunction actually like this
+</span><span class="c1">// I&#39;m using Haskell type signature syntax, since JavaScript is dynamic typing
+</span><span class="c1"></span><span class="nx">pureFunction</span> <span class="o">::</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="nx">Int</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span>
+
+<span class="c1">// data is for our original array
+</span><span class="c1">// index is for the index of the array
+</span><span class="c1">// result is our copy of original array
+</span><span class="c1">// so if we call the function, the operation actually like this
+</span><span class="c1"></span><span class="nx">pureFunction</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[]);</span>
+
+<span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">init</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span> <span class="c1">// it is [2]
+</span><span class="c1"></span><span class="p">}</span>
+
+<span class="nx">pureFunction</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+
+<span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">init</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nx">result</span><span class="p">;</span> <span class="c1">// it is [2, 3]
+</span><span class="c1"></span><span class="p">}</span>
+
+<span class="c1">// and so on
+</span></code></pre></div>
+<p>That is the explanation of pure function. What you give is what you get. It does not depend on to any variable outside its scope. So, we can test and debug the function easier.</p>
+
+<p><strong>Summary</strong></p>
+
+<p>In this first part, we had changed our way of thinking to express our idea to achieve the result. We have learned about immutable data and pure function to avoid side effect and made our code more concise. Those are still basic things before we dive deeper to learn about functional programming in JavaScript (or in another language). Hope you enjoy it and see you in the next part.</p>
+
+<p>P.S. <a href="/posts/introduction-to-functional-programming-in-javascript-part-2/">The second part</a> of this article has been published.</p>
+
+              <div class="comments" id="comments">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "asepnew" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"9d7b2c9f4c0bebc73fcfe5d85","lid":"0c177e8e7d","uniqueMethods":true}) })</script>
+<footer id="footer" class="inverted">
+  <div class="copyright-content">
+    <div class="container">
+      <div class="copyright-text text-center">&copy; 2019 Asep Bagja Priandana. All Rights Reserved.</div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+    <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/functions.js"></script>
+  </body>
+</html>

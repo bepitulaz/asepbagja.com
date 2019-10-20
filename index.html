@@ -2,7 +2,18 @@
 <html lang="en-gb"><head>
 	<meta name="generator" content="Hugo 0.59.0-DEV" />
     
-    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136771948-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,27 +23,68 @@
 
     
     <meta property="og:title" content="Home" />
-    <meta property="og:description" content="The Blog of Asep Bagja P." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://asepbagja.com/" />
-    <meta property="og:image" content="" />
-    <meta property="og:locale" content="en" />
-    
+<meta property="og:description" content="The Blog of Asep Bagja P." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://asepbagja.com/" />
+
+<meta property="og:image" content="https://asepbagja.com/images/avatar.jpg" />
+
+<meta property="og:updated_time" content="2019-04-03T10:31:50+08:00" /><meta property="og:site_name" content="The Tech Entrepreneur and Consultant" />
+
 
     
-    <meta name="twitter:title" content="Home"/>
-    <meta name="twitter:description" content="The Blog of Asep Bagja P."/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image" content="" />
-    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://asepbagja.com/images/avatar.jpg"/>
+
+<meta name="twitter:title" content="Home"/>
+<meta name="twitter:description" content="The Blog of Asep Bagja P."/>
+
+
 
     <link href="/css/plugins.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
 
-    <title>The Tech Entrepreneur and Consultant</title>
-</head><body>
-    <div class="body-inner"><header id="header" data-fullwidth="true">
+    <title>Home - The Tech Entrepreneur and Consultant</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#efefef",
+          "text": "#404040"
+        },
+        "button": {
+          "background": "#8ec760",
+          "text": "#ffffff"
+        }
+      },
+      "position": "bottom"
+    })});
+    </script>
+</head>
+<body>
+    <div class="body-inner">
+<div id="topbar" class="topbar-fullwidth d-none d-xl-block d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-none d-sm-block">
+        <div class="social-icons social-icons-colored-hover">
+          <ul>
+            <li class="social-twitter"><a href="https://twitter.com/bepitulaz"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-linkedin"><a href="https://www.linkedin.com/in/asepbagja"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-youtube"><a href="https://www.youtube.com/channel/UCjGnuWk0n6BWx7rXshMysbw"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header id="header" data-fullwidth="true">
   <div class="header-inner">
     <div class="container">
       
@@ -89,23 +141,69 @@
 </header>
 
 
-<section class="fullscreen background-image" style="background-image:url(images/parallax/19.jpg);">
+<section class="background-image" style="background-image:url(images/home-bg.jpeg);">
   <div class="container">
     <div class="container-fullscreen">
-      <div class="text-middle text-right">
-        <h3 data-animate="fadeInDown" data-animate-delay="0">Hi, I am</h3>
-        <h1 class="text-md" data-animate="fadeInDown" data-animate-delay="500">Asep Bagja Priandana</h1>
-        <h4 data-animate="fadeInDown" data-animate-delay="1000">A tech entrepreneur and can be your on-demand CTO.</h4>
-        <div class="scrolldown-animation" id="scroll-down">
-          <a class="scroll-to" href="#easy-fast">
-            <img src="/images/scrolldown-dark.png" alt="">
-          </a>
+      <div class="heading-text heading-section text-center home-hero">
+        <h1>Asep Bagja Priandana</h1>
+        <h2>A tech entrepreneur and can be your on-demand CTO 😉</h2>
+        <p>
+          Hi, are you a non-technical person? I can help you to plan and build your digital startup idea based on your budget.
+        </p>
+        <p>
+          Please, fill in your information, I will contact you soon.
+        </p>
+      </div>
+      <form class="home-form">
+        <div class="form-row">
+          <div class="form-group col-lg-6">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" name="name" required="required" class="form-control" placeholder="Full name">
+          </div>
+          <div class="form-group col-lg-6">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required="required" class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12">
+            <label for="explanation">How can I help you?</label>
+            <textarea id="explanation" name="explanation" required="required" class="form-control" placeholder="Please, type your current situation"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12 text-center">
+            <input type="submit" name="submit" class="btn" value="I want to consult with you, Asep.">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<section class="background-grey">
+  <div class="container">
+    <div class="row carousel-description-clients carousel-description-style">
+      <div class="col-lg-4">
+        <div class="description">
+          <h2>Companies</h2>
+          These are companies that I found with my partner and where I currently work at.
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="carousel" data-items="2">
+          <div>
+            <a href="https://tanibox.com"><img alt="Tanibox" src="https://tanibox.com/img/logo-dark.png"></a>
+          </div>
+          <div class="pt-4">
+            <a href="https://www.chloematt.com"><img alt="Chloe Matt" src="https://www.chloematt.com/img/logo.svg"></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <footer id="footer" class="inverted">
   <div class="copyright-content">
     <div class="container">
