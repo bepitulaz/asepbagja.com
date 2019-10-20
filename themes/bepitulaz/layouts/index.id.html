@@ -1,20 +1,64 @@
 {{ define "main" }}
-<!-- SECTION IMAGE FULLSCREEN -->
-<section class="fullscreen background-image" style="background-image:url(images/parallax/19.jpg);">
+<section class="background-image" style="background-image:url(/images/home-bg.jpeg);">
   <div class="container">
     <div class="container-fullscreen">
-      <div class="text-middle text-right">
-        <h3 data-animate="fadeInDown" data-animate-delay="0">Hai, saya</h3>
-        <h1 class="text-md" data-animate="fadeInDown" data-animate-delay="500">Asep Bagja Priandana</h1>
-        <h4 data-animate="fadeInDown" data-animate-delay="1000">Pengusaha di bidang teknologi dan bisa jadi CTO panggilan.</h4>
-        <div class="scrolldown-animation" id="scroll-down">
-          <a class="scroll-to" href="#easy-fast">
-            <img src="/images/scrolldown-dark.png" alt="">
-          </a>
+      <div class="heading-text heading-section text-center home-hero">
+        <h1>Asep Bagja Priandana</h1>
+        <h2>Pengusaha di bidang teknologi dan bisa jadi CTO panggilan 😉</h2>
+        <p>
+          Halo, apakah Anda memiliki ide startup digital yang ingin diwujudkan tetapi tidak memahami urusan teknis? Saya bisa bantu untuk perencanaan dan membangun ide tersebut sesuai dana yang Anda miliki.
+        </p>
+        <p>
+          Silakan isi informasi berikut, saya akan menghubungi Anda sesegera mungkin.
+        </p>
+      </div>
+      <form class="home-form">
+        <div class="form-row">
+          <div class="form-group col-lg-6">
+            <label for="name">Nama Lengkap</label>
+            <input id="name" type="text" name="name" required="required" class="form-control" placeholder="Nama">
+          </div>
+          <div class="form-group col-lg-6">
+            <label for="email">Alamat Surat Elektronik (Surel)</label>
+            <input id="email" type="email" name="email" required="required" class="form-control" placeholder="surel@layanansurelanda.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12">
+            <label for="explanation">Bagaimana saya dapat membantu Anda?</label>
+            <textarea id="explanation" name="explanation" required="required" class="form-control" placeholder="Silakan, ketik situasi Anda."></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12 text-center">
+            <input type="submit" name="submit" class="btn" value="Saya ingin berkonsultasi denganmu, Asep.">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="background-grey">
+  <div class="container">
+    <div class="row carousel-description-clients carousel-description-style">
+      <div class="col-lg-4">
+        <div class="description">
+          <h2>Perusahaan</h2>
+          Berikut ini adalah perusahaan-perusahaan yang saya dirikan bersama partner dan tempat di mana saya sekarang bekerja.
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="carousel" data-items="2">
+          <div>
+            <a href="https://tanibox.com"><img alt="Tanibox" src="https://tanibox.com/img/logo-dark.png"></a>
+          </div>
+          <div class="pt-4">
+            <a href="https://www.chloematt.com"><img alt="Chloe Matt" src="https://www.chloematt.com/img/logo.svg"></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- end: SECTION IMAGE FULLSCREEN -->
 {{ end }}

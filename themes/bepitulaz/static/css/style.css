@@ -2878,7 +2878,7 @@ HEADER: Responsive
         display: block;
         opacity: 1;
         overflow-y: scroll;
-        /*       height: 100%; 
+        /*       height: 100%;
         max-height: 100%;   */ }
     .mainMenu-open #dotsMenu {
       z-index: -1; }
@@ -4514,6 +4514,9 @@ h6.font-parisienne {
   .post-item .post-item-wrap {
     background-color: #fff;
     position: relative; }
+  .post-item .post-item-wrap ul, .post-item .post-item-wrap ol {
+    padding-left: 2rem;
+  }
   .post-item img {
     width: 100%;
     height: auto; }
@@ -5401,29 +5404,29 @@ h6.font-parisienne {
             margin: 0;
             padding: 0;
         }
-        
+
         .twitter-widget li {
             list-style: none;
             clear: both;
         }
-        
+
         .twitter-widget li img,
         .twitter-widget li .tweets_txt {
             float: left;
             margin-bottom: 10px;
         }
-        
+
         .twitter-widget li img {
             -webkit-border-radius: 30px;
             -moz-border-radius: 30px;
             border-radius: 30px;
         }
-        
+
         .twitter-widget li .tweets_txt {
             width: 350px;
             margin-left: 10px;
         }
-        
+
         .twitter-widget li .tweets_txt span {
             font-style: italic;
             color: #666;
@@ -6576,7 +6579,7 @@ body.breakpoint-xs .text-xl span {
         }
     }
 
-    
+
 }
 */
 /*  Widgets */
@@ -8373,9 +8376,9 @@ div.dataTables_wrapper div.dataTables_length select {
   cursor: pointer;
     /* &:hover {
         transform: translateY(-5px);
-        background-color: $background-theme;   
+        background-color: $background-theme;
         color: $color-white;
-        box-shadow: $box-shadow;        
+        box-shadow: $box-shadow;
         .cb-title > a {
             color: $color-white;
         }
@@ -8389,7 +8392,7 @@ div.dataTables_wrapper div.dataTables_length select {
     }
     &.cb-active:before {
         content: " ";
-        background-color: $background-theme; 
+        background-color: $background-theme;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -10059,10 +10062,10 @@ a.btn:not([href]):not([tabindex]),
   .card:not(.card-static):hover {
     box-shadow: 0 6px 38px rgba(0, 0, 0, 0.05); }
 
-/* 
+/*
 
 .card {
-    
+
 	display: block;
 width: calc(100% + 30px);
 left: -15px;
@@ -10070,7 +10073,7 @@ position: relative;
 display: flex;
 flex-wrap: wrap;
 align-content: center;
-justify-content: center; 
+justify-content: center;
 
 .card-body {
 	.icon-holder {
@@ -10122,7 +10125,7 @@ justify-content: center;
 
 	&:hover {
 		 transform: translateY(-5px);
-		 background-color: $background-theme;   
+		 background-color: $background-theme;
 		 color: $color-white;
 		 box-shadow: $box-shadow;
 		 .icon-holder {
@@ -13782,3 +13785,41 @@ body.breakpoint-xs .box-fancy [class*="col-"] {
 
 .img-loaded {
   opacity: 1; }
+
+/* HERO */
+.home-hero h1 {
+  font-size: 4rem;
+}
+
+.heading-text.heading-section p {
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+.home-form {
+  background-color: #2250fc;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.home-form .btn {
+  background-color: #fff;
+  color: #2250fc;
+  border: none;
+}
+
+.home-form textarea {
+  height: 130px;
+}
+
+.home-form .form-control {
+  opacity: 0.8;
+}
+
+.home-form .form-group label:not(.error) {
+  color: #fff;
+}
+
+.heading-text.heading-section > h2 {
+  font-size: 1.5rem;
+}

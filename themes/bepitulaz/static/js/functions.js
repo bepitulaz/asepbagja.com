@@ -1397,34 +1397,6 @@ var INSPIRO = {},
                     if (elem.next().hasClass("infinite-scroll")) {
                         INSPIRO.elements.gridLayoutInfinite(elem, elem.options.itemSelector, elem.options.gridMargin);
                     }
-
-
-                    if ($gridFilter.length > 0) {
-                        $gridFilter.each(function () {
-                            var elemFilter = $(this),
-                                $filterItem = elemFilter.find('a'),
-                                elemFilterLayout = elemFilter.attr('data-layout'),
-                                $filterItemActiveClass = "active";
-
-                            $filterItem.on('click', function () {
-
-                                elemFilter.find('li').removeClass($filterItemActiveClass);
-                                $(this).parent('li').addClass($filterItemActiveClass);
-
-                                var filterValue = $(this).attr('data-category');
-                                    $(elemFilterLayout).isotope({
-                                        filter: filterValue,
-                                    });
-
-                                if ($(".grid-active-title").length > 0) {
-                                    $(".grid-active-title").empty().append($(this).text())
-                                }
-                                return false;
-                            });
-                        });
-                    }
-
-
                 });
 
             }

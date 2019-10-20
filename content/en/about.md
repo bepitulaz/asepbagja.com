@@ -1,9 +1,19 @@
 ---
 title: About Me
 date: 2019-02-15
-tags: ["personal"]
+type: "page"
+layout: "page"
+careerHighlight: "Career Highlights"
+careers: ["CEO and CTO at Tanibox OÜ", "CTO at PT Froyo Kreatif Indonesia (past)"]
+eduBackground: "Graduated From"
+education: "Bachelor degree in Accounting, Universitas Islam Indonesia, 2005"
+profileImg: "/images/avatar.jpg"
 ---
 
-My name is Asep Bagja Priandana from Indonesia. You can call me Asep. I grew up in several cities in Indonesia. My family was a nomadic because my father worked as a government auditor. I studied accounting in Universitas Islam Indonesia. Despite of my formal education background, I started my professional career as a web developer in 2009 because technology is my passion.
+Asep Bagja Priandana, you can call him Asep anyway, is an entrepreneur from Indonesia. He was born in a family with no entrepreneurship tradition. His father was an auditor in the government organization, and her mother was a stay-at-home mom. Despite that background, Asep has a different point of view than his parents. He loves to look for opportunities and turn them into a business.
 
-Today, I'm a paralel entrepreneur. I manage and co-found my companies: [Tanibox](https://tanibox.com) and [Chloè & Matt](https://chloematt.com), together with my wife, Retno Ika Safitri. 
+He started his entrepreneurship journey when in high school by selling music CD. When he was in college, Asep tried various businesses: establishing a fashion store with his friends, becoming a band player, and doing freelance programming.
+
+His passion for information technology and computer grew after his father bought a laptop when Asep was still in a 3rd grade in elementary school. Asep is a self-taught programmer. He learnt to programme in Pascal language because of his high school accounting teacher taught him. Even though Asep took an accounting degree in college, he always practices his programming skill in his spare time.
+
+Asep began seriously to take entrepreneurship as his career path in 2012, by establishing Froyo, a digital marketing agency with his friend. Then he exited from Froyo in 2017. After that, he founded **[Tanibox](https://tanibox.com)**, an agriculture technology company in Estonia, together with his wife.

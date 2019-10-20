@@ -4,7 +4,7 @@ date: 2017-08-03T17:00:33+08:00
 draft: false
 coverImg: "/blog-img/card-in-use.jpeg"
 categories:
-- Bisnis
+- Kewirausahaan
 ---
 
 Dari awal saya berencana [exit dari Froyo](/posts/terima-kasih-froyo-asep-is-out), saya sudah bersiap-siap mengurus aneka macam dokumen legal untuk perusahaan baru saya, Tanibox. Waktu itu saya segera mengurus pendirian PT yang berdomisili di Tangerang pada bulan Februari 2017. Saya menggunakan jasa notaris untuk pengurusan PT sampai tuntas. Waktu itu notaris saya cuma bilang, "kalau mengurus di Tangerang akan sedikit lebih lama loh birokrasinya, Mas, dibanding Jakarta. Bisa beda sekitar 2 bulan." Saya pun setuju. Perkiraan saya paling juga Mei 2017 udah beres. Ternyata meleset hingga 6 bulan!

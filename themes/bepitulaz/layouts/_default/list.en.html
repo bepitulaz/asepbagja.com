@@ -8,15 +8,14 @@
     <!-- end: Page title -->
 
     <!-- Portfolio Filter -->
-    <nav class="grid-filter gf-outline" data-layout="#blog">
+    <nav class="grid-filter gf-outline">
       <ul>
-        <li class="active"><a href="#" data-category="*">Show All</a></li>
-        <li><a href="#" data-category=".business">Business</a></li>
-        <li><a href="#" data-category=".programming">Programming</a></li>
-        <li><a href="#" data-category=".tips-and-tricks">Tips and Tricks</a></li>
-        <li><a href="#" data-category=".personal">Personal</a></li>
+        <li><a href="/posts">Show All</a></li>
+        {{ range .Site.Taxonomies.categories }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{end}}
       </ul>
-      <div class="grid-active-title">Show All</div>
+      <div class="grid-active-title">{{ .Title }}</div>
     </nav>
     <!-- end: Portfolio Filter -->
 

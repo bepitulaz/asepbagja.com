@@ -1,6 +1,6 @@
 <head>
     {{ template "_internal/google_analytics_async.html" . }}
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,41 +9,34 @@
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
     <!-- Facebook Open Graph -->
-    <meta property="og:title" content="{{ .Title }}" />
-    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
-    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:image" content="{{ with .Param "tania.image" }}{{ .url | absLangURL }}{{ else }}{{ with .Site.Params.image }}{{ .url | absLangURL }}{{ end }}{{ end }}" />
-    {{ with .Site.Language }}<meta property="og:locale" content="{{ .Lang }}" />{{ end }}
-    {{ with .Site.Params.facebook.appid }}<meta property="fb:app_id" content="{{ . }}" />{{ end }}
+    {{ template "_internal/opengraph.html" . }}
 
     <!-- Twitter Card -->
-    <meta name="twitter:title" content="{{ .Title }}"/>
-    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
-    {{ if .IsHome -}}
-    {{ if ge .Site.Params.image.width 300 -}}
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="{{ .Site.Params.image.url | absLangURL }}"/>
-    {{- else -}}
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image" content="{{ with .Site.Params.image }}{{ .url | absLangURL }}{{ else }}{{ with .Site.Params.logo }}{{ .url | absLangURL }}{{ end }}{{ end }}" />
-    {{- end }}
-    {{- else -}}
-    {{ if ge (.Param "tania.image.width") 300 -}}
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="{{ .Param "tania.image.url" | absLangURL }}"/>
-    {{- else -}}
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:image" content="{{ with .Param "tania.image" }}{{ .url | absLangURL }}{{ else }}{{ with .Site.Params.logo }}{{ .url | absLangURL }}{{ end }}{{ end }}" />
-    {{- end }}
-    {{- end }}
-    {{ with .Site.Params.twitter -}}
-    <meta name="twitter:site" content="@{{ .username }}"/>
-    {{- end }}
+    {{ template "_internal/twitter_cards.html" . }}
+
 
     <link href="/css/plugins.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
 
-    <title>{{ .Site.Title }}</title>
+    <title>{{.Params.title}} - {{ $.Site.Title}}</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#efefef",
+          "text": "#404040"
+        },
+        "button": {
+          "background": "#8ec760",
+          "text": "#ffffff"
+        }
+      },
+      "position": "bottom"
+    })});
+    </script>
 </head>

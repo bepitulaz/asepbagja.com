@@ -3,8 +3,8 @@ DefaultContentLanguage = "en"
 languageCode = "en-gb"
 theme = "bepitulaz" # set the theme
 copyright="2019 © Asep Bagja Priandana"
-#googleAnalytics = "UA-136771948-2"
-googleAnalytics = ""
+googleAnalytics = "UA-136771948-2"
+#googleAnalytics = ""
 enableEmoji=true
 enableRobotsTXT=true
 pygmentsUseClasses=true
@@ -24,6 +24,7 @@ summaryLength = 10
       sub = "The Tech Entrepreneur and Consultant"
       postsTitle = "Posts"
       postsReadMore = "READ MORE"
+      aboutMe = "About Asep"
     [languages.en.blackfriday]
       angledQuotes = false
 
@@ -51,6 +52,7 @@ summaryLength = 10
       sub = "Pengusaha dan Konsultan Teknologi"
       postsTitle = "Artikel"
       postsReadMore = "BACA LEBIH BANYAK"
+      aboutMe = "Tentang Asep"
 
   [[languages.id.menu.main]]
     url    = "/"

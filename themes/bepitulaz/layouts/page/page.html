@@ -1,0 +1,35 @@
+{{ define "main" }}
+<!-- Page title -->
+<section id="page-title" class="page-title-left text-light" data-parallax-image="images/parallax/5.jpg">
+  <div class="container">
+    <div class="page-title">
+      <h1>{{ .Site.Params.aboutMe }}</h1>
+      <h4 class="mt-5">{{ .Params.careerHighlight }}</h4>
+      <ul class="pl-3">
+        {{ range .Params.careers }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+      <h4 class="mt-5">{{ .Params.eduBackground }}</h4>
+      <p>{{ .Params.education }}</p>
+    </div>
+  </div>
+</section>
+<!-- end: Page title -->
+<!-- Content -->
+<section id="page-content">
+  <div class="container">
+    <div class="grid-system-demo-live">
+      <div class="row">
+        <div class="col-lg-6">
+          {{ .Content }}
+        </div>
+        <div class="col-lg-6">
+          <img src="{{ .Params.profileImg }}" class="img-fluid" alt="Asep Bagja Priandana" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end: Content -->
+{{ end }}

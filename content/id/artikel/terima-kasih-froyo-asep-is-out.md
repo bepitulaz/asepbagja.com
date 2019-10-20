@@ -4,7 +4,7 @@ date: 2017-08-02T19:02:33+08:00
 draft: false
 coverImg: "/blog-img/mic_drop.jpg"
 categories:
-- Bisnis
+- Kewirausahaan
 ---
 
 !["Mic drop"](/blog-img/mic_drop.jpg)

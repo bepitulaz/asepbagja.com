@@ -4,7 +4,7 @@ date: 2019-07-03T19:03:43+08:00
 draft: false
 coverImg: "/blog-img/running_remote.jpg"
 categories:
-- Bisnis
+- Kewirausahaan
 ---
 
 Saya sering sekali mendapat pertanyaan dari teman atau kenalan setiap kali mereka melihat website [Tanibox](https://tanibox.com), "Loh, Tanibox itu alamatnya di Estonia? Kok, bisa? Kenapa?" Untuk menjawab pertanyaan ini, saya harus memulai dengan menjelaskan program [Estonia e-Residency](http://e-resident.gov.ee/). Sedangkan untuk menjawab pertanyaan, "kenapa kok Estonia?", kamu bisa memulai kisah awalnya di tulisan saya pada tahun 2017 [di sini](/posts/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia).

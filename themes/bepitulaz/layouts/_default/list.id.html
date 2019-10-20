@@ -8,14 +8,14 @@
     <!-- end: Page title -->
 
     <!-- Portfolio Filter -->
-    <nav class="grid-filter gf-outline" data-layout="#blog">
+    <nav class="grid-filter gf-outline">
       <ul>
-        <li class="active"><a href="#" data-category="*">Tampilkan Semua</a></li>
-        <li><a href="#" data-category=".bisnis">Bisnis</a></li>
-        <li><a href="#" data-category=".pemrograman">Pemrograman</a></li>
-        <li><a href="#" data-category=".tips-dan-trik">Tips dan Trik</a></li>
+        <li><a href="{{ "artikel" | relLangURL }}">Tampilkan Semua</a></li>
+        {{ range .Site.Taxonomies.categories }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{end}}
       </ul>
-      <div class="grid-active-title">Tampilkan Semua</div>
+      <div class="grid-active-title">{{ .Title | singularize }}</div>
     </nav>
     <!-- end: Portfolio Filter -->
 
