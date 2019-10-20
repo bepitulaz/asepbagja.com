@@ -6,6 +6,8 @@ images:
 - "/blog-img/candlestick.jpg"
 categories:
 - Pemrograman
+aliases:
+- /posts/membangun-sistem-hft-sederhana
 ---
 
 Dua minggu terakhir ini saya sibuk mengerjakan sebuah proyek sampingan pribadi yang berhubungan dengan pasar finansial, yaitu melakukan otomatisasi terhadap kegiatan perdagangan di bursa cryptocurrency. Saya yakin untuk yang sudah terbiasa melakukan kegiatan *trading* pasti sering mendengar istilah *robot trading*. Di mana perdagangan dilakukan secara otomatis oleh komputer.

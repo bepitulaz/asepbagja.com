@@ -6,6 +6,8 @@ images:
 - "/blog-img/tw-step-3.png"
 categories:
 - Tips dan Trik
+aliases:
+- /posts/transfer-uang-antar-negara-jenius-transferwise
 ---
 
 **Daftar isi artikel**
@@ -14,7 +16,7 @@ categories:
 - [Mari berkenalan dengan Jenius](#mari-berkenalan-dengan-jenius)
 - [Kesimpulan](#kesimpulan)
 
-Internet membuat batas antar negara seakan tidak ada. Walaupun tinggal di Indonesia, kita bisa mencari peluang-peluang bisnis dan pasar-pasar baru di luar Indonesia untuk memasarkan produk. Seperti saya yang memanfaatkan [Estonia e-Residency](/apa-itu-estonia-e-residency) untuk membangun perusahaan di Eropa. Tentu saja memiliki bisnis di luar negeri artinya harus berurusan dengan mata uang asing. Untuk kasus saya, saya harus berurusan dengan mata uang Euro dan kadang-kadang US Dollar.
+Internet membuat batas antar negara seakan tidak ada. Walaupun tinggal di Indonesia, kita bisa mencari peluang-peluang bisnis dan pasar-pasar baru di luar Indonesia untuk memasarkan produk. Seperti saya yang memanfaatkan [Estonia e-Residency](/id/artikel/apa-itu-estonia-e-residency) untuk membangun perusahaan di Eropa. Tentu saja memiliki bisnis di luar negeri artinya harus berurusan dengan mata uang asing. Untuk kasus saya, saya harus berurusan dengan mata uang Euro dan kadang-kadang US Dollar.
 
 Situasi saya saat ini:
 

@@ -6,9 +6,11 @@ images:
 - "/blog-img/card-in-use.jpeg"
 categories:
 - Kewirausahaan
+aliases:
+- /posts/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia
 ---
 
-Dari awal saya berencana [exit dari Froyo](/posts/terima-kasih-froyo-asep-is-out), saya sudah bersiap-siap mengurus aneka macam dokumen legal untuk perusahaan baru saya, Tanibox. Waktu itu saya segera mengurus pendirian PT yang berdomisili di Tangerang pada bulan Februari 2017. Saya menggunakan jasa notaris untuk pengurusan PT sampai tuntas. Waktu itu notaris saya cuma bilang, "kalau mengurus di Tangerang akan sedikit lebih lama loh birokrasinya, Mas, dibanding Jakarta. Bisa beda sekitar 2 bulan." Saya pun setuju. Perkiraan saya paling juga Mei 2017 udah beres. Ternyata meleset hingga 6 bulan!
+Dari awal saya berencana [exit dari Froyo](/id/artikel/terima-kasih-froyo-asep-is-out), saya sudah bersiap-siap mengurus aneka macam dokumen legal untuk perusahaan baru saya, Tanibox. Waktu itu saya segera mengurus pendirian PT yang berdomisili di Tangerang pada bulan Februari 2017. Saya menggunakan jasa notaris untuk pengurusan PT sampai tuntas. Waktu itu notaris saya cuma bilang, "kalau mengurus di Tangerang akan sedikit lebih lama loh birokrasinya, Mas, dibanding Jakarta. Bisa beda sekitar 2 bulan." Saya pun setuju. Perkiraan saya paling juga Mei 2017 udah beres. Ternyata meleset hingga 6 bulan!
 
 Hasilnya sampai bulan Agustus 2017 ini (saat tulisan ini keluar), PT Tanibox Agritech Indonesia baru ada akte dan NPWP saja. SIUP sama sekali belum keluar. Luar biasa bukan?
 
