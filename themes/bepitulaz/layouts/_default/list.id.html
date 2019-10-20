@@ -11,8 +11,10 @@
     <nav class="grid-filter gf-outline">
       <ul>
         <li><a href="{{ "artikel" | relLangURL }}">Tampilkan Semua</a></li>
-        {{ range .Site.Taxonomies.categories }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        {{ with $.Site.GetPage (printf "/categories/%s" $name) }}
+          <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
+        {{ end }}
         {{end}}
       </ul>
       <div class="grid-active-title">{{ .Title | singularize }}</div>
