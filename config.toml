@@ -14,7 +14,7 @@ summaryLength = 10
 
 [languages]
   [languages.en]
-    title = "ASPBGJ"
+    title = "Asep Bagja & Co."
     weight = 1
     contentDir = "content/en"
     languageName = "English"
@@ -42,7 +42,7 @@ summaryLength = 10
     weight = 2
 
   [languages.id]
-    title = "ASPBGJ"
+    title = "Asep Bagja & Co."
     weight = 2
     contentDir = "content/id"
     languageName = "Bahasa Indonesia"
