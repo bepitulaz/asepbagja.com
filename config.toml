@@ -14,14 +14,14 @@ summaryLength = 10
 
 [languages]
   [languages.en]
-    title = "The Tech Entrepreneur and Consultant"
+    title = "ASPBGJ"
     weight = 1
     contentDir = "content/en"
     languageName = "English"
     staticDir = "static/en"
     [languages.en.params]
       main = "Hi, I'm Asep :wave:"
-      sub = "The Tech Entrepreneur and Consultant"
+      sub = "The Tech Consultant"
       postsTitle = "Posts"
       postsReadMore = "READ MORE"
       aboutMe = "About Asep"
@@ -42,14 +42,14 @@ summaryLength = 10
     weight = 2
 
   [languages.id]
-    title = "Pengusaha dan Konsultan Teknologi"
+    title = "ASPBGJ"
     weight = 2
     contentDir = "content/id"
     languageName = "Bahasa Indonesia"
     staticDir = "static"
     [languages.id.params]
       main = "Hai, saya Asep :wave:"
-      sub = "Pengusaha dan Konsultan Teknologi"
+      sub = "Konsultan Teknologi"
       postsTitle = "Artikel"
       postsReadMore = "BACA LEBIH BANYAK"
       aboutMe = "Tentang Asep"
