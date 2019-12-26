@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on ASPBGJ</title>
+    <title>Projects on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/tags/projects/</link>
-    <description>Recent content in Projects on ASPBGJ</description>
+    <description>Recent content in Projects on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/posts/urban-farming-with-clojure/</guid>
-      <description>Currently, I&amp;rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house.</description>
+      <description>Currently, I&#39;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house.</description>
     </item>
     
     <item>

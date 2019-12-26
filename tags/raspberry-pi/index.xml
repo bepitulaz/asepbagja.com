@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>raspberry pi on ASPBGJ</title>
+    <title>raspberry pi on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/tags/raspberry-pi/</link>
-    <description>Recent content in raspberry pi on ASPBGJ</description>
+    <description>Recent content in raspberry pi on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/posts/urban-farming-with-clojure/</guid>
-      <description>Currently, I&amp;rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house.</description>
+      <description>Currently, I&#39;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house.</description>
     </item>
     
   </channel>

@@ -25,10 +25,9 @@ if (!doNotTrack) {
 <meta property="og:description" content="This weekend, I am experimenting to use React Bootstrap with ClojureScript." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asepbagja.com/posts/integrating-react-bootstrap-and-reagent/" />
-
 <meta property="og:image" content="https://raw.githubusercontent.com/cljs/logo/master/cljs-white.png" />
 <meta property="article:published_time" content="2015-05-11T00:00:00+00:00" />
-<meta property="article:modified_time" content="2015-05-11T00:00:00+00:00" /><meta property="og:site_name" content="ASPBGJ" />
+<meta property="article:modified_time" content="2015-05-11T00:00:00+00:00" /><meta property="og:site_name" content="Asep Bagja &amp; Co." />
 
 
     
@@ -44,7 +43,7 @@ if (!doNotTrack) {
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
 
-    <title>Integrating React Bootstrap and Reagent - ASPBGJ</title>
+    <title>Integrating React Bootstrap and Reagent - Asep Bagja &amp; Co.</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
@@ -205,16 +204,11 @@ text-align: center;
                     </div>
                 </div>
               </div>
-              <p>This weekend, I am experimenting to use <a href="http://react-bootstrap.github.io/">React Bootstrap</a> with ClojureScript. For whom that doesn&rsquo;t know it yet, React Bootstrap is a <a href="http://getbootstrap.com/">Bootstrap 3</a> component built with <a href="http://facebook.github.io/react/">ReactJS</a>. I&rsquo;m using <a href="https://reagent-project.github.io/">Reagent</a> library for interacting with React from ClojureScript, instead of <a href="https://github.com/omcljs/om">Om</a>.</p>
-
+              <p>This weekend, I am experimenting to use <a href="http://react-bootstrap.github.io/">React Bootstrap</a> with ClojureScript. For whom that doesn't know it yet, React Bootstrap is a <a href="http://getbootstrap.com/">Bootstrap 3</a> component built with <a href="http://facebook.github.io/react/">ReactJS</a>. I'm using <a href="https://reagent-project.github.io/">Reagent</a> library for interacting with React from ClojureScript, instead of <a href="https://github.com/omcljs/om">Om</a>.</p>
 <p>Integrating React Bootstrap and Reagent was confusing me at the first. It was non-trivial effort. I searched Google and got no relevant solutions for hours. So, this working solution is based on my trial and error experimentation.</p>
-
-<p>Let&rsquo;s start.</p>
-
-<p>In <code>project.clj</code> file, I use Reagent with <code>:exclusions</code>, because I have to use React version from NPM not the version that comes from Reagent. Don&rsquo;t forget to create <code>react.cljs</code> which contains only <code>(ns cljsjs.react)</code>.</p>
-
+<p>Let's start.</p>
+<p>In <code>project.clj</code> file, I use Reagent with <code>:exclusions</code>, because I have to use React version from NPM not the version that comes from Reagent. Don't forget to create <code>react.cljs</code> which contains only <code>(ns cljsjs.react)</code>.</p>
 <p><code>project.clj</code></p>
-
 <pre><code>(defproject sample &quot;0.1.0-SNAPSHOT&quot;
   :description &quot;Write your definition here.&quot;
   :url &quot;http://sample.org&quot;
@@ -233,17 +227,10 @@ text-align: center;
                         :compiler {:output-to &quot;resources/main.js&quot;
                         :optimizations :advanced
                         :pretty-print true}}]})
-</code></pre>
-
-<p><code>react.cljs</code></p>
-
+</code></pre><p><code>react.cljs</code></p>
 <pre><code>(ns cljsjs.react)
-</code></pre>
-
-<p>Now, look at the index.html file. I use React and React Bootstrap which come from NPM. I manage the NPM dependencies by using <a href="https://github.com/RyanMcG/lein-npm">lein-npm</a>. It is a good Leiningen plugin for integrating NPM and Leiningen seamlessly.</p>
-
+</code></pre><p>Now, look at the index.html file. I use React and React Bootstrap which come from NPM. I manage the NPM dependencies by using <a href="https://github.com/RyanMcG/lein-npm">lein-npm</a>. It is a good Leiningen plugin for integrating NPM and Leiningen seamlessly.</p>
 <p><code>index.html</code></p>
-
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
@@ -264,12 +251,8 @@ text-align: center;
     &lt;script type=&quot;text/javascript&quot; src=&quot;main.js&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
-
-<p>Finally in <code>core.cljs</code>, I can do JS interop to call React component from React Bootstrap module.</p>
-
+</code></pre><p>Finally in <code>core.cljs</code>, I can do JS interop to call React component from React Bootstrap module.</p>
 <p><code>core.cljs</code></p>
-
 <pre><code>(ns sample.core
   (:require [cljsjs.react]
             [reagent.core :as reagent :refer [atom]]))
@@ -289,10 +272,7 @@ text-align: center;
           (reagent/create-element col #js{:xs 6 :md 6} &quot;Right column&quot;)))))
 
 (reagent/render [text-editor] (.getElementById js/document &quot;apps&quot;))
-</code></pre>
-
-<p>This is my working project structure for doing all those thing.</p>
-
+</code></pre><p>This is my working project structure for doing all those thing.</p>
 <pre><code>doc
 resources
 -- node_modules
@@ -310,7 +290,6 @@ target
 test
 project.clj
 </code></pre>
-
               <div class="comments" id="comments">
                 <div id="disqus_thread"></div>
 <script type="application/javascript">

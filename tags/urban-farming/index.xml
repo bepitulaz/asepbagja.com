@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>urban farming on ASPBGJ</title>
+    <title>urban farming on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/tags/urban-farming/</link>
-    <description>Recent content in urban farming on ASPBGJ</description>
+    <description>Recent content in urban farming on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://asepbagja.com/posts/my-familys-journey-to-grow-our-own-food/</guid>
-      <description>My wife&amp;rsquo;s dream after we married was having a garden at home.</description>
+      <description>My wife&#39;s dream after we married was having a garden at home.</description>
     </item>
     
   </channel>

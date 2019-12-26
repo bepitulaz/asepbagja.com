@@ -4,12 +4,12 @@
   
   <url>
     <loc>https://asepbagja.com/id/artikel/</loc>
-    <lastmod>2019-09-23T15:08:11+08:00</lastmod>
+    <lastmod>2019-12-26T15:08:11+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://asepbagja.com/id/</loc>
-    <lastmod>2019-09-23T15:08:11+08:00</lastmod>
+    <lastmod>2019-12-26T15:08:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,8 +23,13 @@
   </url>
   
   <url>
+    <loc>https://asepbagja.com/id/categories/catatan/</loc>
+    <lastmod>2019-12-26T15:08:11+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://asepbagja.com/id/categories/</loc>
-    <lastmod>2019-09-23T15:08:11+08:00</lastmod>
+    <lastmod>2019-12-26T15:08:11+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -35,6 +40,11 @@
                 hreflang="id"
                 href="https://asepbagja.com/id/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://asepbagja.com/id/artikel/satu-dekade-saya/</loc>
+    <lastmod>2019-12-26T15:08:11+08:00</lastmod>
   </url>
   
   <url>

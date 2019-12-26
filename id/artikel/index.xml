@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Artikels on ASPBGJ</title>
+    <title>Artikels on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/id/artikel/</link>
-    <description>Recent content in Artikels on ASPBGJ</description>
+    <description>Recent content in Artikels on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>2019 © Asep Bagja Priandana</copyright>
-    <lastBuildDate>Mon, 23 Sep 2019 15:08:11 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2019 15:08:11 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/id/artikel/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Perjalanan Satu Dekade Saya</title>
+      <link>https://asepbagja.com/id/artikel/satu-dekade-saya/</link>
+      <pubDate>Thu, 26 Dec 2019 15:08:11 +0800</pubDate>
+      
+      <guid>https://asepbagja.com/id/artikel/satu-dekade-saya/</guid>
+      <description>Sebentar lagi kita akan memasuki tahun 2020, sebuah awal dekade baru.</description>
+    </item>
     
     <item>
       <title>Mengakali Biaya Transfer Uang Antar Negara Dengan Jenius dan TransferWise</title>

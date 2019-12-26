@@ -18,17 +18,16 @@ if (!doNotTrack) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     
-    <meta name="description" content="As a web developer and iOS developer, I didn&rsquo;t know much about hardware or bare metal programming.">
+    <meta name="description" content="As a web developer and iOS developer, I didn&#39;t know much about hardware or bare metal programming.">
 
     
     <meta property="og:title" content="My Learning Curve In IoT World As A Web and iOS Developer" />
-<meta property="og:description" content="As a web developer and iOS developer, I didn&rsquo;t know much about hardware or bare metal programming." />
+<meta property="og:description" content="As a web developer and iOS developer, I didn&#39;t know much about hardware or bare metal programming." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asepbagja.com/posts/my-learning-curve-in-iot-world-as-a-web-and-ios-developer/" />
-
 <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25200525/esp-8266.jpg" />
 <meta property="article:published_time" content="2015-03-16T00:00:00+00:00" />
-<meta property="article:modified_time" content="2015-03-16T00:00:00+00:00" /><meta property="og:site_name" content="ASPBGJ" />
+<meta property="article:modified_time" content="2015-03-16T00:00:00+00:00" /><meta property="og:site_name" content="Asep Bagja &amp; Co." />
 
 
     
@@ -36,7 +35,7 @@ if (!doNotTrack) {
 <meta name="twitter:image" content="https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25200525/esp-8266.jpg"/>
 
 <meta name="twitter:title" content="My Learning Curve In IoT World As A Web and iOS Developer"/>
-<meta name="twitter:description" content="As a web developer and iOS developer, I didn&rsquo;t know much about hardware or bare metal programming."/>
+<meta name="twitter:description" content="As a web developer and iOS developer, I didn&#39;t know much about hardware or bare metal programming."/>
 
 
 
@@ -44,7 +43,7 @@ if (!doNotTrack) {
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
 
-    <title>My Learning Curve In IoT World As A Web and iOS Developer - ASPBGJ</title>
+    <title>My Learning Curve In IoT World As A Web and iOS Developer - Asep Bagja &amp; Co.</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
@@ -205,36 +204,21 @@ text-align: center;
                     </div>
                 </div>
               </div>
-              <p>As a web developer and iOS developer, I didn&rsquo;t know much about hardware or bare metal programming. I only learned about resistor, capasitor, transistor, etc when I was still in junior high school, thus my electronic knowledge is very limited.</p>
-
+              <p>As a web developer and iOS developer, I didn't know much about hardware or bare metal programming. I only learned about resistor, capasitor, transistor, etc when I was still in junior high school, thus my electronic knowledge is very limited.</p>
 <p><strong>Arduino Uno R3. My First Board.</strong></p>
-
 <p>I was interested for learning electronic again as a hobby around 2-3 years ago, when I read that Arduino is easy for learning micro controller programming. I bought it for IDR190.000 (around USD15). I also ordered a bread board for prototyping, some jumper cables, and a pair of LEDs.</p>
-
 <p>I must admit that it was not easy enough for the first time. I had to learn Arduino IDE with Processing language, and learned some jargons that I never knew before in web programming e.g., baud rate, digital pin, analog pin, Tx/Rx, serial port, etc. Finally, I can made my first project run. It was blinking the LED project. Arduino IDE makes everything simple, from writing the code (sketch) until uploading it to the board.</p>
-
 <p>Today, learning Arduino programming from web development background is getting easier. We can do it by using JavaScript with NodeJS and Johnny-Five package.</p>
-
 <p><strong>Raspberry Pi. Small Linux Board with ARM Processor.</strong></p>
-
 <p>After doing some small toy projects in Arduino platform, I read about Raspberry Pi the $35 credit card size computer. The first time I knew about GPIO (General Purpose Input/Output) was from this board, and with this board also I learned how to build a cross compiler toolchain for compiling C program from OSX to RPi. I was using this board for various purposes, mostly for home entertainment.</p>
-
 <p>My latest hobby project was building the automation system for my aquarium. It utilized RPi to control servo motor for rotating the fish food dispenser over the internet. I built it by using NodeJS, SocketIO, and <a href="https://www.npmjs.com/package/johnny-five">Johnny-Five</a> package.</p>
-
-<iframe src="https://www.youtube.com/embed/oNoDhwC3RDk" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
+<!-- raw HTML omitted -->
 <p>The problem came when I want to deploy it on my aquarium. I felt $35 was not worth to be placed as a permanent installation, because I still need the RPi for my home entertainment. So, I should find the cheap way. Arduino obviously not the cheap way. It is $15, but if I want to connect it to the internet I should buy either ethernet shield or the expensive wifi shield.</p>
-
 <p>My friend gave me a solution via Twitter. He mentioned about&hellip;</p>
-
 <p><strong>ESP8266. The $5 Wifi Module.</strong></p>
-
 <p>I google-ed it. It is a new wifi module that people usually use it as a module for Arduino, but actually it can be used as a stand alone micro controller. So, I ordered it for IDR70.000, also with USB TTY programmer for IDR22000. The total shopping was just IDR99.000 (around $7). It is worth to solder permanently.</p>
-
-<p><img src="https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25200525/esp-8266.jpg" alt="esp-8266" /></p>
-
-<p>The USB TTY is used to program the micro controller. ESP8266 has 2 GPIO pins and working with 3.3 volt power. I can&rsquo;t use JavaScript for this hardware, thus it becomes my first time for writing my own firmware in C and deploy (flash) it to a hardware that don&rsquo;t have operating system. Now, I&rsquo;m in progress for porting my aquarium system to use this coin size and cheap module.</p>
-
+<p><img src="https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25200525/esp-8266.jpg" alt="esp-8266"></p>
+<p>The USB TTY is used to program the micro controller. ESP8266 has 2 GPIO pins and working with 3.3 volt power. I can't use JavaScript for this hardware, thus it becomes my first time for writing my own firmware in C and deploy (flash) it to a hardware that don't have operating system. Now, I'm in progress for porting my aquarium system to use this coin size and cheap module.</p>
 <p>I will write the tutorial about how to use it in the next post.</p>
 
               <div class="comments" id="comments">

@@ -25,10 +25,9 @@ if (!doNotTrack) {
 <meta property="og:description" content="In part 1, we had learned about two important concepts in functional programming paradigm: immutable data and pure function." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-2/" />
-
 <meta property="og:image" content="https://asepbagja.com/blog-img/js-img.jpg" />
 <meta property="article:published_time" content="2016-07-04T00:00:00+00:00" />
-<meta property="article:modified_time" content="2016-07-04T00:00:00+00:00" /><meta property="og:site_name" content="ASPBGJ" />
+<meta property="article:modified_time" content="2016-07-04T00:00:00+00:00" /><meta property="og:site_name" content="Asep Bagja &amp; Co." />
 
 
     
@@ -44,7 +43,7 @@ if (!doNotTrack) {
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
 
-    <title>Introduction to Functional Programming in JavaScript (Part 2) - ASPBGJ</title>
+    <title>Introduction to Functional Programming in JavaScript (Part 2) - Asep Bagja &amp; Co.</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
@@ -206,113 +205,102 @@ text-align: center;
                 </div>
               </div>
               <p>In <a href="/posts/introduction-to-functional-programming-in-javascript-part-1/">part 1</a>, we had learned about two important concepts in functional programming paradigm: immutable data and pure function. Now, we will learn another important concept in functional programming, that is higher order function.</p>
-
 <p>According to Wikipedia, higher-order function is a function that does at least one of the following:</p>
-
 <ul>
 <li>takes one or more functions as arguments</li>
 <li>returns a function as its results.</li>
 </ul>
-
-<p>JavaScript has the first-class function. It means the functions in JavaScript treats as a value, that we can assign it to the variable, pass it around, and return from another function. Therefore, JavaScript supports higher order function. I&rsquo;m sure every JavaScript programmer ever used higher order function in their life. If you ever used jQuery, you must be familiar with these syntaxes:</p>
+<p>JavaScript has the first-class function. It means the functions in JavaScript treats as a value, that we can assign it to the variable, pass it around, and return from another function. Therefore, JavaScript supports higher order function. I'm sure every JavaScript programmer ever used higher order function in their life. If you ever used jQuery, you must be familiar with these syntaxes:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;my-api-url.com&#34;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
-<span class="p">});</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
 
 <span class="c1">// or
 </span><span class="c1"></span>
-<span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#my-awesome-button&#34;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">evt</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
-<span class="p">});</span>
-</code></pre></div>
-<p>Those are the sample implementations. We passed the function as an argument to another function.</p>
-
+<span class="nx">$</span><span class="p">(</span><span class="s2">&#34;#my-awesome-button&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">evt</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
+</code></pre></div><p>Those are the sample implementations. We passed the function as an argument to another function.</p>
 <p><strong>Map, Filter, and Reduce</strong></p>
-
 <p><code>Map</code>, <code>filter</code>, and <code>reduce</code> are three methods those are natively available in most browsers and in NodeJS. We will intensively use these methods when doing functional programming in JavaScript and also in any programming language.</p>
-
 <p><code>Map</code> takes a function and collection of items, runs the function on each item in the collection, and returns a new collection as the result. This is the simple example of <code>map</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span> <span class="c1">// I want add each item by 1
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">;</span> <span class="c1">// I want add each item by 1
 </span><span class="c1"></span>
 <span class="c1">// we pass an anonymous function to the map
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">mapResult</span> <span class="o">=</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">mapResult</span> <span class="o">=</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="nx">item</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-<span class="p">});</span>
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mapResult</span><span class="p">);</span> <span class="c1">// [2, 3, 4]
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// the original data does not change: [1, 2, 3]
-</span></code></pre></div>
-<p>So, actually, we did not need to implement it by our self like we did in part 1 of this article &ndash; the <code>pureFunction</code> section.</p>
-
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mapResult</span><span class="p">)</span><span class="p">;</span> <span class="c1">// [2, 3, 4]
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">)</span><span class="p">;</span> <span class="c1">// the original data does not change: [1, 2, 3]
+</span></code></pre></div><p>So, actually, we did not need to implement it by our self like we did in part 1 of this article &ndash; the <code>pureFunction</code> section.</p>
 <p>Next is <code>filter</code>. It takes a function and a collection, runs the function on each item in the collection, returns a new collection when the function returns <code>true</code>. This is the simple example of <code>filter</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span> <span class="c1">// I want the even number only
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">;</span> <span class="c1">// I want the even number only
 </span><span class="c1"></span>
-<span class="kd">let</span> <span class="nx">filterResult</span> <span class="o">=</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="kd">let</span> <span class="nx">filterResult</span> <span class="o">=</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="nx">item</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">});</span>
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterResult</span><span class="p">);</span> <span class="c1">// [2]
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// the original data does not change: [1, 2, 3]
-</span></code></pre></div>
-<p>The later is <code>reduce</code>. It takes a function and a collection of items,and returns the value by combining the items. This is the simple example of <code>reduce</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span> <span class="c1">// I want to sum all the items
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterResult</span><span class="p">)</span><span class="p">;</span> <span class="c1">// [2]
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">)</span><span class="p">;</span> <span class="c1">// the original data does not change: [1, 2, 3]
+</span></code></pre></div><p>The later is <code>reduce</code>. It takes a function and a collection of items,and returns the value by combining the items. This is the simple example of <code>reduce</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">;</span> <span class="c1">// I want to sum all the items
 </span><span class="c1"></span>
-<span class="kd">let</span> <span class="nx">reduceResult</span> <span class="o">=</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">prev</span><span class="p">,</span> <span class="nx">current</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="kd">let</span> <span class="nx">reduceResult</span> <span class="o">=</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">reduce</span><span class="p">(</span><span class="p">(</span><span class="nx">prev</span><span class="p">,</span> <span class="nx">current</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="nx">prev</span> <span class="o">+</span> <span class="nx">current</span><span class="p">;</span>
-<span class="p">});</span>
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">reduceResult</span><span class="p">);</span> <span class="c1">// 6
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// the original data does not change: [1, 2, 3]
-</span></code></pre></div>
-<p>The advantage of using <code>map</code>, <code>filter</code>, and <code>reduce</code> is you can easily chain all those function with predictable behaviour. This is the sample case to use it all together.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">leads</span> <span class="o">=</span> <span class="p">[{</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">reduceResult</span><span class="p">)</span><span class="p">;</span> <span class="c1">// 6
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">)</span><span class="p">;</span> <span class="c1">// the original data does not change: [1, 2, 3]
+</span></code></pre></div><p>The advantage of using <code>map</code>, <code>filter</code>, and <code>reduce</code> is you can easily chain all those function with predictable behaviour. This is the sample case to use it all together.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">leads</span> <span class="o">=</span> <span class="p">[</span><span class="p">{</span>
   <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Acme Company&#34;</span><span class="p">,</span>
   <span class="nx">isDeal</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
   <span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;USD&#34;</span><span class="p">,</span>
   <span class="nx">deal</span><span class="o">:</span> <span class="mi">150</span>
-<span class="p">},</span> <span class="p">{</span>
+<span class="p">}</span><span class="p">,</span> <span class="p">{</span>
   <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Seven Eleven&#34;</span><span class="p">,</span>
   <span class="nx">isDeal</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
   <span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;IDR&#34;</span><span class="p">,</span>
   <span class="nx">deal</span><span class="o">:</span> <span class="mi">1000000</span>
-<span class="p">},</span> <span class="p">{</span>
+<span class="p">}</span><span class="p">,</span> <span class="p">{</span>
   <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Cozyfield&#34;</span><span class="p">,</span>
   <span class="nx">isDeal</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
   <span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;IDR&#34;</span><span class="p">,</span>
   <span class="nx">deal</span><span class="o">:</span> <span class="mi">2500000</span>
-<span class="p">},</span> <span class="p">{</span>
+<span class="p">}</span><span class="p">,</span> <span class="p">{</span>
   <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Froyo Agency&#34;</span><span class="p">,</span>
   <span class="nx">isDeal</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
   <span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;USD&#34;</span><span class="p">,</span>
   <span class="nx">deal</span><span class="o">:</span> <span class="mi">2000</span>
-<span class="p">}];</span>
+<span class="p">}</span><span class="p">]</span><span class="p">;</span>
 
 <span class="c1">// get all data with USD, change the currency symbol to $
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">getUsdOnlyWithDollar</span> <span class="o">=</span> <span class="nx">leads</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">getUsdOnlyWithDollar</span> <span class="o">=</span> <span class="nx">leads</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="nx">item</span><span class="p">.</span><span class="nx">currency</span> <span class="o">===</span> <span class="s2">&#34;USD&#34;</span><span class="p">;</span>
-<span class="p">}).</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="p">}</span><span class="p">)</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">{</span>
     <span class="nx">name</span><span class="o">:</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
     <span class="nx">isDeal</span><span class="o">:</span> <span class="nx">item</span><span class="p">.</span><span class="nx">isDeal</span><span class="p">,</span>
     <span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;$&#34;</span><span class="p">,</span>
     <span class="nx">deal</span><span class="o">:</span> <span class="nx">item</span><span class="p">.</span><span class="nx">deal</span>
-  <span class="p">};</span>
-<span class="p">});</span>
+  <span class="p">}</span><span class="p">;</span>
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
 
 <span class="c1">// [{ name: &#39;Acme Company&#39;, isDeal: true, currency: &#39;$&#39;, deal: 150 },
-</span><span class="c1">// { name: &#39;Froyo Agency&#39;, isDeal: false, currency: &#39;$&#39;, deal: 2000 } ]
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getUsdOnlyWithDollar</span><span class="p">);</span>
+</span><span class="c1"></span><span class="c1">// { name: &#39;Froyo Agency&#39;, isDeal: false, currency: &#39;$&#39;, deal: 2000 } ]
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">getUsdOnlyWithDollar</span><span class="p">)</span><span class="p">;</span>
 
 <span class="c1">// get all data with isDeal is false, convert all USD currency to IDR
-</span><span class="c1">// 1 USD = IDR 13000, then sum all the amount of expected deal
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">calculateIt</span> <span class="o">=</span> <span class="nx">leads</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span><span class="c1"></span><span class="c1">// 1 USD = IDR 13000, then sum all the amount of expected deal
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">calculateIt</span> <span class="o">=</span> <span class="nx">leads</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="o">!</span><span class="nx">item</span><span class="p">.</span><span class="nx">isDeal</span><span class="p">;</span>
-<span class="p">}).</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+<span class="p">}</span><span class="p">)</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">{</span>
     <span class="nx">name</span><span class="o">:</span> <span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
     <span class="nx">isDeal</span><span class="o">:</span> <span class="nx">item</span><span class="p">.</span><span class="nx">isDeal</span><span class="p">,</span>
     <span class="nx">currency</span><span class="o">:</span> <span class="nx">item</span><span class="p">.</span><span class="nx">currency</span>
-  <span class="p">};</span>
+  <span class="p">}</span><span class="p">;</span>
 
   <span class="k">if</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">currency</span> <span class="o">===</span> <span class="s2">&#34;USD&#34;</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">result</span><span class="p">.</span><span class="nx">deal</span> <span class="o">=</span> <span class="nx">item</span><span class="p">.</span><span class="nx">deal</span> <span class="o">*</span> <span class="mi">13000</span><span class="p">;</span>
@@ -321,81 +309,71 @@ text-align: center;
   <span class="p">}</span>
 
   <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
-<span class="p">}).</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">prevItem</span><span class="p">,</span> <span class="nx">currItem</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">{</span><span class="nx">deal</span><span class="o">:</span> <span class="nx">prevItem</span><span class="p">.</span><span class="nx">deal</span> <span class="o">+</span> <span class="nx">currItem</span><span class="p">.</span><span class="nx">deal</span><span class="p">};</span>
-<span class="p">});</span>
+<span class="p">}</span><span class="p">)</span><span class="p">.</span><span class="nx">reduce</span><span class="p">(</span><span class="p">(</span><span class="nx">prevItem</span><span class="p">,</span> <span class="nx">currItem</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span><span class="nx">deal</span><span class="o">:</span> <span class="nx">prevItem</span><span class="p">.</span><span class="nx">deal</span> <span class="o">+</span> <span class="nx">currItem</span><span class="p">.</span><span class="nx">deal</span><span class="p">}</span><span class="p">;</span>
+<span class="p">}</span><span class="p">)</span><span class="p">;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">calculateIt</span><span class="p">);</span> <span class="c1">// { deal: 29500000 }
-</span></code></pre></div>
-<p><strong>Currying</strong></p>
-
-<p>We won&rsquo;t cook that spicy and exotic cuisine for now. Currying is the process of transforming a function that takes multiple arguments into a function that takes only a single argument and returns another function if the arguments are still needed. Take a look at these two code snippets:</p>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">calculateIt</span><span class="p">)</span><span class="p">;</span> <span class="c1">// { deal: 29500000 }
+</span></code></pre></div><p><strong>Currying</strong></p>
+<p>We won't cook that spicy and exotic cuisine for now. Currying is the process of transforming a function that takes multiple arguments into a function that takes only a single argument and returns another function if the arguments are still needed. Take a look at these two code snippets:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">name</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="nx">message</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="nx">name</span><span class="p">;</span>
-<span class="p">};</span>
+<span class="p">}</span><span class="p">;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">,</span> <span class="s2">&#34;Asep&#34;</span><span class="p">));</span> <span class="c1">// &#34;Hello Asep&#34;
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">,</span> <span class="s2">&#34;Bagja&#34;</span><span class="p">));</span> <span class="c1">// &#34;Hello Bagja&#34;
-</span></code></pre></div>
-<p>We already familiar with that syntax, nothing wrong with that. Now the curried version for that greeting function.</p>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">,</span> <span class="s2">&#34;Asep&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &#34;Hello Asep&#34;
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">,</span> <span class="s2">&#34;Bagja&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &#34;Hello Bagja&#34;
+</span></code></pre></div><p>We already familiar with that syntax, nothing wrong with that. Now the curried version for that greeting function.</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">curriedGreeting</span> <span class="o">=</span> <span class="p">(</span><span class="nx">message</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">message</span> <span class="o">+</span> <span class="s2">&#34; &#34;</span> <span class="o">+</span> <span class="nx">name</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">let</span> <span class="nx">sayHello</span> <span class="o">=</span> <span class="nx">curriedGreeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">);</span> <span class="c1">// this is partially applied function
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">);</span> <span class="c1">// it returns a function
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">(</span><span class="s2">&#34;Asep&#34;</span><span class="p">));</span> <span class="c1">// &#34;Hello Asep&#34;
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">(</span><span class="s2">&#34;Bagja&#34;</span><span class="p">));</span> <span class="c1">// &#34;Hello Bagja&#34;
+<span class="kd">let</span> <span class="nx">sayHello</span> <span class="o">=</span> <span class="nx">curriedGreeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">)</span><span class="p">;</span> <span class="c1">// this is partially applied function
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">)</span><span class="p">;</span> <span class="c1">// it returns a function
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">(</span><span class="s2">&#34;Asep&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &#34;Hello Asep&#34;
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sayHello</span><span class="p">(</span><span class="s2">&#34;Bagja&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &#34;Hello Bagja&#34;
 </span><span class="c1"></span>
 <span class="c1">// you can also call it directly by using another parentheses
-</span><span class="c1"></span><span class="nx">curriedGreeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">)(</span><span class="s2">&#34;Asep&#34;</span><span class="p">);</span> <span class="c1">// &#34;Hello Asep&#34;
-</span><span class="c1"></span><span class="nx">curriedGreeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">)(</span><span class="s2">&#34;Bagja&#34;</span><span class="p">);</span> <span class="c1">// &#34;Hello Bagja&#34;
-</span></code></pre></div>
-<p>At the moment we invoke <code>curriedGreeting</code> with only one argument, it will return the next function that still waiting to be invoked by the second argument. After the second argument is passed to the function, we will get our expected return value.</p>
-
-<p>That looks so cool, but why we want to do that? It&rsquo;s not straightforward, is it? Ok, let me show you a use case that can be considered to use this technique.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">callAPI</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span><span class="c1"></span><span class="nx">curriedGreeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">)</span><span class="p">(</span><span class="s2">&#34;Asep&#34;</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &#34;Hello Asep&#34;
+</span><span class="c1"></span><span class="nx">curriedGreeting</span><span class="p">(</span><span class="s2">&#34;Hello&#34;</span><span class="p">)</span><span class="p">(</span><span class="s2">&#34;Bagja&#34;</span><span class="p">)</span><span class="p">;</span> <span class="c1">// &#34;Hello Bagja&#34;
+</span></code></pre></div><p>At the moment we invoke <code>curriedGreeting</code> with only one argument, it will return the next function that still waiting to be invoked by the second argument. After the second argument is passed to the function, we will get our expected return value.</p>
+<p>That looks so cool, but why we want to do that? It's not straightforward, is it? Ok, let me show you a use case that can be considered to use this technique.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">callAPI</span> <span class="o">=</span> <span class="p">(</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="c1">// Do the web service call here. Let&#39;s assume it returns an array of objects
-</span><span class="c1"></span>  <span class="k">return</span> <span class="p">[{</span>
+</span><span class="c1"></span>  <span class="k">return</span> <span class="p">[</span><span class="p">{</span>
     <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Brio&#34;</span><span class="p">,</span>
     <span class="nx">manufacturer</span><span class="o">:</span> <span class="s2">&#34;Honda&#34;</span>
-  <span class="p">},</span>
+  <span class="p">}</span><span class="p">,</span>
   <span class="p">{</span>
     <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Avanza&#34;</span><span class="p">,</span>
     <span class="nx">manufacturer</span><span class="o">:</span> <span class="s2">&#34;Toyota&#34;</span>
-  <span class="p">},</span>
+  <span class="p">}</span><span class="p">,</span>
   <span class="p">{</span>
     <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;Innova&#34;</span><span class="p">,</span>
     <span class="nx">manufacturer</span><span class="o">:</span> <span class="s2">&#34;Toyota&#34;</span>
-  <span class="p">}];</span>
-<span class="p">};</span>
+  <span class="p">}</span><span class="p">]</span><span class="p">;</span>
+<span class="p">}</span><span class="p">;</span>
 
 <span class="c1">// Filter the data with curried function
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">filterData</span> <span class="o">=</span> <span class="p">(</span><span class="nx">fn</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">(</span><span class="nx">manufacturer</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">fn</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">fn</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
       <span class="k">return</span> <span class="nx">item</span><span class="p">.</span><span class="nx">manufacturer</span> <span class="o">===</span> <span class="nx">manufacturer</span><span class="p">;</span>
-    <span class="p">});</span>
+    <span class="p">}</span><span class="p">)</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="c1">// call the web service only one time
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">filterBy</span> <span class="o">=</span> <span class="nx">filterData</span><span class="p">(</span><span class="nx">callAPI</span><span class="p">());</span>
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">filterBy</span> <span class="o">=</span> <span class="nx">filterData</span><span class="p">(</span><span class="nx">callAPI</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
 
 <span class="c1">// then we can use the result multiple times
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterBy</span><span class="p">(</span><span class="s2">&#34;Toyota&#34;</span><span class="p">));</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterBy</span><span class="p">(</span><span class="s2">&#34;Honda&#34;</span><span class="p">));</span>
-</code></pre></div>
-<p>Currying is a useful technique in functional programming. It can avoid repetition in our code, thus makes the code more efficient. I encourage you to play and use it in your JavaScript code.</p>
-
-<p><strong>Summary and What&rsquo;s Next?</strong></p>
-
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterBy</span><span class="p">(</span><span class="s2">&#34;Toyota&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">filterBy</span><span class="p">(</span><span class="s2">&#34;Honda&#34;</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+</code></pre></div><p>Currying is a useful technique in functional programming. It can avoid repetition in our code, thus makes the code more efficient. I encourage you to play and use it in your JavaScript code.</p>
+<p><strong>Summary and What's Next?</strong></p>
 <p>JavaScript supports higher-order function very well. It makes JavaScript suitable to apply some techniques from functional programming paradigm, and we can combine it with the knowledge that we had learned from the <a href="http://asepbagja.com/introduction-to-functional-programming-in-javascript-part-1/">part 1</a> of the article to make our code more brevity.</p>
-
-<p>Learning functional programming won&rsquo;t hurt you. I encourage you to learn a programming language that specifically designed for it because many techniques and concepts are hard to explain or do in JavaScript. You can pick Haskell, Clojure, Scala, Elixir, OCaml, etc. By knowing imperative programming and functional programming you will get the best of both worlds.</p>
-
+<p>Learning functional programming won't hurt you. I encourage you to learn a programming language that specifically designed for it because many techniques and concepts are hard to explain or do in JavaScript. You can pick Haskell, Clojure, Scala, Elixir, OCaml, etc. By knowing imperative programming and functional programming you will get the best of both worlds.</p>
 <p>Hope you enjoy this series of introduction to functional programming.</p>
 
               <div class="comments" id="comments">

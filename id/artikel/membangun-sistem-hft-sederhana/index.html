@@ -25,10 +25,9 @@ if (!doNotTrack) {
 <meta property="og:description" content="Dua minggu terakhir ini saya sibuk mengerjakan sebuah proyek sampingan pribadi yang berhubungan dengan pasar finansial, yaitu melakukan otomatisasi terhadap kegiatan perdagangan di bursa cryptocurrency." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asepbagja.com/id/artikel/membangun-sistem-hft-sederhana/" />
-
 <meta property="og:image" content="https://asepbagja.com/blog-img/candlestick.jpg" />
 <meta property="article:published_time" content="2019-09-19T17:07:43+08:00" />
-<meta property="article:modified_time" content="2019-09-19T17:07:43+08:00" /><meta property="og:site_name" content="ASPBGJ" />
+<meta property="article:modified_time" content="2019-09-19T17:07:43+08:00" /><meta property="og:site_name" content="Asep Bagja &amp; Co." />
 
 
     
@@ -44,7 +43,7 @@ if (!doNotTrack) {
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
 
-    <title>Membangun Sistem High Frequency Trading Sederhana - ASPBGJ</title>
+    <title>Membangun Sistem High Frequency Trading Sederhana - Asep Bagja &amp; Co.</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
@@ -205,65 +204,36 @@ text-align: center;
                     </div>
                 </div>
               </div>
-              
-
-<p>Dua minggu terakhir ini saya sibuk mengerjakan sebuah proyek sampingan pribadi yang berhubungan dengan pasar finansial, yaitu melakukan otomatisasi terhadap kegiatan perdagangan di bursa cryptocurrency. Saya yakin untuk yang sudah terbiasa melakukan kegiatan <em>trading</em> pasti sering mendengar istilah <em>robot trading</em>. Di mana perdagangan dilakukan secara otomatis oleh komputer.</p>
-
-<p><img src="/blog-img/candlestick.jpg" alt="&quot;Candlestick chart&quot;" />
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@m_b_m?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from M. B. M."><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">M. B. M.</span></a></p>
-
+              <p>Dua minggu terakhir ini saya sibuk mengerjakan sebuah proyek sampingan pribadi yang berhubungan dengan pasar finansial, yaitu melakukan otomatisasi terhadap kegiatan perdagangan di bursa cryptocurrency. Saya yakin untuk yang sudah terbiasa melakukan kegiatan <em>trading</em> pasti sering mendengar istilah <em>robot trading</em>. Di mana perdagangan dilakukan secara otomatis oleh komputer.</p>
+<p><img src="/blog-img/candlestick.jpg" alt="&ldquo;Candlestick chart&rdquo;">
+<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->unsplash-logo<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->M. B. M.<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <p>Saya memutuskan untuk membangun sistem sendiri dari nol dengan tujuan supaya benar-benar paham bagaimana sistem yang saya bangun bekerja sambil terus mengasah ilmu di bidang <em><a href="https://www.investopedia.com/articles/active-trading/101014/basics-algorithmic-trading-concepts-and-examples.asp">algorithmic trading</a></em>.</p>
-
 <p>Perlu diingat bahwa artikel yang saya tulis ini sifatnya hanya catatan belajar saya, jadi jangan ditelan mentah-mentah.</p>
-
 <h3 id="perkenalan-tentang-high-frequency-trading">Perkenalan Tentang High-Frequency Trading</h3>
-
 <p>High-Frequency Trading (HFT) adalah strategi perdagangan aset di mana <em>trader</em> tidak menyimpan aset lama-lama, biasanya tidak akan lebih dari satu hari dengan keuntungan dari setiap <em>trade</em> sangat tipis tetapi dilakukan dengan jumlah yang banyak. Strategi dieksekusi secara cepat oleh komputer. HFT biasanya digunakan oleh <em>investment banks</em>, hedge fund, atau investor institusional untuk bertransaksi dalam volume yang besar dan kecepatan tinggi (bisa sampai hitungan milidetik) di bursa efek.</p>
-
 <p>Di Indonesia, HFT tidak bisa digunakan di Bursa Efek Indonesia karena tidak diperbolehkan dan mungkin memang sistem di bursanya sendiri belum siap.</p>
-
 <p>Oleh karena itu, untuk proses belajar, saya beralih ke bursa cryptocurrency karena bursa-bursa cryptocurrency pada umumnya memiliki API (Application Programming Interface) untuk mengakses data perdagangan secara <em>real-time</em> dan API untuk membuka posisi jual/beli.</p>
-
 <h3 id="arsitektur-sistem">Arsitektur Sistem</h3>
-
 <p>Sistem yang saya buat menggunakan arsitektur <em>microservices</em> untuk memastikan bahwa sistem ini bisa diperbesar lagi dengan mudah <em>(scalable)</em>. Ada empat <em>services</em>: Raw Data Service, Trading Service, Trading Strategy Development Service, dan Data Warehouse.</p>
-
-<p><img src="/blog-img/my-hft-system.jpg" alt="&quot;Arsitektur Sistem&quot;" />
+<p><img src="/blog-img/my-hft-system.jpg" alt="&ldquo;Arsitektur Sistem&rdquo;">
 <em>Arsitektur sistem trading yang saya rancang.</em></p>
-
 <h4 id="raw-data-service">Raw Data Service</h4>
-
 <p><em>Service</em> ini digunakan untuk mengambil <em>ticker</em> secara berkala dari bursa. <em>Ticker</em> adalah data harga jual dan beli pada suatu aset. Untuk saat ini saya ambil per 30 detik sekali untuk setiap aset karena saya rasa untuk saat ini belum perlu dilakukan lebih cepat lagi.</p>
-
 <p>Data mentah yang didapat dari bursa langsung dimasukkan ke data warehouse agar nantinya bisa dianalisa dan digunakan untuk membuat strategi perdagangan. Selain dimasukkan ke Data Warehouse, data mentah ini juga dikirimkan secara <em>real-time</em> ke Trading Service menggunakan format MsgPack melewati MQTT Broker.</p>
-
 <p>Raw Data Service saya bangun dengan menggunakan <em>framework</em> Ruby on Rails. Mungkin terlihat <em>overkill</em> ya menggunakan Rails untuk <em>service</em> sesederhana ini. Alasan saya menggunakannya karena selain saya sudah terbiasa, Rails juga sangat cepat untuk melakukan pembuatan purwarupa aplikasi yang banyak menggunakan CRUD, dan ada fitur Active Jobs sehingga saya tidak perlu pusing-pusing melakukan konfigurasi <em>cron jobs</em>.</p>
-
 <h4 id="trading-service">Trading Service</h4>
-
 <p>Untuk <em>service</em> ini saya menggunakan Python tanpa <em>framework</em>. Mengapa Python? Karena ekosistem pustaka-pustaka pengolahan data dan analisa data sangat berlimpah dibandingkan Ruby.</p>
-
 <p>Di dalam Trading Service ini lah algoritma <em>trading</em> diimplementasikan. Sistem akan bereaksi terhadap <em>ticker</em> yang didapat dari MQTT Broker, apakah sebaiknya melakukan posisi beli atau jual. Ketika sinyal beli atau jual sudah keluar, <em>service</em> ini akan mengontak Trading API di bursa.</p>
-
 <h4 id="trading-strategy-development-service">Trading Strategy Development Service</h4>
-
 <p><em>Service</em> ini tidak berhubungan dengan bursa sama sekali. Di bagian ini lah saya melakukan <a href="https://en.wikipedia.org/wiki/Technical_analysis">analisa teknikal</a> dengan menggunakan berbagai macam indikator, membangun algoritma yang akan digunakan sebagai strategi, dan juga melakukan <em>backtesting</em>. <em>Backtesting</em> adalah tahapan menguji algoritma dengan menggunakan data historis apakah algoritma tersebut menguntungkan atau tidak. Data historis ini saya ambil dari Data Warehouse.</p>
-
-<p><img src="/blog-img/backtest.png" alt="&quot;Backtesting&quot;" />
+<p><img src="/blog-img/backtest.png" alt="&ldquo;Backtesting&rdquo;">
 <em>Contoh hasil backtesting menggunakan data satu hari ke belakang dengan timeframe satu menit</em></p>
-
 <h4 id="data-warehouse">Data Warehouse</h4>
-
 <p>Di sini saya menggunakan PostgreSQL untuk melakukan penyimpanan data time series. Sejauh ini masih memadai.</p>
-
 <h3 id="kesimpulan">Kesimpulan</h3>
-
 <p>Sistem yang saya bangun ini belum lah sempurna (boleh dibilang HFT abal-abal haha) dan masih jauh dari sistem HFT di luar sana yang dengan kecepatan tinggi dapat melakukan <em>trading</em> dalam hitungan milidetik. Bahkan hingga membuat <em><a href="https://en.wikipedia.org/wiki/2010_Flash_Crash">flash crash</a></em> pada pasar.</p>
-
 <p>Mari jika mau berdiskusi atau memberi saran bisa tinggalkan pesan di kolom komentar atau lewat email saya yang tercantum di menu sebelah kiri.</p>
-
-<p><u><strong>Daftar API dan pustaka pemrograman yang digunakan</strong></u></p>
-
+<p><!-- raw HTML omitted --><strong>Daftar API dan pustaka pemrograman yang digunakan</strong><!-- raw HTML omitted --></p>
 <ul>
 <li><a href="https://indodax.com">Indodax</a>. Bursa cryptocurrency Indonesia yang saya gunakan. Dokumentasi API-nya dapat dilihat <a href="https://indodax.com/downloads/INDODAXCOM-API-DOCUMENTATION.pdf">di sini</a>.</li>
 <li><a href="http://ta-lib.org/">TA-Lib</a>. Pustaka pemrograman pada bahasa C untuk melakukan analisa teknikal. Dapat digunakan untuk Python melalui <em><a href="https://github.com/mrjbq7/ta-lib">wrapper</a></em>.</li>

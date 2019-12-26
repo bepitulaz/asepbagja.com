@@ -25,10 +25,9 @@ if (!doNotTrack) {
 <meta property="og:description" content="Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-1/" />
-
 <meta property="og:image" content="https://asepbagja.com/blog-img/js-img.jpg" />
 <meta property="article:published_time" content="2016-07-03T00:00:00+00:00" />
-<meta property="article:modified_time" content="2016-07-03T00:00:00+00:00" /><meta property="og:site_name" content="ASPBGJ" />
+<meta property="article:modified_time" content="2016-07-03T00:00:00+00:00" /><meta property="og:site_name" content="Asep Bagja &amp; Co." />
 
 
     
@@ -44,7 +43,7 @@ if (!doNotTrack) {
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
 
-    <title>Introduction to Functional Programming in JavaScript (Part 1) - ASPBGJ</title>
+    <title>Introduction to Functional Programming in JavaScript (Part 1) - Asep Bagja &amp; Co.</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
@@ -205,56 +204,45 @@ text-align: center;
                     </div>
                 </div>
               </div>
-              <p>Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal. It focuses on how to perform actions to achieve the expected result. Otherwise, functional programming paradigm concentrates on computing results rather than performing actions. In another word, the imperative one is an annoying micromanager in your office, and the functional one is a macromanager who just describe what&rsquo;s the job to be done.</p>
-
+              <p>Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal. It focuses on how to perform actions to achieve the expected result. Otherwise, functional programming paradigm concentrates on computing results rather than performing actions. In another word, the imperative one is an annoying micromanager in your office, and the functional one is a macromanager who just describe what's the job to be done.</p>
 <p>Imagine this situation. You are asked by your boss to get 3 sales leads by the end of the week. The approach will be distinctive by those 2 paradigms.</p>
-
 <p>The imperative boss will micromanage you by telling you something like these:</p>
-
 <ol>
 <li>Open Craigslist</li>
 <li>Find the phone number</li>
 <li>If you find it, please dial that number</li>
-<li>Tell to the prospective client, &ldquo;Hello, I&rsquo;m from annoying company&hellip;bla&hellip;bla&hellip;&rdquo;</li>
-<li>If you can&rsquo;t find the phone number, you should seek the email address</li>
-<li>Send them an email with this sentence, &ldquo;Hello, I&rsquo;m from annoying company&hellip;bla&hellip;bla&hellip;&rdquo;</li>
-<li>When you can&rsquo;t find the contact in Craiglist, you should try open Yellow Pages</li>
+<li>Tell to the prospective client, &ldquo;Hello, I'm from annoying company&hellip;bla&hellip;bla&hellip;&rdquo;</li>
+<li>If you can't find the phone number, you should seek the email address</li>
+<li>Send them an email with this sentence, &ldquo;Hello, I'm from annoying company&hellip;bla&hellip;bla&hellip;&rdquo;</li>
+<li>When you can't find the contact in Craiglist, you should try open Yellow Pages</li>
 <li>Schedule a meeting at Wednesday afternoon with the prospective client</li>
 <li>&hellip;and so on, until you get 3 sales leads by the end of the week.</li>
 </ol>
-
 <p>The functional boss will tell something more descriptive without micromanaging you:</p>
-
 <ol>
 <li>That is a computer with internet connection on the desk, you can use it to find and contact some leads</li>
 <li>You can use office phone to call them</li>
 <li>Schedule a meeting whenever you feel it is necessary</li>
 <li>Return back to me after you get 3 sales leads by the end of the week.</li>
 </ol>
-
 <p>After we get distinctive between those 2 paradigms, now we will try to implement it in JavaScript. JavaScript currently is one of the hottest and mainstream programming languages which support multi-paradigms. So, we can use it to program in a functional way, while using the imperative features whenever necessary.</p>
-
 <p><strong>The first pillar of FP: think about immutable data</strong></p>
-
-<p>Immutable data means the data can&rsquo;t be modified after its creation to avoid side effects. JavaScript does not force us to use immutable data like any other programming language specifically designed for functional programming, therefore we should force our self to think about immutability when programming with the functional paradigm. Consider this mutable code:</p>
+<p>Immutable data means the data can't be modified after its creation to avoid side effects. JavaScript does not force us to use immutable data like any other programming language specifically designed for functional programming, therefore we should force our self to think about immutability when programming with the functional paradigm. Consider this mutable code:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 1: simple mutable data sample
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// create the initial value
 </span><span class="c1"></span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">// now x&#39;s value is 11
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="p">;</span> <span class="c1">// now x&#39;s value is 11
 </span><span class="c1"></span>
 <span class="c1">// 2: the mutable loop
-</span><span class="c1"></span><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="p">;</span>
 <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">sample</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// the i&#39;s value is changing on each iteration
 </span><span class="c1"></span>  <span class="nx">sample</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">sample</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// now sample&#39;s value is [2, 6, 4, 3]
-</span></code></pre></div>
-<p>It&rsquo;s hard to spot the bugs in a large code base with many mutable data. Do you remember the micromanaging boss? Yes, it&rsquo;s kinda like that. According to sample number 2 above, we will read the loop 4 times to track the current value of <code>sample</code>. Imagine if you have an array with 1000 elements inside it. Have fun with that.</p>
-
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">)</span><span class="p">;</span> <span class="c1">// now sample&#39;s value is [2, 6, 4, 3]
+</span></code></pre></div><p>It's hard to spot the bugs in a large code base with many mutable data. Do you remember the micromanaging boss? Yes, it's kinda like that. According to sample number 2 above, we will read the loop 4 times to track the current value of <code>sample</code>. Imagine if you have an array with 1000 elements inside it. Have fun with that.</p>
 <p><strong>The second pillar of FP: Pure Function</strong></p>
-
 <p>A pure function is a function that does not depend on and modifies the states of the variable out of its scope. It means the function always returns the result given same parameters and produces no side effects. I will give you an example to understand about &ldquo;side effect&rdquo;.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span> <span class="c1">// I want each element of this array add by 1.
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">;</span> <span class="c1">// I want each element of this array add by 1.
 </span><span class="c1"></span>
 <span class="kd">function</span> <span class="nx">impureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
@@ -263,66 +251,60 @@ text-align: center;
   <span class="k">return</span> <span class="nx">data</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">impureFunction</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// You get what you want: [2, 3, 4]
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// But you get the side effect too. The value has been changed :(
-</span></code></pre></div>
-<p>You can think the side effect in code is the same as the side effect in medicine. When you drink cough syrup, your cough maybe stops, but after that, you will feel sleepy. In a large code base, the impure function will hard to test and debug. So, we will rewrite that by using pure function and immutable data.</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">impureFunction</span><span class="p">(</span><span class="nx">sample</span><span class="p">)</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="p">;</span> <span class="c1">// You get what you want: [2, 3, 4]
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">)</span><span class="p">;</span> <span class="c1">// But you get the side effect too. The value has been changed :(
+</span></code></pre></div><p>You can think the side effect in code is the same as the side effect in medicine. When you drink cough syrup, your cough maybe stops, but after that, you will feel sleepy. In a large code base, the impure function will hard to test and debug. So, we will rewrite that by using pure function and immutable data.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">sample</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">;</span>
 
 <span class="kd">function</span> <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">init</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">if</span><span class="p">(</span><span class="nx">index</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
-    <span class="k">return</span> <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">result</span><span class="p">);</span> <span class="c1">// we use recursion instead of for loop
+    <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span><span class="p">;</span> <span class="c1">// we use recursion instead of for loop
 </span><span class="c1"></span>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">init</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">sample</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[]);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span> <span class="c1">// you get what you want: [2, 3, 4]
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">);</span> <span class="c1">// your original data does not mutate: [1, 2, 3]
-</span></code></pre></div>
-<p>According to the code above, we are making a new array instead of mutating the original one. We also use recursion to avoid side effect. Let&rsquo;s scrutinize the <code>pureFunction</code> function to understand it.</p>
+<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">sample</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span><span class="p">;</span> <span class="c1">// you get what you want: [2, 3, 4]
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sample</span><span class="p">)</span><span class="p">;</span> <span class="c1">// your original data does not mutate: [1, 2, 3]
+</span></code></pre></div><p>According to the code above, we are making a new array instead of mutating the original one. We also use recursion to avoid side effect. Let's scrutinize the <code>pureFunction</code> function to understand it.</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// pureFunction takes 3 parameters: data, index, init
-</span><span class="c1">// pureFunction will create a new array as a return value
+</span><span class="c1"></span><span class="c1">// pureFunction will create a new array as a return value
 </span><span class="c1"></span><span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">init</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">return</span> <span class="nx">init</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c1">// The type signature of pureFunction actually like this
-</span><span class="c1">// I&#39;m using Haskell type signature syntax, since JavaScript is dynamic typing
-</span><span class="c1"></span><span class="nx">pureFunction</span> <span class="o">::</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="nx">Int</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span>
+</span><span class="c1"></span><span class="c1">// I&#39;m using Haskell type signature syntax, since JavaScript is dynamic typing
+</span><span class="c1"></span><span class="nx">pureFunction</span> <span class="o">:</span><span class="o">:</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span> <span class="o">-</span><span class="o">&gt;</span> <span class="nx">Int</span> <span class="o">-</span><span class="o">&gt;</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span> <span class="o">-</span><span class="o">&gt;</span> <span class="p">[</span><span class="nx">Int</span><span class="p">]</span>
 
 <span class="c1">// data is for our original array
-</span><span class="c1">// index is for the index of the array
-</span><span class="c1">// result is our copy of original array
-</span><span class="c1">// so if we call the function, the operation actually like this
-</span><span class="c1"></span><span class="nx">pureFunction</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[]);</span>
+</span><span class="c1"></span><span class="c1">// index is for the index of the array
+</span><span class="c1"></span><span class="c1">// result is our copy of original array
+</span><span class="c1"></span><span class="c1">// so if we call the function, the operation actually like this
+</span><span class="c1"></span><span class="nx">pureFunction</span><span class="p">(</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
 
 <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">init</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">)</span><span class="p">;</span>
   <span class="k">return</span> <span class="nx">result</span><span class="p">;</span> <span class="c1">// it is [2]
 </span><span class="c1"></span><span class="p">}</span>
 
-<span class="nx">pureFunction</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="nx">pureFunction</span><span class="p">(</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
 
 <span class="nx">pureFunction</span><span class="p">(</span><span class="nx">data</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">init</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">current</span> <span class="o">=</span> <span class="p">[</span><span class="nx">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">init</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">current</span><span class="p">)</span><span class="p">;</span>
   <span class="k">return</span> <span class="nx">result</span><span class="p">;</span> <span class="c1">// it is [2, 3]
 </span><span class="c1"></span><span class="p">}</span>
 
 <span class="c1">// and so on
-</span></code></pre></div>
-<p>That is the explanation of pure function. What you give is what you get. It does not depend on to any variable outside its scope. So, we can test and debug the function easier.</p>
-
+</span></code></pre></div><p>That is the explanation of pure function. What you give is what you get. It does not depend on to any variable outside its scope. So, we can test and debug the function easier.</p>
 <p><strong>Summary</strong></p>
-
 <p>In this first part, we had changed our way of thinking to express our idea to achieve the result. We have learned about immutable data and pure function to avoid side effect and made our code more concise. Those are still basic things before we dive deeper to learn about functional programming in JavaScript (or in another language). Hope you enjoy it and see you in the next part.</p>
-
 <p>P.S. <a href="/posts/introduction-to-functional-programming-in-javascript-part-2/">The second part</a> of this article has been published.</p>
 
               <div class="comments" id="comments">
