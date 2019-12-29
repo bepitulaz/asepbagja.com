@@ -74,3 +74,4 @@ Ini adalah tahun "yang penting bisa bertahan hidup" dan Tanibox terus jalan. Ber
 
 Kami memulai kembali Tanibox dengan modal terbatas dan hanya bekerja berdua dengan istri saya. Di awal 2019 kami lakukan *pivot*. Sekarang kami mentarget pasar B2B sehingga kegiatan pemasaran bisa dilakukan dengan modal terbatas, dan menganggap pasar Indonesia sebagai bonus (jika ada.) Strategi ini cukup berhasil. Sepanjang 2019, kami bisa bertahan hidup dengan beberapa klien dari negara-negara di Eropa.
 
+*P.S. Istri saya juga menuliskan catatan satu dekadenya yang menarik untuk dibaca: [Satu Dekade Ini Ngapain Saja?](https://www.retno.eu/id/blog/05-2010-2019/)*
