@@ -5,7 +5,7 @@ tags: ["arduino","Projects"]
 categories:
 - Programming
 images:
-- "https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25203819/working-design-300x300.jpg"
+- "/blog-img/aquarium-post-mortem.jpeg"
 ---
 
 _One of the biggest problem of having pet is filling its needs while the owner leaving the home._
@@ -16,7 +16,7 @@ Three days before the departure, I started to create it. I have an Arduino Uno R
 
 Then I moved with second design. The Arduino would be rotating the servo twice a day without notified me whether it fed the fish successfully or not. I tested it several times, and 150% sure that this device worked with zero bug in code.
 
-![working-design](https://s3-ap-southeast-1.amazonaws.com/asepco/wp-content/uploads/2016/03/25203819/working-design-300x300.jpg)
+![working-design](/blog-img/aquarium-post-mortem.jpeg)
 
 I left my home confidently.
 
