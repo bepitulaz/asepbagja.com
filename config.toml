@@ -12,12 +12,11 @@ pygmentsCodeFences=true
 disqusShortname = "asepnew"
 summaryLength = 10
 
+rssLimit = 10
+
 [author]
   email = "asep.bagja.p@gmail.com"
   name = "Asep Bagja Priandana"
-
-[services.rss]
-  limit = 10
 
 [languages]
   [languages.en]
