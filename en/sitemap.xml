@@ -23,21 +23,6 @@
   </url>
   
   <url>
-    <loc>https://asepbagja.com/</loc>
-    <lastmod>2019-04-03T10:31:50+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="https://asepbagja.com/id/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://asepbagja.com/"
-                />
-  </url>
-  
-  <url>
     <loc>https://asepbagja.com/posts/insights-agritech-product/</loc>
     <lastmod>2019-04-03T10:31:50+08:00</lastmod>
   </url>
@@ -63,6 +48,21 @@
   </url>
   
   <url>
+    <loc>https://asepbagja.com/</loc>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://asepbagja.com/id/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://asepbagja.com/"
+                />
+  </url>
+  
+  <url>
     <loc>https://asepbagja.com/tags/basic/</loc>
     <lastmod>2016-07-04T00:00:00+00:00</lastmod>
   </url>
@@ -83,12 +83,12 @@
   </url>
   
   <url>
-    <loc>https://asepbagja.com/categories/programming/</loc>
+    <loc>https://asepbagja.com/tags/programming/</loc>
     <lastmod>2016-07-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://asepbagja.com/tags/programming/</loc>
+    <loc>https://asepbagja.com/categories/programming/</loc>
     <lastmod>2016-07-04T00:00:00+00:00</lastmod>
   </url>
   

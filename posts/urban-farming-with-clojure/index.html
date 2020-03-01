@@ -18,11 +18,11 @@ if (!doNotTrack) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     
-    <meta name="description" content="Currently, I&#39;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house.">
+    <meta name="description" content="Currently, I&rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house.">
 
     
     <meta property="og:title" content="Urban Farming with Clojure" />
-<meta property="og:description" content="Currently, I&#39;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house." />
+<meta property="og:description" content="Currently, I&rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asepbagja.com/posts/urban-farming-with-clojure/" />
 <meta property="og:image" content="https://cdn.hackaday.io/images/1186661438911748780.JPG" />
@@ -35,7 +35,7 @@ if (!doNotTrack) {
 <meta name="twitter:image" content="https://cdn.hackaday.io/images/1186661438911748780.JPG"/>
 
 <meta name="twitter:title" content="Urban Farming with Clojure"/>
-<meta name="twitter:description" content="Currently, I&#39;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house."/>
+<meta name="twitter:description" content="Currently, I&rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house."/>
 
 
 
@@ -204,8 +204,8 @@ text-align: center;
                     </div>
                 </div>
               </div>
-              <p>Currently, I'm developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house. You can check the project's progress on <a href="https://hackaday.io/project/7124-tanibox-indoor-farming-system">my Hackaday's page</a>. The system should controls the lighting on and off at the correct time, logs the temperature and humidity and triggers the fan based on it, and sends the farm log to the server, so, I can predict the harvest time and the farm optimal condition in the future. At the heart of the system, I'm using Raspberry Pi as a micro controller.</p>
-<p>Physical world is actually concurrent, thus why not give Clojure a shot? It's a good language for handling concurrency, right?</p>
+              <p>Currently, I&rsquo;m developing an indoor farming system to grow vegetables (at the moment is Lettuce) and herbs in my house. You can check the project&rsquo;s progress on <a href="https://hackaday.io/project/7124-tanibox-indoor-farming-system">my Hackaday&rsquo;s page</a>. The system should controls the lighting on and off at the correct time, logs the temperature and humidity and triggers the fan based on it, and sends the farm log to the server, so, I can predict the harvest time and the farm optimal condition in the future. At the heart of the system, I&rsquo;m using Raspberry Pi as a micro controller.</p>
+<p>Physical world is actually concurrent, thus why not give Clojure a shot? It&rsquo;s a good language for handling concurrency, right?</p>
 <p>So, here is my first working version of my code for controlling the LED growing lamp.</p>
 <pre><code>(ns farmbox.lighting
   (:require [clojure.core.async :as a :refer [&gt;! &lt;! &gt;! &lt;!! go chan close!]]
@@ -247,9 +247,9 @@ text-align: center;
   (let [[in out] (lighting-machine)]
     (&gt;!! in switch-status)
     (println (&lt;!! out))))
-</code></pre><p>I gave <code>Lamp is off</code> and <code>Lamp is on</code> string because go channel can't be given <code>nil</code> value.</p>
+</code></pre><p>I gave <code>Lamp is off</code> and <code>Lamp is on</code> string because go channel can&rsquo;t be given <code>nil</code> value.</p>
 <p><strong>The drawback of using Clojure in Raspberry Pi</strong></p>
-<p>Although Clojure is good for handling concurrency, but its runtime is too heavy for device with limited resources likes Raspberry Pi. Its startup time can takes around 2 minutes. It won't be a big problem for production, because you only start the app once. Otherwise it will give some pains in the ass when in development phase, the compile time and the startup time are too slow.</p>
+<p>Although Clojure is good for handling concurrency, but its runtime is too heavy for device with limited resources likes Raspberry Pi. Its startup time can takes around 2 minutes. It won&rsquo;t be a big problem for production, because you only start the app once. Otherwise it will give some pains in the ass when in development phase, the compile time and the startup time are too slow.</p>
 <p>In the second iteration, I will try to evaluate NodeJS as the runtime and use ClojureScript for coding it.</p>
 
               <div class="comments" id="comments">

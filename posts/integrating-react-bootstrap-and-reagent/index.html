@@ -204,10 +204,10 @@ text-align: center;
                     </div>
                 </div>
               </div>
-              <p>This weekend, I am experimenting to use <a href="http://react-bootstrap.github.io/">React Bootstrap</a> with ClojureScript. For whom that doesn't know it yet, React Bootstrap is a <a href="http://getbootstrap.com/">Bootstrap 3</a> component built with <a href="http://facebook.github.io/react/">ReactJS</a>. I'm using <a href="https://reagent-project.github.io/">Reagent</a> library for interacting with React from ClojureScript, instead of <a href="https://github.com/omcljs/om">Om</a>.</p>
+              <p>This weekend, I am experimenting to use <a href="http://react-bootstrap.github.io/">React Bootstrap</a> with ClojureScript. For whom that doesn&rsquo;t know it yet, React Bootstrap is a <a href="http://getbootstrap.com/">Bootstrap 3</a> component built with <a href="http://facebook.github.io/react/">ReactJS</a>. I&rsquo;m using <a href="https://reagent-project.github.io/">Reagent</a> library for interacting with React from ClojureScript, instead of <a href="https://github.com/omcljs/om">Om</a>.</p>
 <p>Integrating React Bootstrap and Reagent was confusing me at the first. It was non-trivial effort. I searched Google and got no relevant solutions for hours. So, this working solution is based on my trial and error experimentation.</p>
-<p>Let's start.</p>
-<p>In <code>project.clj</code> file, I use Reagent with <code>:exclusions</code>, because I have to use React version from NPM not the version that comes from Reagent. Don't forget to create <code>react.cljs</code> which contains only <code>(ns cljsjs.react)</code>.</p>
+<p>Let&rsquo;s start.</p>
+<p>In <code>project.clj</code> file, I use Reagent with <code>:exclusions</code>, because I have to use React version from NPM not the version that comes from Reagent. Don&rsquo;t forget to create <code>react.cljs</code> which contains only <code>(ns cljsjs.react)</code>.</p>
 <p><code>project.clj</code></p>
 <pre><code>(defproject sample &quot;0.1.0-SNAPSHOT&quot;
   :description &quot;Write your definition here.&quot;

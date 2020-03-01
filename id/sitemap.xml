@@ -8,21 +8,6 @@
   </url>
   
   <url>
-    <loc>https://asepbagja.com/id/</loc>
-    <lastmod>2019-12-26T15:08:11+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://asepbagja.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="https://asepbagja.com/id/"
-                />
-  </url>
-  
-  <url>
     <loc>https://asepbagja.com/id/categories/catatan/</loc>
     <lastmod>2019-12-26T15:08:11+08:00</lastmod>
   </url>
@@ -45,6 +30,11 @@
   <url>
     <loc>https://asepbagja.com/id/artikel/satu-dekade-saya/</loc>
     <lastmod>2019-12-26T15:08:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://asepbagja.com/id/categories/kerja-remote/</loc>
+    <lastmod>2019-09-23T15:08:11+08:00</lastmod>
   </url>
   
   <url>
@@ -75,6 +65,21 @@
   <url>
     <loc>https://asepbagja.com/id/categories/kewirausahaan/</loc>
     <lastmod>2019-07-03T19:03:43+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://asepbagja.com/id/</loc>
+    <lastmod>2019-02-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://asepbagja.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://asepbagja.com/id/"
+                />
   </url>
   
   <url>

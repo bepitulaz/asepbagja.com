@@ -206,9 +206,9 @@ text-align: center;
               </div>
               <p>I have a small green house in <a href="https://asep.co/my-familys-journey-to-grow-our-own-food/">my home front yard</a>, and I deployed some sensors like temperature, humidity, electrical conductivity (EC), and pH sensor there.</p>
 <p>After the development of the sensors completed, it was the time for me to develop the web service for logging the data. I considered to use NoSQL database for persistent data storage. Otherwise I dismissed that idea for the sake of cost efficiency.</p>
-<p>To use NoSQL database, I should open one or two servers in cloud provider for running it. As we know, the cost for compute engine is charged per hour. Let's pick AWS EC2 for the example. T2.small instance pricing is $0.04/hour. That's too expensive for non-profit purpose.</p>
+<p>To use NoSQL database, I should open one or two servers in cloud provider for running it. As we know, the cost for compute engine is charged per hour. Let&rsquo;s pick AWS EC2 for the example. T2.small instance pricing is $0.04/hour. That&rsquo;s too expensive for non-profit purpose.</p>
 <p><strong>The solution</strong></p>
-<p>I decided to make my own NoSQL solution. Persisted all data logs to plain text and put it on AWS S3. That's cheaper, because S3 is storage server and it is charged per GB. For the first 1 TB, it only costs me $0.02/GB. It will takes a long time to reach 1 GB, if only for saving plain text.</p>
+<p>I decided to make my own NoSQL solution. Persisted all data logs to plain text and put it on AWS S3. That&rsquo;s cheaper, because S3 is storage server and it is charged per GB. For the first 1 TB, it only costs me $0.02/GB. It will takes a long time to reach 1 GB, if only for saving plain text.</p>
 <p>The concept is simple. Just catch the string from the sensor, transform it into Clojure data structure, and save it inside the plain text file. To query it back, I just need to read the plain text file, transform the string back into Clojure data structure, and do the computation.</p>
 <p>Here is the snippet code for writing and querying the data.</p>
 <pre><code>(ns data-logging.core
@@ -269,7 +269,7 @@ text-align: center;
 
 ;; Querying the data
 (search-log &quot;2015-12-08 14:00:00&quot; &quot;2015-12-08 19:00:00&quot; &quot;today-2015-12-08.log&quot;)
-</code></pre><p>Someday if I can get profit from my greenhouse and I need to scale this system, I just need to export the log into another data storage technology. It's simple, cheap, and scalable.</p>
+</code></pre><p>Someday if I can get profit from my greenhouse and I need to scale this system, I just need to export the log into another data storage technology. It&rsquo;s simple, cheap, and scalable.</p>
 
               <div class="comments" id="comments">
                 <div id="disqus_thread"></div>
