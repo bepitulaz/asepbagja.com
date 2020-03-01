@@ -31,7 +31,7 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}
-      <dc:creator>{{ with $.Site.Author.name }} ({{.}}){{end}}</dc:creator>
+      <dc:creator>{{ with $.Site.Author.name }}{{.}}{{end}}</dc:creator>
       {{end}}
       <guid>{{ .Permalink }}</guid>
       {{ with .Params.images }}
