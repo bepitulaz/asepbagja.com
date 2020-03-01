@@ -2,7 +2,7 @@ baseURL = "https://asepbagja.com/"
 DefaultContentLanguage = "en"
 languageCode = "en-gb"
 theme = "bepitulaz" # set the theme
-copyright="2019 © Asep Bagja Priandana"
+copyright="2020 © Asep Bagja Priandana"
 googleAnalytics = "UA-136771948-2"
 #googleAnalytics = ""
 enableEmoji=true
@@ -11,6 +11,10 @@ pygmentsUseClasses=true
 pygmentsCodeFences=true
 disqusShortname = "asepnew"
 summaryLength = 10
+
+[author]
+  email = "asep.bagja.p@gmail.com"
+  name = "Asep Bagja Priandana"
 
 [languages]
   [languages.en]
