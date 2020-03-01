@@ -16,6 +16,9 @@ summaryLength = 10
   email = "asep.bagja.p@gmail.com"
   name = "Asep Bagja Priandana"
 
+[services.rss]
+  limit = 10
+
 [languages]
   [languages.en]
     title = "Asep Bagja & Co."
