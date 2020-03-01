@@ -14,19 +14,5 @@
 	<atom:link href="https://asepbagja.com/id/categories/pemrograman/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Membangun Sistem High Frequency Trading Sederhana</title>
-      <link>https://asepbagja.com/id/artikel/membangun-sistem-hft-sederhana/</link>
-      <pubDate>Thu, 19 Sep 2019 17:07:43 +0800</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/id/artikel/membangun-sistem-hft-sederhana/</guid>
-      
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/candlestick.jpg" />
-        
-      
-      <description>Dua minggu terakhir ini saya sibuk mengerjakan sebuah proyek sampingan pribadi yang berhubungan dengan pasar finansial, yaitu melakukan otomatisasi terhadap kegiatan perdagangan di bursa cryptocurrency.</description>
-    </item>
-    
   </channel>
 </rss>

@@ -14,45 +14,5 @@
 	<atom:link href="https://asepbagja.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Business</title>
-      <link>https://asepbagja.com/categories/business/</link>
-      <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/categories/business/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Personal</title>
-      <link>https://asepbagja.com/categories/personal/</link>
-      <pubDate>Sat, 23 Mar 2019 11:30:54 +0800</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/categories/personal/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
-      <link>https://asepbagja.com/categories/programming/</link>
-      <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/categories/programming/</guid>
-      
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tips and Tricks</title>
-      <link>https://asepbagja.com/categories/tips-and-tricks/</link>
-      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/categories/tips-and-tricks/</guid>
-      
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

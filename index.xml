@@ -15,6 +15,26 @@
     
     
     <item>
+      <title>Business</title>
+      <link>https://asepbagja.com/categories/business/</link>
+      <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <guid>https://asepbagja.com/categories/business/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Categories</title>
+      <link>https://asepbagja.com/categories/</link>
+      <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <guid>https://asepbagja.com/categories/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
       <title>Insights to Sell Agritech Product</title>
       <link>https://asepbagja.com/posts/insights-agritech-product/</link>
       <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
@@ -26,6 +46,16 @@
         
       
       <description>My company Tanibox is developing agriculture software for two years. We focus on Tania, our open source farm management software.</description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://asepbagja.com/posts/</link>
+      <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <guid>https://asepbagja.com/posts/</guid>
+      
+      <description></description>
     </item>
     
     <item>
@@ -43,6 +73,16 @@
     </item>
     
     <item>
+      <title>Personal</title>
+      <link>https://asepbagja.com/categories/personal/</link>
+      <pubDate>Sat, 23 Mar 2019 11:30:54 +0800</pubDate>
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <guid>https://asepbagja.com/categories/personal/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
       <title>About Me</title>
       <link>https://asepbagja.com/about/</link>
       <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
@@ -50,6 +90,20 @@
       <guid>https://asepbagja.com/about/</guid>
       
       <description>Asep Bagja Priandana, you can call him Asep anyway, is an entrepreneur from Indonesia.</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>https://asepbagja.com/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <guid>https://asepbagja.com/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/images/avatar.jpg" />
+        
+      
+      <description>This is my personal blog, where I share about what I&amp;rsquo;m learning, my thought in technology industry, and things that I enjoy.</description>
     </item>
     
     <item>
@@ -67,88 +121,13 @@
     </item>
     
     <item>
-      <title>Introduction to Functional Programming in JavaScript (Part 1)</title>
-      <link>https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-1/</link>
-      <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
+      <title>Programming</title>
+      <link>https://asepbagja.com/categories/programming/</link>
+      <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
       <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-1/</guid>
+      <guid>https://asepbagja.com/categories/programming/</guid>
       
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/js-img.jpg" />
-        
-      
-      <description>Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal.</description>
-    </item>
-    
-    <item>
-      <title>Add Free SSL to Existing WordPress Site with Docker and Let&#39;s Encrypt</title>
-      <link>https://asepbagja.com/posts/add-free-ssl-to-existing-wordpress-site-with-docker-and-lets-encrypt/</link>
-      <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/posts/add-free-ssl-to-existing-wordpress-site-with-docker-and-lets-encrypt/</guid>
-      
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://letsencrypt.org/images/le-logo-standard.png" />
-        
-      
-      <description>Google announced that they use HTTPS as a ranking signal on 2014, and it becomes more standard in their search result.</description>
-    </item>
-    
-    <item>
-      <title>Why Did I Start to Invest in The Stock Market?</title>
-      <link>https://asepbagja.com/posts/why-did-i-start-to-invest-in-the-stock-market/</link>
-      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/posts/why-did-i-start-to-invest-in-the-stock-market/</guid>
-      
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/candlestick.jpg" />
-        
-      
-      <description>Most of you perhaps ever heard or read about The Cashflow Quadrant by Robert Kiyosaki.</description>
-    </item>
-    
-    <item>
-      <title>2016 Personal Challenges</title>
-      <link>https://asepbagja.com/posts/2016-personal-challenges/</link>
-      <pubDate>Mon, 04 Jan 2016 00:00:00 +0000</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/posts/2016-personal-challenges/</guid>
-      
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/aurora.jpg" />
-        
-      
-      <description>Happy new year 2016.
-Annually I challenged myself with some new skills and some targets.</description>
-    </item>
-    
-    <item>
-      <title>Simple, Cheap, and Scalable IoT Data Logging With Clojure</title>
-      <link>https://asepbagja.com/posts/simple-and-cheap-iot-data-logging-with-clojure/</link>
-      <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/posts/simple-and-cheap-iot-data-logging-with-clojure/</guid>
-      
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Clojure_logo.svg/500px-Clojure_logo.svg.png" />
-        
-      
-      <description>I have a small green house in my home front yard, and I deployed some sensors like temperature, humidity, electrical conductivity (EC), and pH sensor there.</description>
-    </item>
-    
-    <item>
-      <title>Geekcamp Jakarta 2015. Programmable Music</title>
-      <link>https://asepbagja.com/posts/geekcamp-jakarta-2015-programmable-music/</link>
-      <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
-      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
-      <guid>https://asepbagja.com/posts/geekcamp-jakarta-2015-programmable-music/</guid>
-      
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/programmable-music.png" />
-        
-      
-      <description>Geekcamp Jakarta 2015 is a technology and business conference organized by KMKLabs.</description>
+      <description></description>
     </item>
     
   </channel>
