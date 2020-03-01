@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>overtone on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/tags/overtone/</link>
     <description>Recent content in overtone on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Wed, 04 Nov 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/tags/overtone/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +18,13 @@
       <title>Geekcamp Jakarta 2015. Programmable Music</title>
       <link>https://asepbagja.com/posts/geekcamp-jakarta-2015-programmable-music/</link>
       <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/posts/geekcamp-jakarta-2015-programmable-music/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/programmable-music.png" />
+        
+      
       <description>Geekcamp Jakarta 2015 is a technology and business conference organized by KMKLabs.</description>
     </item>
     

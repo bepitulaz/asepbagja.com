@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>functional programming on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/tags/functional-programming/</link>
     <description>Recent content in functional programming on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Mon, 04 Jul 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/tags/functional-programming/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +18,13 @@
       <title>Introduction to Functional Programming in JavaScript (Part 2)</title>
       <link>https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-2/</link>
       <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-2/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/js-img.jpg" />
+        
+      
       <description>In part 1, we had learned about two important concepts in functional programming paradigm: immutable data and pure function.</description>
     </item>
     
@@ -25,8 +32,13 @@
       <title>Introduction to Functional Programming in JavaScript (Part 1)</title>
       <link>https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-1/</link>
       <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/posts/introduction-to-functional-programming-in-javascript-part-1/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/js-img.jpg" />
+        
+      
       <description>Imperative programming is a programming paradigm that uses a sequence of statements to reach a certain goal.</description>
     </item>
     

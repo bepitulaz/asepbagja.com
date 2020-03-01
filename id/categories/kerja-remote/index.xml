@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Kerja Remote on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/id/categories/kerja-remote/</link>
     <description>Recent content in Kerja Remote on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Mon, 23 Sep 2019 15:08:11 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/id/categories/kerja-remote/index.xml" rel="self" type="application/rss+xml" />
@@ -16,10 +18,14 @@
       <title>Mengakali Biaya Transfer Uang Antar Negara Dengan Jenius dan TransferWise</title>
       <link>https://asepbagja.com/id/artikel/transfer-uang-antar-negara-jenius-transferwise/</link>
       <pubDate>Mon, 23 Sep 2019 15:08:11 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/id/artikel/transfer-uang-antar-negara-jenius-transferwise/</guid>
-      <description>Daftar isi artikel
- Apa itu TransferWise Mari berkenalan dengan Jenius Kesimpulan  Internet membuat batas antar negara seakan tidak ada.</description>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/tw-step-3.png" />
+        
+      
+      <description>Sebagai employer, terkadang kita butuh melakukan transfer uang ke pekerja di luar negeri. Melakukan transfer menggunakan bank konvensional tentu sangat mahal biayanya. Berikut trik dari saya untuk melakukan transfer ke luar negeri dengan biaya murah.</description>
     </item>
     
   </channel>

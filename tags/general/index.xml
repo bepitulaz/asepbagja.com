@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>general on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/tags/general/</link>
     <description>Recent content in general on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Wed, 28 Jan 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/tags/general/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +18,13 @@
       <title>Is Learning to Code Necessary for Everyone?</title>
       <link>https://asepbagja.com/posts/is-learning-to-code-necessary-for-everyone/</link>
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/posts/is-learning-to-code-necessary-for-everyone/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/code.jpg" />
+        
+      
       <description>Although coding is not a basic communication skill for human, I prefer to encourage people for learning it, especially for someone who wants to expresses and develops his/her idea in technology industry but doesn&amp;rsquo;t come from computer science background.</description>
     </item>
     
@@ -25,8 +32,13 @@
       <title>Me and Programming Languages</title>
       <link>https://asepbagja.com/posts/me-and-programming-languages/</link>
       <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/posts/me-and-programming-languages/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/proglang-rel.jpg" />
+        
+      
       <description>This is the story of my life about my relationship with some programming languages from the first time I learnt computer programming until now.</description>
     </item>
     

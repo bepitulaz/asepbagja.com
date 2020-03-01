@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tips and Tricks on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/categories/tips-and-tricks/</link>
     <description>Recent content in Tips and Tricks on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Fri, 24 Jun 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/categories/tips-and-tricks/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +18,13 @@
       <title>Add Free SSL to Existing WordPress Site with Docker and Let&#39;s Encrypt</title>
       <link>https://asepbagja.com/posts/add-free-ssl-to-existing-wordpress-site-with-docker-and-lets-encrypt/</link>
       <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/posts/add-free-ssl-to-existing-wordpress-site-with-docker-and-lets-encrypt/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://letsencrypt.org/images/le-logo-standard.png" />
+        
+      
       <description>Google announced that they use HTTPS as a ranking signal on 2014, and it becomes more standard in their search result.</description>
     </item>
     

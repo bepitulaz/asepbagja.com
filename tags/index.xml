@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/tags/</link>
     <description>Recent content in Tags on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Mon, 04 Jul 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +18,9 @@
       <title>basic</title>
       <link>https://asepbagja.com/tags/basic/</link>
       <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/basic/</guid>
+      
       <description></description>
     </item>
     
@@ -25,8 +28,9 @@
       <title>functional programming</title>
       <link>https://asepbagja.com/tags/functional-programming/</link>
       <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/functional-programming/</guid>
+      
       <description></description>
     </item>
     
@@ -34,8 +38,9 @@
       <title>javascript</title>
       <link>https://asepbagja.com/tags/javascript/</link>
       <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/javascript/</guid>
+      
       <description></description>
     </item>
     
@@ -43,8 +48,9 @@
       <title>Programming</title>
       <link>https://asepbagja.com/tags/programming/</link>
       <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/programming/</guid>
+      
       <description></description>
     </item>
     
@@ -52,8 +58,9 @@
       <title>Business</title>
       <link>https://asepbagja.com/tags/business/</link>
       <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/business/</guid>
+      
       <description></description>
     </item>
     
@@ -61,8 +68,9 @@
       <title>finance</title>
       <link>https://asepbagja.com/tags/finance/</link>
       <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/finance/</guid>
+      
       <description></description>
     </item>
     
@@ -70,8 +78,9 @@
       <title>investment</title>
       <link>https://asepbagja.com/tags/investment/</link>
       <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/investment/</guid>
+      
       <description></description>
     </item>
     
@@ -79,8 +88,9 @@
       <title>clojure</title>
       <link>https://asepbagja.com/tags/clojure/</link>
       <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/clojure/</guid>
+      
       <description></description>
     </item>
     
@@ -88,8 +98,9 @@
       <title>iot</title>
       <link>https://asepbagja.com/tags/iot/</link>
       <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/iot/</guid>
+      
       <description></description>
     </item>
     
@@ -97,8 +108,9 @@
       <title>music</title>
       <link>https://asepbagja.com/tags/music/</link>
       <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/music/</guid>
+      
       <description></description>
     </item>
     
@@ -106,8 +118,9 @@
       <title>overtone</title>
       <link>https://asepbagja.com/tags/overtone/</link>
       <pubDate>Wed, 04 Nov 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/overtone/</guid>
+      
       <description></description>
     </item>
     
@@ -115,8 +128,9 @@
       <title>hydroponic</title>
       <link>https://asepbagja.com/tags/hydroponic/</link>
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/hydroponic/</guid>
+      
       <description></description>
     </item>
     
@@ -124,8 +138,9 @@
       <title>Ideas</title>
       <link>https://asepbagja.com/tags/ideas/</link>
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/ideas/</guid>
+      
       <description></description>
     </item>
     
@@ -133,8 +148,9 @@
       <title>urban farming</title>
       <link>https://asepbagja.com/tags/urban-farming/</link>
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/urban-farming/</guid>
+      
       <description></description>
     </item>
     
@@ -142,8 +158,9 @@
       <title>advise</title>
       <link>https://asepbagja.com/tags/advise/</link>
       <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/advise/</guid>
+      
       <description></description>
     </item>
     
@@ -151,8 +168,9 @@
       <title>Projects</title>
       <link>https://asepbagja.com/tags/projects/</link>
       <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/projects/</guid>
+      
       <description></description>
     </item>
     
@@ -160,8 +178,9 @@
       <title>raspberry pi</title>
       <link>https://asepbagja.com/tags/raspberry-pi/</link>
       <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/raspberry-pi/</guid>
+      
       <description></description>
     </item>
     
@@ -169,8 +188,9 @@
       <title>arduino</title>
       <link>https://asepbagja.com/tags/arduino/</link>
       <pubDate>Tue, 21 Jul 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/arduino/</guid>
+      
       <description></description>
     </item>
     
@@ -178,8 +198,9 @@
       <title>clojurescript</title>
       <link>https://asepbagja.com/tags/clojurescript/</link>
       <pubDate>Tue, 26 May 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/clojurescript/</guid>
+      
       <description></description>
     </item>
     
@@ -187,8 +208,9 @@
       <title>reactjs</title>
       <link>https://asepbagja.com/tags/reactjs/</link>
       <pubDate>Mon, 11 May 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/reactjs/</guid>
+      
       <description></description>
     </item>
     
@@ -196,8 +218,9 @@
       <title>esp8266</title>
       <link>https://asepbagja.com/tags/esp8266/</link>
       <pubDate>Mon, 16 Mar 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/esp8266/</guid>
+      
       <description></description>
     </item>
     
@@ -205,8 +228,9 @@
       <title>coding</title>
       <link>https://asepbagja.com/tags/coding/</link>
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/coding/</guid>
+      
       <description></description>
     </item>
     
@@ -214,8 +238,9 @@
       <title>general</title>
       <link>https://asepbagja.com/tags/general/</link>
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/tags/general/</guid>
+      
       <description></description>
     </item>
     

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Artikels on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/id/artikel/</link>
     <description>Recent content in Artikels on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Thu, 26 Dec 2019 15:08:11 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/id/artikel/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +18,13 @@
       <title>Perjalanan Satu Dekade Saya</title>
       <link>https://asepbagja.com/id/artikel/satu-dekade-saya/</link>
       <pubDate>Thu, 26 Dec 2019 15:08:11 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/id/artikel/satu-dekade-saya/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/graduation.png" />
+        
+      
       <description>Sebentar lagi kita akan memasuki tahun 2020, sebuah awal dekade baru.</description>
     </item>
     
@@ -25,18 +32,27 @@
       <title>Mengakali Biaya Transfer Uang Antar Negara Dengan Jenius dan TransferWise</title>
       <link>https://asepbagja.com/id/artikel/transfer-uang-antar-negara-jenius-transferwise/</link>
       <pubDate>Mon, 23 Sep 2019 15:08:11 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/id/artikel/transfer-uang-antar-negara-jenius-transferwise/</guid>
-      <description>Daftar isi artikel
- Apa itu TransferWise Mari berkenalan dengan Jenius Kesimpulan  Internet membuat batas antar negara seakan tidak ada.</description>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/tw-step-3.png" />
+        
+      
+      <description>Sebagai employer, terkadang kita butuh melakukan transfer uang ke pekerja di luar negeri. Melakukan transfer menggunakan bank konvensional tentu sangat mahal biayanya. Berikut trik dari saya untuk melakukan transfer ke luar negeri dengan biaya murah.</description>
     </item>
     
     <item>
       <title>Membangun Sistem High Frequency Trading Sederhana</title>
       <link>https://asepbagja.com/id/artikel/membangun-sistem-hft-sederhana/</link>
       <pubDate>Thu, 19 Sep 2019 17:07:43 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/id/artikel/membangun-sistem-hft-sederhana/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/candlestick.jpg" />
+        
+      
       <description>Dua minggu terakhir ini saya sibuk mengerjakan sebuah proyek sampingan pribadi yang berhubungan dengan pasar finansial, yaitu melakukan otomatisasi terhadap kegiatan perdagangan di bursa cryptocurrency.</description>
     </item>
     
@@ -44,8 +60,13 @@
       <title>Apa Itu Estonia e-Residency?</title>
       <link>https://asepbagja.com/id/artikel/apa-itu-estonia-e-residency/</link>
       <pubDate>Wed, 03 Jul 2019 19:03:43 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/id/artikel/apa-itu-estonia-e-residency/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/running_remote.jpg" />
+        
+      
       <description>Saya sering sekali mendapat pertanyaan dari teman atau kenalan setiap kali mereka melihat website Tanibox, &amp;ldquo;Loh, Tanibox itu alamatnya di Estonia?</description>
     </item>
     
@@ -53,8 +74,13 @@
       <title>Pengalaman Mengagumkan Mendaftarkan Perusahaan di Estonia</title>
       <link>https://asepbagja.com/id/artikel/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia/</link>
       <pubDate>Thu, 03 Aug 2017 17:00:33 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/id/artikel/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/card-in-use.jpeg" />
+        
+      
       <description>Dari awal saya berencana exit dari Froyo, saya sudah bersiap-siap mengurus aneka macam dokumen legal untuk perusahaan baru saya, Tanibox.</description>
     </item>
     
@@ -62,8 +88,13 @@
       <title>Terima Kasih Froyo. Asep Is Out!</title>
       <link>https://asepbagja.com/id/artikel/terima-kasih-froyo-asep-is-out/</link>
       <pubDate>Wed, 02 Aug 2017 19:02:33 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/id/artikel/terima-kasih-froyo-asep-is-out/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/mic_drop.jpg" />
+        
+      
       <description>A mic dropped is taken from Flickr.
 Awal tahun 2017, seperti tahun-tahun sebelumnya saya membuat sebuah resolusi yang saya tuliskan di blog.</description>
     </item>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Catatan on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/id/categories/catatan/</link>
     <description>Recent content in Catatan on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Thu, 26 Dec 2019 15:08:11 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/id/categories/catatan/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +18,13 @@
       <title>Perjalanan Satu Dekade Saya</title>
       <link>https://asepbagja.com/id/artikel/satu-dekade-saya/</link>
       <pubDate>Thu, 26 Dec 2019 15:08:11 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/id/artikel/satu-dekade-saya/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/graduation.png" />
+        
+      
       <description>Sebentar lagi kita akan memasuki tahun 2020, sebuah awal dekade baru.</description>
     </item>
     

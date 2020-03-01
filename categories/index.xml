@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on Asep Bagja &amp; Co.</title>
     <link>https://asepbagja.com/categories/</link>
     <description>Recent content in Categories on Asep Bagja &amp; Co.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>2019 © Asep Bagja Priandana</copyright>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
     <lastBuildDate>Wed, 03 Apr 2019 10:31:50 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/categories/index.xml" rel="self" type="application/rss+xml" />
@@ -16,8 +18,9 @@
       <title>Business</title>
       <link>https://asepbagja.com/categories/business/</link>
       <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/categories/business/</guid>
+      
       <description></description>
     </item>
     
@@ -25,8 +28,9 @@
       <title>Personal</title>
       <link>https://asepbagja.com/categories/personal/</link>
       <pubDate>Sat, 23 Mar 2019 11:30:54 +0800</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/categories/personal/</guid>
+      
       <description></description>
     </item>
     
@@ -34,8 +38,9 @@
       <title>Programming</title>
       <link>https://asepbagja.com/categories/programming/</link>
       <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/categories/programming/</guid>
+      
       <description></description>
     </item>
     
@@ -43,8 +48,9 @@
       <title>Tips and Tricks</title>
       <link>https://asepbagja.com/categories/tips-and-tricks/</link>
       <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
-      
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
       <guid>https://asepbagja.com/categories/tips-and-tricks/</guid>
+      
       <description></description>
     </item>
     
