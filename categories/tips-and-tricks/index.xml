@@ -18,7 +18,10 @@
       <title>Add Free SSL to Existing WordPress Site with Docker and Let&#39;s Encrypt</title>
       <link>https://asepbagja.com/posts/add-free-ssl-to-existing-wordpress-site-with-docker-and-lets-encrypt/</link>
       <pubDate>Fri, 24 Jun 2016 00:00:00 +0000</pubDate>
+      
       <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <dc:creator>asep.bagja.p@gmail.com (Asep Bagja Priandana)</dc:creator>
+      
       <guid>https://asepbagja.com/posts/add-free-ssl-to-existing-wordpress-site-with-docker-and-lets-encrypt/</guid>
       
         
