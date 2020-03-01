@@ -14,5 +14,47 @@
 	<atom:link href="https://asepbagja.com/categories/business/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Insights to Sell Agritech Product</title>
+      <link>https://asepbagja.com/posts/insights-agritech-product/</link>
+      <pubDate>Wed, 03 Apr 2019 10:31:50 +0800</pubDate>
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <guid>https://asepbagja.com/posts/insights-agritech-product/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800" />
+        
+      
+      <description>My company Tanibox is developing agriculture software for two years. We focus on Tania, our open source farm management software.</description>
+    </item>
+    
+    <item>
+      <title>Why Did I Start to Invest in The Stock Market?</title>
+      <link>https://asepbagja.com/posts/why-did-i-start-to-invest-in-the-stock-market/</link>
+      <pubDate>Fri, 13 May 2016 00:00:00 +0000</pubDate>
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <guid>https://asepbagja.com/posts/why-did-i-start-to-invest-in-the-stock-market/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/candlestick.jpg" />
+        
+      
+      <description>Most of you perhaps ever heard or read about The Cashflow Quadrant by Robert Kiyosaki.</description>
+    </item>
+    
+    <item>
+      <title>Do Not Refuse The Corporate Culture</title>
+      <link>https://asepbagja.com/posts/do-not-refuse-the-corporate-culture/</link>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      <author>asep.bagja.p@gmail.com (Asep Bagja Priandana)</author>
+      <guid>https://asepbagja.com/posts/do-not-refuse-the-corporate-culture/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/corporate.jpg" />
+        
+      
+      <description>A letter from my dad about how to make my company bigger.</description>
+    </item>
+    
   </channel>
 </rss>
