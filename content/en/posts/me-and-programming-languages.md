@@ -1,7 +1,6 @@
 ---
 title: Me and Programming Languages
 date: 2014-11-12
-tags: ["basic","general","Programming"]
 categories:
 - Programming
 images:

@@ -1,7 +1,6 @@
 ---
 title: Full Stack Clojure Project
 date: 2015-05-26
-tags: ["clojure","clojurescript","Programming"]
 categories:
 - Programming
 images:

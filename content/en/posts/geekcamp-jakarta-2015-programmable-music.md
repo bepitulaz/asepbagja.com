@@ -1,7 +1,6 @@
 ---
 title: Geekcamp Jakarta 2015. Programmable Music
 date: 2015-11-04
-tags: ["clojure","music","overtone","Programming"]
 categories:
 - Programming
 images:

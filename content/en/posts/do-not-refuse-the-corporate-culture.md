@@ -1,7 +1,6 @@
 ---
 title: Do Not Refuse The Corporate Culture
 date: 2015-10-14
-tags: ["advise","Business"]
 images:
 - "/blog-img/corporate.jpg"
 categories:

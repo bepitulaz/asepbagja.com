@@ -1,7 +1,6 @@
 ---
 title: Integrating React Bootstrap and Reagent
 date: 2015-05-11
-tags: ["clojure","clojurescript","Programming","reactjs"]
 categories:
 - Programming
 images:

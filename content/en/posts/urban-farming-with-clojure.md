@@ -1,7 +1,6 @@
 ---
 title: Urban Farming with Clojure
 date: 2015-08-09
-tags: ["clojure","Projects","raspberry pi"]
 categories:
 - Programming
 images:

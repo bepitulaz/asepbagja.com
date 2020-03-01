@@ -1,7 +1,6 @@
 ---
 title: R.I.P All of My Fish. Postmortem of A Hardware Automation Project
 date: 2015-07-21
-tags: ["arduino","Projects"]
 categories:
 - Programming
 images:

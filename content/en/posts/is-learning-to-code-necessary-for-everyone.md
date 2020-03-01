@@ -1,7 +1,6 @@
 ---
 title: Is Learning to Code Necessary for Everyone?
 date: 2015-01-28
-tags: ["coding","general","Ideas"]
 categories:
 - Programming
 images:

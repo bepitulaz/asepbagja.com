@@ -2,7 +2,6 @@
 title: Introduction to Functional Programming in JavaScript (Part 2)
 date: 2016-07-04
 cdn: 'header-on'
-tags: ["basic","functional programming","javascript","Programming"]
 categories:
 - Programming
 images:

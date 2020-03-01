@@ -1,7 +1,6 @@
 ---
 title: Simple, Cheap, and Scalable IoT Data Logging With Clojure
 date: 2015-12-08
-tags: ["clojure","iot","Programming"]
 categories:
 - Programming
 images:

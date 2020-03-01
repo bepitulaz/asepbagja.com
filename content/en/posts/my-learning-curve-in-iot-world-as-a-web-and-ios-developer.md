@@ -1,7 +1,6 @@
 ---
 title: My Learning Curve In IoT World As A Web and iOS Developer
 date: 2015-03-16
-tags: ["arduino","esp8266","Programming"]
 categories:
 - Programming
 images:
