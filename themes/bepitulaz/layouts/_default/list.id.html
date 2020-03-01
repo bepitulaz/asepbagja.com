@@ -40,7 +40,7 @@
               <span class="post-meta-category">
                 <i class="fa fa-tag"></i>
                 {{ range .Param $taxo }}
-                  {{ $name := . }}
+                  {{ $name := . }}.&nbsp;
                   {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
                     <a href="{{ .Permalink }}">{{ $name }}</a>
                   {{ end }}
