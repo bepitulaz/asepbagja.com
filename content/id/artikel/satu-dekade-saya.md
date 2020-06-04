@@ -6,6 +6,8 @@ images:
 - "/blog-img/graduation.png"
 categories:
 - Catatan
+aliases:
+- /id/artikel/satu-dekade-saya
 ---
 
 Sebentar lagi kita akan memasuki tahun 2020, sebuah awal dekade baru. Di media sosial, banyak orang menuliskan pencapaian-pencapaian penting di hidupnya selama periode 2010-2019. Saya pun akan melakukan hal serupa, tapi tidak di media sosial. Akan lebih bebas jika saya tuliskan di blog ini saja.

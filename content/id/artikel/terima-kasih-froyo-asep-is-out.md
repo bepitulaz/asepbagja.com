@@ -8,6 +8,7 @@ categories:
 - Kewirausahaan
 aliases:
 - /posts/terima-kasih-froyo-asep-is-out
+- /id/artikel/terima-kasih-froyo-asep-is-out
 ---
 
 !["Mic drop"](/blog-img/mic_drop.jpg)
