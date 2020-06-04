@@ -1,0 +1,96 @@
+{{ define "main" }}
+<section class="asp--profile py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="d-flex flex-column flex-lg-row no-gutters border rounded shadow bg-white o-hidden">
+          <div class="p-4 p-md-5 col-xl-7 d-flex align-items-center">
+            <div class="p-lg-4 p-xl-5">
+              <div>
+                <h5>Hi! I'm</h5>
+                <div class="display-3 text-dark mb-3">Asep Bagja Priandana,</div>
+              </div>
+              <p class="lead">
+                a parallel entrepreneur, podcaster, programmer, and bedroom musician.
+              </p>
+              <a href="{{ "about" | relLangURL }}">Get to know me further...</a>
+            </div>
+          </div>
+          <div class="d-block position-relative bg-gradient col-xl-5">
+            <div class="divider divider-side transform-flip-y bg-white d-none d-lg-block"></div>
+            <img class="flex-fill hover-fade-out" src="{{ .Site.Author.avatar }}" alt="Asep Bagja Priandana">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-gradient-red">
+  <div class="container">
+    <div class="row mb- mb-lg-0">
+      <div class="col-12">
+        <div class="d-flex align-items-center">
+          <div class="mr-3 mr-md-4 p-3 p-md-4 rounded-circle bg-white-alt">
+            <img src="/img/icons/theme/media/music.svg" alt="Bookmark icon" class="icon bg-white" data-inject-svg>
+          </div>
+          <div class="display-4 text-white mb-0">Recent podcast episodes</div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3 mt-lg-5">
+      {{- range ( where site.RegularPages "Section" "podcast" | first 2 ) }}
+      <div class="col-lg-6 mb-3">
+        <div class="d-flex flex-row flex-lg-row no-gutters rounded bg-white o-hidden">
+          <div class="d-block position-relative bg-gradient col-4 col-xl-5">
+            <img class="flex-fill hover-fade-out" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="https://anchor.fm/bepitulaz">
+            <!--<div class="divider divider-side bg-white d-none d-lg-block"></div>-->
+          </div>
+          <div class="col-xl-7 d-flex align-items-center">
+            <div class="p-3 p-lg-4 p-xl-5">
+              <div>
+                <a class="h4" href="{{.Permalink}}">{{.Title}}</a>
+                <div class="text-small text-muted mt-4">{{.Date.Format "2 Jan 2006"}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      {{- range ( where site.RegularPages "Section" "posts" | first 3 ) }}
+      {{ $taxo := "categories" }}
+      <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+        <div class="card h-100 hover-box-shadow">
+          <a href="{{.Permalink}}" class="d-block bg-gradient rounded-top">
+            <img class="card-img-top hover-fade-out" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="{{.Title}}">
+          </a>
+          <div class="card-body">
+            <a href="{{.Permalink}}">
+              <h4>{{.Title}}</h4>
+            </a>
+            <div class="text-small text-muted">{{.Date.Format "Jan 2, 2006"}}</div>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            {{ range .Param $taxo }}
+              {{ $name := . }}
+              {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                <a href="{{ .Permalink }}" class="badge badge-pill badge-success">{{ $name }}</a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="bg-cream p-0 o-hidden">
+  <div class="container min-vh-100 d-flex flex-column justify-content-between text-center py-4 py-md-5">
+    <a href="{{ "/" | relLangURL }}" class="fade-page">
+      <img src="/img/logos/logo-aspbgj.svg" class="asp--logo" alt="AsepBagja" data-inject-svg>
+    </a>
+    <div class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-5 mb-4">
+          <img src="/img/illustrations/404.svg" alt="404 Page Not Found" class="img-fluid">
+        </div>
+        <div class="col-12">
+          <h1>404 - Halaman tidak ditemukan</h1>
+          <div class="lead">Ups! Sepertinya halaman ini sudah tidak lagi tersedia.</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a href="{{ "/" | relLangURL }}" class="btn btn-sm btn-outline-primary fade-page">Kembali ke Beranda</a>
+    </div>
+  </div>
+</section>
+{{ end }}

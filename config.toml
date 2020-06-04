@@ -1,7 +1,7 @@
 baseURL = "https://asepbagja.com/"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "id"
 languageCode = "en-gb"
-theme = "bepitulaz" # set the theme
+theme = "Podcaster" # set the theme
 copyright="2020 © Asep Bagja Priandana"
 googleAnalytics = "UA-136771948-2"
 #googleAnalytics = ""
@@ -17,6 +17,7 @@ rssLimit = 10
 [author]
   email = "asep.bagja.p@gmail.com"
   name = "Asep Bagja Priandana"
+  avatar = "/images/avatar.jpg"
 
 [languages]
   [languages.en]
@@ -31,20 +32,22 @@ rssLimit = 10
       postsTitle = "Posts"
       postsReadMore = "READ MORE"
       aboutMe = "About Asep"
+      socialShare = "Share this content"
+      description = "The personal blog of Asep Bagja"
     [languages.en.blackfriday]
       angledQuotes = false
 
-  [[languages.en.menu.main]]
-    url    = "/"
-    name   = "Home"
-    weight = 0
-  [[languages.en.menu.about]]
-    url    = "/about"
-    name   = "About"
-    weight = 1
-  [[languages.en.menu.posts]]
+  [[languages.en.menu.article]]
     url    = "/posts"
     name   = "Posts"
+    weight = 0
+  [[languages.en.menu.podcast]]
+    url    = "/podcast"
+    name   = "Podcast"
+    weight = 1
+  [[languages.en.menu.about]]
+    url    = "/about"
+    name   = "About me"
     weight = 2
 
   [languages.id]
@@ -59,16 +62,18 @@ rssLimit = 10
       postsTitle = "Artikel"
       postsReadMore = "BACA LEBIH BANYAK"
       aboutMe = "Tentang Asep"
+      socialShare = "Bagikan konten ini"
+      description = "Blog pribadi Asep Bagja"
 
-  [[languages.id.menu.main]]
-    url    = "/"
-    name   = "Beranda"
-    weight = 0
-  [[languages.id.menu.about]]
-    url    = "/tentang-saya"
-    name   = "Tentang Saya"
-    weight = 1
-  [[languages.id.menu.posts]]
+  [[languages.id.menu.article]]
     url    = "/artikel"
     name   = "Artikel"
+    weight = 0
+  [[languages.id.menu.podcast]]
+    url    = "/podcast"
+    name   = "Podcast"
+    weight = 1
+  [[languages.id.menu.about]]
+    url    = "/tentang-saya"
+    name   = "Tentang saya"
     weight = 2

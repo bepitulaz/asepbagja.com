@@ -7,7 +7,6 @@ images:
 - "/blog-img/tw-step-3.png"
 categories:
 - Tips dan Trik
-- Kerja Remote
 aliases:
 - /posts/transfer-uang-antar-negara-jenius-transferwise
 ---

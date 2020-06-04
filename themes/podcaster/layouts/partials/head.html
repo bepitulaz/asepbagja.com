@@ -1,0 +1,46 @@
+<head>
+  {{ template "_internal/google_analytics_async.html" . }}
+
+  <meta charset="utf-8">
+  <title>{{ .Title }} - {{ $.Site.Title}}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Description -->
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+  <!-- Facebook Open Graph -->
+  {{ template "_internal/opengraph.html" . }}
+
+  <!-- Twitter Card -->
+  {{ template "_internal/twitter_cards.html" . }}
+
+  <!-- Begin loading animation -->
+  <link href="/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- End loading animation -->
+  <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Nunito:wght@400;400i;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="/img/logos/logo-aspbgj.svg"/>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#efefef",
+        "text": "#404040"
+      },
+      "button": {
+        "background": "#8ec760",
+        "text": "#ffffff"
+      }
+    },
+    "position": "bottom"
+  })});
+  </script>
+
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+</head>

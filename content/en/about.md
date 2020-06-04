@@ -4,7 +4,7 @@ date: 2019-02-15
 type: "page"
 layout: "page"
 careerHighlight: "Career Highlights"
-careers: ["CEO and CTO at Tanibox OÜ", "CTO at PT Froyo Kreatif Indonesia (past)"]
+careers: ["Director at PT Kultiva Agro Sejahtera", "CEO and CTO at Tanibox OÜ", "Ex-CTO at PT Froyo Kreatif Indonesia"]
 eduBackground: "Graduated From"
 education: "Bachelor degree in Accounting, Universitas Islam Indonesia, 2005"
 profileImg: "/images/avatar.jpg"

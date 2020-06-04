@@ -4,7 +4,7 @@ date: 2019-02-15
 type: "page"
 layout: "page"
 careerHighlight: "Sorotan Karir"
-careers: ["CEO dan CTO di Tanibox OÜ", "CTO di PT Froyo Kreatif Indonesia (dulu)"]
+careers: ["Direktur Utama di PT Kultiva Agro Sejahtera", "CEO dan CTO di Tanibox OÜ", "Ex-CTO di PT Froyo Kreatif Indonesia"]
 eduBackground: "Pendidikan"
 education: "S1 Akuntansi, Universitas Islam Indonesia, 2005"
 profileImg: "/images/avatar.jpg"

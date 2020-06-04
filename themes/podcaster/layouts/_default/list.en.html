@@ -1,0 +1,77 @@
+{{ define "main" }}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center">
+          {{ if eq .Name "Posts" }}
+          <div class="mr-3 mr-md-4 p-1 p-md-2 rounded-circle bg-dark-alt">
+            <img src="/img/icons/theme/home/book-open.svg" alt="Bookmark icon" class="icon bg-white" data-inject-svg>
+          </div>
+          {{ end }}
+
+          {{ if eq .Name "Podcasts" }}
+          <div class="mr-3 mr-md-4 p-1 p-md-2 rounded-circle bg-dark-alt">
+            <img src="/img/icons/theme/media/music.svg" alt="Bookmark icon" class="icon bg-white" data-inject-svg>
+          </div>
+          {{ end }}
+
+          <h2 class="text-dark mb-0">{{ .Name }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3 mt-lg-5">
+      {{ if eq .Name "Posts" }}
+        {{ range .Pages }}
+        {{ $taxo := "categories" }}
+        <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+          <div class="card h-100 hover-box-shadow">
+            <a href="{{ .Permalink }}" class="d-block bg-gradient rounded-top">
+              <img class="card-img-top hover-fade-out" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="{{ .Title }}">
+            </a>
+            <div class="card-body">
+              <a href="{{ .Permalink }}">
+                <h4>{{ .Title }}</h4>
+              </a>
+              <p>{{ .Summary }}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              {{ range .Param $taxo }}
+                {{ $name := . }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                  <a href="{{ .Permalink }}" class="badge badge-pill badge-success">{{ $name }}</a>
+                {{ end }}
+              {{ end }}
+              <div class="text-small text-muted">{{.Date.Format "2 Jan 2006"}}</div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+
+      <!-- podcast layout -->
+      {{ if eq .Name "Podcasts" }}
+        {{ range .Pages }}
+        {{ $taxo := "categories" }}
+        <div class="col-lg-6 mb-4">
+          <div class="d-flex flex-row no-gutters border rounded bg-white o-hidden">
+            <div class="d-block position-relative bg-gradient col-4 col-lg-5">
+              <img class="flex-fill hover-fade-out" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="{{ .Title }}">
+              <!--<div class="divider divider-side bg-white d-none d-lg-block"></div>-->
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="p-3 p-lg-4 p-xl-5">
+                <div>
+                  <a class="h4" href="{{ .Permalink }}">{{ .Title }}</a>
+                  <div class="text-small text-muted mt-4">{{.Date.Format "2 Jan 2006"}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

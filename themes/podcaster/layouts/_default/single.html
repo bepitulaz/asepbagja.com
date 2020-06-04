@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section class="p-0 border-top border-bottom bg-light row no-gutters">
+  <div class="col-lg-4 col-xl-5 order-lg-2">
+    <div class="divider divider-side transform-flip-y bg-light d-none d-lg-block"></div>
+    <img class="flex-fill" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="An article cover">
+  </div>
+  <div class="col-lg-8 col-xl-7">
+    <div class="container min-vh-lg-70 d-flex align-items-center">
+      <div class="row justify-content-center">
+        <div class="col col-md-10 col-xl-9 py-4 py-sm-5">
+          <div class="my-4 my-md-5">
+            <div class="d-flex align-items-center mb-3 mb-xl-4">
+              {{ $taxo := "categories" }}
+              {{ range .Param $taxo }}
+                {{ $name := . }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                <i class="fa fa-tag"></i> <a href="{{ .Permalink }}" class="badge badge-pill badge-info">{{ $name }}</a>
+                {{ end }}
+              {{ end }}
+              <div class="ml-3 text-small text-muted">{{ .Date.Format "2 Jan 2006" }}</div>
+            </div>
+            <h1 class="display-4">{{ .Title }}</h1>
+            {{ if isset .Params "embed"}}
+            <article class="pt-3 pt-xl-5">
+              <iframe src="{{ .Params.embed }}" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+            </article>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-8 col-md-10">
+        <article class="article">
+          {{ .Content }}
+        </article>
+        <div class="my-4 my-sm-5 card card-body flex-sm-row justify-content-between align-items-center">
+          <div class="h5 mb-sm-0">{{ .Site.Params.socialShare }}</div>
+          {{ partial "share-buttons.html" . }}
+        </div>
+        {{ template "_internal/disqus.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
