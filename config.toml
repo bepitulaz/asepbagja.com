@@ -1,62 +1,74 @@
 baseURL = "https://asepbagja.com/"
+DefaultContentLanguage = "en"
 languageCode = "en-gb"
-title = "ASPBGJ"
-theme = "hugo-coder" # set the theme
+theme = "bepitulaz" # set the theme
+copyright="2020 © Asep Bagja Priandana"
 googleAnalytics = "UA-136771948-2"
+#googleAnalytics = ""
+enableEmoji=true
+enableRobotsTXT=true
+pygmentsUseClasses=true
+pygmentsCodeFences=true
+disqusShortname = "asepnew"
+summaryLength = 10
 
-paginate = 20
-canonifyurls = true
+rssLimit = 10
 
-pygmentsstyle = "bw"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-disqusShortname = "Asepnew"
+[author]
+  email = "asep.bagja.p@gmail.com"
+  name = "Asep Bagja Priandana"
 
-[params] # theme parameters
-    author = "Asep Bagja Priandana" # author's name
-    info = "A Software Developer and Entrepreneur" # author's job title or info
-    description = "My personal web" # site description
-    keywords = "blog,developer,personal" # site keywords
-    avatarurl = "images/avatar.jpg"
-    hidecredits = false
-    hidecopyright = false
-    rtl = false
-    math = true
-    
-# Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
+[languages]
+  [languages.en]
+    title = "Asep Bagja & Co."
     weight = 1
-    url = "https://github.com/bepitulaz/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 2
-    url = "https://twitter.com/bepitulaz/"
-[[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 3
-    url = "https://www.linkedin.com/in/asepbagja/"
-[[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium fa-2x"
-    weight = 4
-    url = "https://medium.com/@bepitulaz"
+    contentDir = "content/en"
+    languageName = "English"
+    staticDir = "static/en"
+    [languages.en.params]
+      main = "Hi, I'm Asep :wave:"
+      sub = "The Tech Consultant"
+      postsTitle = "Posts"
+      postsReadMore = "READ MORE"
+      aboutMe = "About Asep"
+    [languages.en.blackfriday]
+      angledQuotes = false
 
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 2
-    url  = "/posts/"
-
-[[menu.main]]
-    name = "About"
+  [[languages.en.menu.main]]
+    url    = "/"
+    name   = "Home"
+    weight = 0
+  [[languages.en.menu.about]]
+    url    = "/about"
+    name   = "About"
     weight = 1
-    url  = "/about/"
+  [[languages.en.menu.posts]]
+    url    = "/posts"
+    name   = "Posts"
+    weight = 2
 
-[[menu.main]]
-    name = "Shop"
-    weight = 3
-    url  = "/shop/"
+  [languages.id]
+    title = "Asep Bagja & Co."
+    weight = 2
+    contentDir = "content/id"
+    languageName = "Bahasa Indonesia"
+    staticDir = "static"
+    [languages.id.params]
+      main = "Hai, saya Asep :wave:"
+      sub = "Konsultan Teknologi"
+      postsTitle = "Artikel"
+      postsReadMore = "BACA LEBIH BANYAK"
+      aboutMe = "Tentang Asep"
+
+  [[languages.id.menu.main]]
+    url    = "/"
+    name   = "Beranda"
+    weight = 0
+  [[languages.id.menu.about]]
+    url    = "/tentang-saya"
+    name   = "Tentang Saya"
+    weight = 1
+  [[languages.id.menu.posts]]
+    url    = "/artikel"
+    name   = "Artikel"
+    weight = 2

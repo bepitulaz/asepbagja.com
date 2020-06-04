@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="background-image" style="background-image:url(/images/home-bg.jpeg);">
+  <div class="container">
+    <div class="container-fullscreen">
+      <div class="heading-text heading-section text-center home-hero">
+        <h1>Asep Bagja Priandana</h1>
+        <h2>Pengusaha di bidang teknologi 😉</h2>
+        <p>
+          Halo, ingin berkorespondensi dengan saya? Silakan mengisi formulir berikut ini.
+        </p>
+      </div>
+      <form class="home-form" action="https://formspree.io/xaywwbrj" method="POST">
+        <div class="form-row">
+          <div class="form-group col-lg-6">
+            <label for="name">Nama Lengkap</label>
+            <input id="name" type="text" name="name" required="required" class="form-control" placeholder="Nama">
+          </div>
+          <div class="form-group col-lg-6">
+            <label for="email">Alamat Surat Elektronik (Surel)</label>
+            <input id="email" type="email" name="_replyto" required="required" class="form-control" placeholder="surel@layanansurelanda.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12">
+            <label for="explanation">Bagaimana saya dapat membantu Anda?</label>
+            <textarea id="explanation" name="explanation" required="required" class="form-control" placeholder="Silakan, ketik situasi Anda."></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12 text-center">
+            <input type="submit" name="submit" class="btn" value="Kirim">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="background-grey">
+  <div class="container">
+    <div class="row carousel-description-clients carousel-description-style">
+      <div class="col-lg-4">
+        <div class="description">
+          <h2>Perusahaan</h2>
+          Berikut ini adalah perusahaan-perusahaan yang saya dirikan bersama partner dan tempat di mana saya sekarang bekerja.
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="carousel" data-items="2">
+          <div>
+            <a href="https://tanibox.com"><img alt="Tanibox" src="https://tanibox.com/img/logo-dark.png"></a>
+          </div>
+          <div class="pt-4">
+            <a href="https://www.chloematt.com"><img alt="Chloe Matt" src="https://www.chloematt.com/img/logo.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

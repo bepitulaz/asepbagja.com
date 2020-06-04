@@ -1,0 +1,63 @@
+{{ define "main" }}
+<!-- SECTION IMAGE FULLSCREEN -->
+<section class="background-image" style="background-image:url(images/home-bg.jpeg);">
+  <div class="container">
+    <div class="container-fullscreen">
+      <div class="heading-text heading-section text-center home-hero">
+        <h1>Asep Bagja Priandana</h1>
+        <h2>A tech entrepreneur 😉</h2>
+        <p>
+          Hi, do you want to connect with me? Please, fill this form below.
+        </p>
+      </div>
+      <form class="home-form" action="https://formspree.io/xaywwbrj" method="POST">
+        <div class="form-row">
+          <div class="form-group col-lg-6">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" name="name" required="required" class="form-control" placeholder="Full name">
+          </div>
+          <div class="form-group col-lg-6">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="_replyto" required="required" class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12">
+            <label for="explanation">How can I help you?</label>
+            <textarea id="explanation" name="explanation" required="required" class="form-control" placeholder="Please, type your current situation"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-12 text-center">
+            <input type="submit" name="submit" class="btn" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- end: SECTION IMAGE FULLSCREEN -->
+
+<section class="background-grey">
+  <div class="container">
+    <div class="row carousel-description-clients carousel-description-style">
+      <div class="col-lg-4">
+        <div class="description">
+          <h2>Companies</h2>
+          These are companies that I found with my partner and where I currently work at.
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="carousel" data-items="2">
+          <div>
+            <a href="https://tanibox.com"><img alt="Tanibox" src="https://tanibox.com/img/logo-dark.png"></a>
+          </div>
+          <div class="pt-4">
+            <a href="https://www.chloematt.com"><img alt="Chloe Matt" src="https://www.chloematt.com/img/logo.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

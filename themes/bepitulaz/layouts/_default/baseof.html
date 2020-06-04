@@ -1,12 +1,18 @@
 <!doctype html>
 <html lang="{{.Site.LanguageCode}}">
-    {{- partial "head.html" . -}}
+  {{- partial "head.html" . -}}
 
-    <body>
-        {{- partial "header.html" . -}}
+  <body>
+    <div class="body-inner">
+    {{- partial "header.html" . -}}
+    {{- block "main" . }}{{- end }}
+    {{- partial "footer.html" . -}}
+    </div>
 
-        {{- block "main" . }}{{- end }}
+    <a id="scrollTop"><i class="icon-chevron-up1"></i><i class="icon-chevron-up1"></i></a>
 
-        {{- partial "footer.html" . -}}
-    </body>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/functions.js"></script>
+  </body>
 </html>

@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section id="page-content">
+  <div class="container">
+    <!-- Page title -->
+    <div class="page-title">
+      <h1>{{ .Site.Params.postsTitle }}</h1>
+    </div>
+    <!-- end: Page title -->
+
+    <!-- Portfolio Filter -->
+    <div class="row">
+      <div class="col-12">
+        <nav class="grid-filter gf-outline">
+          <ul>
+            <li><a href="/posts">Show All</a></li>
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+            {{ with $.Site.GetPage (printf "/categories/%s" $name) }}
+                <li><a href="{{ .Permalink }}">{{ $name | humanize }}</a></li>
+            {{ end }}
+            {{end}}
+          </ul>
+          <div class="grid-active-title">{{ .Title }}</div>
+        </nav>
+      </div>
+    </div>
+    <!-- end: Portfolio Filter -->
+
+    <div class="card-columns m-b-30">
+      {{ range .Pages }}
+      <!-- Post item-->
+      {{ $taxo := "categories" }}
+      <div class="card border{{ range .Param $taxo }}{{ $classname := . }}{{ with $.Site.GetPage (printf "/%s/%s" $taxo ($classname | urlize)) }} {{ ($classname | urlize) }}{{ end }}{{ end }}">
+        <img alt="{{.Title}}" class="card-img-top" src="{{ range .Params.images }}{{ . }}{{ end }}">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{.Date.Format "Jan 2, 2006"}}</span>
+            </div>
+            <div class="col text-right">
+              <span class="post-meta-category">
+                <i class="fa fa-tag"></i>
+                {{ range .Param $taxo }}
+                  {{ $name := . }}
+                  {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                    <a href="{{ .Permalink }}">{{ $name }}</a>
+                  {{ end }}
+                {{ end }}
+              </span>
+            </div>
+          </div>
+          <h4 class="card-title"><a href="{{.Permalink}}">{{.Title}}</a></h4>
+          <p class="card-text">{{ .Summary }}</p>
+          <a href="{{.Permalink}}" class="item-link">{{ .Site.Params.postsReadMore }} <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- end: Post item-->
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

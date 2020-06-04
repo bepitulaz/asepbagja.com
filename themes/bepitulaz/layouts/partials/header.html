@@ -1,18 +1,78 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Asep's Note</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-        {{ with .Site.Menus.main}}
-            {{ range sort . }}
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</span></a>
-            </li>
-            {{ end }}
-        {{ end }}
-        </ul>
+<!-- Topbar -->
+<div id="topbar" class="topbar-fullwidth d-none d-xl-block d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-none d-sm-block">
+        <div class="social-icons social-icons-colored-hover">
+          <ul>
+            <li class="social-twitter"><a href="https://twitter.com/bepitulaz"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-linkedin"><a href="https://www.linkedin.com/in/asepbagja"><i class="fab fa-linkedin"></i></a></li>
+            <li class="social-youtube"><a href="https://www.youtube.com/channel/UCjGnuWk0n6BWx7rXshMysbw"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</nav>
+  </div>
+</div>
+<!-- end: Topbar -->
+<header id="header" data-fullwidth="true">
+  <div class="header-inner">
+    <div class="container">
+      <!--Logo-->
+      <div id="logo">
+        <a href="{{ "/" | relLangURL }}" class="ASPBGJ logo">
+          ASPBGJ
+        </a>
+      </div>
+      <!--End: Logo-->
+
+      <!--Header Extras-->
+      <div class="header-extras">
+        <ul>
+          <li>
+            <div class="p-dropdown">
+              <a href="#"><i class="icon-flag11"></i></a>
+              <ul class="p-dropdown-content">
+                {{ range $.Site.Home.AllTranslations }}
+                <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--end: Header Extras-->
+
+      <!--Navigation Resposnive Trigger-->
+      <div id="mainMenu-trigger">
+        <button class="lines-button x"> <span class="lines"></span> </button>
+      </div>
+      <!--end: Navigation Resposnive Trigger-->
+
+      <!--Navigation-->
+      <div id="mainMenu">
+        <nav>
+          <ul>
+            {{- $currentPage := . -}}
+            {{ range .Site.Menus.main -}}
+            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+              <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+            {{- end }}
+            {{ range .Site.Menus.about -}}
+            <li class="{{ if $currentPage.IsMenuCurrent "about" . }}active{{ end }}">
+              <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+            {{- end }}
+            {{ range .Site.Menus.posts -}}
+            <li class="{{ if $currentPage.IsMenuCurrent "posts" . }}active{{ end }}">
+              <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+            {{- end }}
+          </ul>
+        </nav>
+      </div>
+      <!--end: Navigation-->
+    </div>
+  </div>
+</header>
