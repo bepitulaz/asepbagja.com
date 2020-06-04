@@ -1,7 +1,7 @@
 baseURL = "https://asepbagja.com/"
 DefaultContentLanguage = "id"
 languageCode = "en-gb"
-theme = "Podcaster" # set the theme
+theme = "podcaster" # set the theme
 copyright="2020 © Asep Bagja Priandana"
 googleAnalytics = "UA-136771948-2"
 #googleAnalytics = ""
