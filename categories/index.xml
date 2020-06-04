@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Categories on Asep Bagja &amp; Co.</title>
+    <link>https://asepbagja.com/categories/</link>
+    <description>Recent content in Categories on Asep Bagja &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
+    <lastBuildDate>Tue, 02 Jun 2020 07:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://asepbagja.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Karir</title>
+      <link>https://asepbagja.com/categories/karir/</link>
+      <pubDate>Tue, 02 Jun 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/karir/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hobi</title>
+      <link>https://asepbagja.com/categories/hobi/</link>
+      <pubDate>Tue, 26 May 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/hobi/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Santai</title>
+      <link>https://asepbagja.com/categories/santai/</link>
+      <pubDate>Mon, 25 May 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/santai/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Catatan</title>
+      <link>https://asepbagja.com/categories/catatan/</link>
+      <pubDate>Thu, 26 Dec 2019 15:08:11 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/catatan/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips dan Trik</title>
+      <link>https://asepbagja.com/categories/tips-dan-trik/</link>
+      <pubDate>Mon, 23 Sep 2019 15:08:11 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/tips-dan-trik/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pemrograman</title>
+      <link>https://asepbagja.com/categories/pemrograman/</link>
+      <pubDate>Thu, 19 Sep 2019 17:07:43 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/pemrograman/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kewirausahaan</title>
+      <link>https://asepbagja.com/categories/kewirausahaan/</link>
+      <pubDate>Wed, 03 Jul 2019 19:03:43 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/kewirausahaan/</guid>
+      
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+a.navigation-title {
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.head-title {
+    margin-top: 30px;
+}
+
+.head-title h1 {
+    margin-bottom: 15px;
+}
+
+.head-title a {
+    color: #212121;
+    font-family: Lato,Helvetica,sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+p {
+    font-family: Merriweather, Georgia, serif;
+    font-weight: 300;
+}
+
+.card {
+    margin: 10px 0;
+}
+
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6 {
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.card-body p.card-text {
+    font-size: 0.9rem;
+}
