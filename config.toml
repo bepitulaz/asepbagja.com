@@ -45,10 +45,14 @@ rssLimit = 10
     url    = "/podcast"
     name   = "Podcast"
     weight = 1
+  [[languages.en.menu.music]]
+    url    = "/musics"
+    name   = "Musics"
+    weight = 2
   [[languages.en.menu.about]]
     url    = "/about"
     name   = "About me"
-    weight = 2
+    weight = 3
 
   [languages.id]
     title = "Asep Bagja & Co."
@@ -73,7 +77,11 @@ rssLimit = 10
     url    = "/podcast"
     name   = "Podcast"
     weight = 1
+  [[languages.id.menu.music]]
+    url    = "/musik"
+    name   = "Musik"
+    weight = 2
   [[languages.id.menu.about]]
     url    = "/tentang-saya"
     name   = "Tentang saya"
-    weight = 2
+    weight = 3

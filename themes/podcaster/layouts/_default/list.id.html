@@ -21,34 +21,6 @@
       </div>
     </div>
     <div class="row mt-3 mt-lg-5">
-      {{ if eq .Name "Artikels" }}
-        {{ range .Pages }}
-        {{ $taxo := "categories" }}
-        <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
-          <div class="card h-100 hover-box-shadow">
-            <a href="{{ .Permalink }}" class="d-block bg-gradient rounded-top">
-              <img class="card-img-top hover-fade-out" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="{{ .Title }}">
-            </a>
-            <div class="card-body">
-              <a href="{{ .Permalink }}">
-                <h4>{{ .Title }}</h4>
-              </a>
-              <p>{{ .Summary }}</p>
-            </div>
-            <div class="card-footer d-flex justify-content-between align-items-center">
-              {{ range .Param $taxo }}
-                {{ $name := . }}
-                {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
-                  <a href="{{ .Permalink }}" class="badge badge-pill badge-success">{{ $name }}</a>
-                {{ end }}
-              {{ end }}
-              <div class="text-small text-muted">{{.Date.Format "2 Jan 2006"}}</div>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      {{ end }}
-
       <!-- podcast layout -->
       {{ if eq .Name "Podcasts" }}
         {{ range .Pages }}
@@ -66,6 +38,67 @@
                   <div class="text-small text-muted mt-4">{{.Date.Format "2 Jan 2006"}}</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      <!-- end of podcast layout -->
+
+      <!-- Music layout -->
+      {{ else if eq .Name "Musiks" }}
+        {{ range .Pages }}
+        {{ $taxo := "categories" }}
+        <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+          <div class="card h-100 hover-box-shadow">
+            <div class="embed-responsive embed-responsive-16by9" style="background-color: #000;">
+              <a href="{{ .Params.playlink }}" class="stretched-link bg-gradient rounded-top" target="_blank">
+                <img class="card-img-top embed-responsive-item" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="{{ .Title }}" style="object-fit: contain;">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="{{ .Params.playlink }}" target="_blank">
+                <h4>{{ .Title }}</h4>
+              </a>
+              <p>{{ .Content }}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              {{ range .Param $taxo }}
+                {{ $name := . }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                  <a href="{{ .Permalink }}" class="badge badge-pill badge-success">{{ $name }}</a>
+                {{ end }}
+              {{ end }}
+              <div class="text-small text-muted">{{.Date.Format "2 Jan 2006"}}</div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      <!-- end of music layout -->
+
+      {{ else }}
+        {{ range .Pages }}
+        {{ $taxo := "categories" }}
+        <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
+          <div class="card h-100 hover-box-shadow">
+            <div class="embed-responsive embed-responsive-16by9" style="background-color: #000;">
+              <a href="{{ .Permalink }}" class="d-block bg-gradient rounded-top">
+                <img class="card-img-top hover-fade-out embed-responsive-item" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="{{ .Title }}" style="object-fit: contain;">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="{{ .Permalink }}">
+                <h4>{{ .Title }}</h4>
+              </a>
+              <p>{{ .Summary }}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+              {{ range .Param $taxo }}
+                {{ $name := . }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                  <a href="{{ .Permalink }}" class="badge badge-pill badge-success">{{ $name }}</a>
+                {{ end }}
+              {{ end }}
+              <div class="text-small text-muted">{{.Date.Format "2 Jan 2006"}}</div>
             </div>
           </div>
         </div>

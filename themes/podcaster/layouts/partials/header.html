@@ -24,6 +24,11 @@
             <a href="{{ .URL | relLangURL }}" class="nav-link">{{ .Name }}</a>
           </li>
           {{- end }}
+          {{ range .Site.Menus.music -}}
+          <li class="nav-item  {{ if $currentPage.IsMenuCurrent "music" . }}active{{ end }}">
+            <a href="{{ .URL | relLangURL }}" class="nav-link">{{ .Name }}</a>
+          </li>
+          {{- end }}
           {{ range .Site.Menus.about -}}
           <li class="nav-item  {{ if $currentPage.IsMenuCurrent "about" . }}active{{ end }}">
             <a href="{{ .URL | relLangURL }}" class="nav-link">{{ .Name }}</a>
