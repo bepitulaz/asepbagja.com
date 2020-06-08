@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Musics on Asep Bagja &amp; Co.</title>
+    <link>https://asepbagja.com/en/musics/</link>
+    <description>Recent content in Musics on Asep Bagja &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
+    <lastBuildDate>Sun, 07 Jun 2020 07:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://asepbagja.com/en/musics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pirates of the Aegean - David Bruce</title>
+      <link>https://asepbagja.com/en/musics/pirates-of-the-aegean/</link>
+      <pubDate>Sun, 07 Jun 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/en/musics/pirates-of-the-aegean/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/pirates-of-the-aegean.jpg" />
+        
+      
+      <description>An arrangement with the violin and electronic music.</description>
+    </item>
+    
+    <item>
+      <title>Scarborough Fair - Simon &amp; Garfunkel</title>
+      <link>https://asepbagja.com/en/musics/scarborough-fair/</link>
+      <pubDate>Sat, 30 May 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/en/musics/scarborough-fair/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/scarborough-fair.jpg" />
+        
+      
+      <description>A music cover with the violin and guitar.</description>
+    </item>
+    
+    <item>
+      <title>Young and Beautiful - Lana Del Rey</title>
+      <link>https://asepbagja.com/en/musics/young-and-beautiful/</link>
+      <pubDate>Sat, 07 Jun 2014 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/en/musics/young-and-beautiful/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/young-and-beautiful.jpg" />
+        
+      
+      <description>A piano music cover with Eunike Kartini on vocal.</description>
+    </item>
+    
+    <item>
+      <title>All Too Well - Taylor Swift</title>
+      <link>https://asepbagja.com/en/musics/all-too-well/</link>
+      <pubDate>Sat, 01 Mar 2014 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/en/musics/all-too-well/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/all-too-well.jpg" />
+        
+      
+      <description>An instrumental piano music cover.</description>
+    </item>
+    
+    <item>
+      <title>High and Dry - Radiohead</title>
+      <link>https://asepbagja.com/en/musics/high-and-dry/</link>
+      <pubDate>Wed, 19 Jun 2013 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/en/musics/high-and-dry/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/soundcloud-default.jpg" />
+        
+      
+      <description>An arrangement with Fikri Rasyid on the guitar and vocal.</description>
+    </item>
+    
+    <item>
+      <title>Penggalan Kisah Lama - La Luna</title>
+      <link>https://asepbagja.com/en/musics/penggalan-kisah-lama/</link>
+      <pubDate>Mon, 31 Dec 2012 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/en/musics/penggalan-kisah-lama/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/soundcloud-default.jpg" />
+        
+      
+      <description>A music cover with Shellya on vocal.</description>
+    </item>
+    
+  </channel>
+</rss>

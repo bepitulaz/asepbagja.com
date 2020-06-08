@@ -9,10 +9,22 @@
     <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
     <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
     <copyright>2020 © Asep Bagja Priandana</copyright>
-    <lastBuildDate>Tue, 02 Jun 2020 07:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 07:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Youtube</title>
+      <link>https://asepbagja.com/categories/youtube/</link>
+      <pubDate>Sun, 07 Jun 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/youtube/</guid>
+      
+      <description></description>
+    </item>
     
     <item>
       <title>Karir</title>
@@ -94,6 +106,18 @@
       <dc:creator>Asep Bagja Priandana</dc:creator>
       
       <guid>https://asepbagja.com/categories/kewirausahaan/</guid>
+      
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Soundcloud</title>
+      <link>https://asepbagja.com/categories/soundcloud/</link>
+      <pubDate>Sat, 07 Jun 2014 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/categories/soundcloud/</guid>
       
       <description></description>
     </item>

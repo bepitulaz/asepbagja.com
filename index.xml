@@ -9,10 +9,26 @@
     <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
     <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
     <copyright>2020 © Asep Bagja Priandana</copyright>
-    <lastBuildDate>Tue, 02 Jun 2020 07:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 07:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pirates of the Aegean - David Bruce</title>
+      <link>https://asepbagja.com/musik/pirates-of-the-aegean/</link>
+      <pubDate>Sun, 07 Jun 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/musik/pirates-of-the-aegean/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/pirates-of-the-aegean.jpg" />
+        
+      
+      <description>Aransemen ulang menggunakan violin dan musik elektronik.</description>
+    </item>
     
     <item>
       <title>#4: Compounding Pengetahuan</title>
@@ -28,6 +44,22 @@
         
       
       <description></description>
+    </item>
+    
+    <item>
+      <title>Scarborough Fair - Simon &amp; Garfunkel</title>
+      <link>https://asepbagja.com/musik/scarborough-fair/</link>
+      <pubDate>Sat, 30 May 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/musik/scarborough-fair/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/scarborough-fair.jpg" />
+        
+      
+      <description>Musik cover menggunakan violin dan gitar.</description>
     </item>
     
     <item>
@@ -140,34 +172,6 @@
         
       
       <description>Saya sering sekali mendapat pertanyaan dari teman atau kenalan setiap kali mereka melihat website Tanibox, &amp;ldquo;Loh, Tanibox itu alamatnya di Estonia?</description>
-    </item>
-    
-    <item>
-      <title>Tentang Asep</title>
-      <link>https://asepbagja.com/tentang-saya/</link>
-      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <dc:creator>Asep Bagja Priandana</dc:creator>
-      
-      <guid>https://asepbagja.com/tentang-saya/</guid>
-      
-      <description>Asep Bagja Priandana, Anda boleh panggil dia Asep, seorang pengusaha dari Indonesia.</description>
-    </item>
-    
-    <item>
-      <title>Pengalaman Mengagumkan Mendaftarkan Perusahaan di Estonia</title>
-      <link>https://asepbagja.com/artikel/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia/</link>
-      <pubDate>Thu, 03 Aug 2017 17:00:33 +0800</pubDate>
-      
-      <dc:creator>Asep Bagja Priandana</dc:creator>
-      
-      <guid>https://asepbagja.com/artikel/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia/</guid>
-      
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/card-in-use.jpeg" />
-        
-      
-      <description>Dari awal saya berencana exit dari Froyo, saya sudah bersiap-siap mengurus aneka macam dokumen legal untuk perusahaan baru saya, Tanibox.</description>
     </item>
     
   </channel>
