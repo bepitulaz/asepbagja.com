@@ -69,20 +69,23 @@
       {{ $taxo := "categories" }}
       <div class="col-md-6 col-lg-4 mb-3 mb-md-4">
         <div class="card h-100 hover-box-shadow">
-          <a href="{{.Permalink}}" class="d-block bg-gradient rounded-top">
-            <img class="card-img-top hover-fade-out" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="{{.Title}}">
-          </a>
+          <div class="embed-responsive embed-responsive-16by9" style="background-color: #000;">
+            <a href="{{ .Permalink }}" class="stretched-link bg-gradient rounded-top" target="_blank">
+              <img class="card-img-top embed-responsive-item" src="{{ range .Params.images }}{{ . }}{{ end }}" alt="{{ .Title }}" style="object-fit: contain;">
+            </a>
+          </div>
           <div class="card-body">
             <a href="{{.Permalink}}">
               <h4>{{.Title}}</h4>
             </a>
-            <div class="text-small text-muted">{{.Date.Format "Jan 2, 2006"}}</div>
+            <p>{{ .Summary }}</p>
           </div>
           <div class="card-footer d-flex justify-content-between align-items-center">
             {{ range .Param $taxo }}
               {{ $name := . }}
               {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
                 <a href="{{ .Permalink }}" class="badge badge-pill badge-success">{{ $name }}</a>
+                <div class="text-small text-muted">{{.Date.Format "Jan 2, 2006"}}</div>
               {{ end }}
             {{ end }}
           </div>
