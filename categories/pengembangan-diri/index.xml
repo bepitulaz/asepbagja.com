@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pengembangan Diri on Asep Bagja &amp; Co.</title>
+    <link>https://asepbagja.com/categories/pengembangan-diri/</link>
+    <description>Recent content in Pengembangan Diri on Asep Bagja &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
+    <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
+    <copyright>2020 © Asep Bagja Priandana</copyright>
+    <lastBuildDate>Fri, 12 Jun 2020 07:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://asepbagja.com/categories/pengembangan-diri/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>#5: Memahami Prinsip Pareto</title>
+      <link>https://asepbagja.com/podcast/memahami-prinsip-pareto/</link>
+      <pubDate>Fri, 12 Jun 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/podcast/memahami-prinsip-pareto/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/5796566/5796566-1590379110975-07f35a3d3e50e.jpg" />
+        
+      
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

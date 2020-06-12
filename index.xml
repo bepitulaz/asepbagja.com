@@ -9,10 +9,26 @@
     <managingEditor>asep.bagja.p@gmail.com (Asep Bagja Priandana)</managingEditor>
     <webMaster>asep.bagja.p@gmail.com (Asep Bagja Priandana)</webMaster>
     <copyright>2020 © Asep Bagja Priandana</copyright>
-    <lastBuildDate>Sun, 07 Jun 2020 07:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2020 07:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://asepbagja.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>#5: Memahami Prinsip Pareto</title>
+      <link>https://asepbagja.com/podcast/memahami-prinsip-pareto/</link>
+      <pubDate>Fri, 12 Jun 2020 07:00:00 +0800</pubDate>
+      
+      <dc:creator>Asep Bagja Priandana</dc:creator>
+      
+      <guid>https://asepbagja.com/podcast/memahami-prinsip-pareto/</guid>
+      
+        
+      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/5796566/5796566-1590379110975-07f35a3d3e50e.jpg" />
+        
+      
+      <description></description>
+    </item>
     
     <item>
       <title>Pirates of the Aegean - David Bruce</title>
@@ -156,22 +172,6 @@
         
       
       <description>Dua minggu terakhir ini saya sibuk mengerjakan sebuah proyek sampingan pribadi yang berhubungan dengan pasar finansial, yaitu melakukan otomatisasi terhadap kegiatan perdagangan di bursa cryptocurrency.</description>
-    </item>
-    
-    <item>
-      <title>Apa Itu Estonia e-Residency?</title>
-      <link>https://asepbagja.com/artikel/apa-itu-estonia-e-residency/</link>
-      <pubDate>Wed, 03 Jul 2019 19:03:43 +0800</pubDate>
-      
-      <dc:creator>Asep Bagja Priandana</dc:creator>
-      
-      <guid>https://asepbagja.com/artikel/apa-itu-estonia-e-residency/</guid>
-      
-        
-      <media:content type="image/jpeg" medium="image" width="900" height="600" url="https://asepbagja.com/blog-img/running_remote.jpg" />
-        
-      
-      <description>Saya sering sekali mendapat pertanyaan dari teman atau kenalan setiap kali mereka melihat website Tanibox, &amp;ldquo;Loh, Tanibox itu alamatnya di Estonia?</description>
     </item>
     
   </channel>
