@@ -8,7 +8,8 @@ categories:
 - Kewirausahaan
 aliases:
 - /posts/apa-itu-estonia-e-residency
-- /id/artikel/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia
+- /id/artikel/apa-itu-estonia-e-residency
+- /id/artikel/apa-itu-estonia-e-residency/
 ---
 
 Saya sering sekali mendapat pertanyaan dari teman atau kenalan setiap kali mereka melihat website [Tanibox](https://tanibox.com), "Loh, Tanibox itu alamatnya di Estonia? Kok, bisa? Kenapa?" Untuk menjawab pertanyaan ini, saya harus memulai dengan menjelaskan program [Estonia e-Residency](http://e-resident.gov.ee/). Sedangkan untuk menjawab pertanyaan, "kenapa kok Estonia?", kamu bisa memulai kisah awalnya di tulisan saya pada tahun 2017 [di sini](/id/artikel/pengalaman-mengagumkan-mendaftarkan-perusahaan-di-estonia).
