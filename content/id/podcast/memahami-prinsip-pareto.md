@@ -8,3 +8,7 @@ images:
 categories:
 - Pengembangan Diri
 ---
+
+Ada yang pernah dengar prinsip Pareto? Di episode kelima, saya akan membahas prinsip Pareto dan keuntungannya jika kita dapat memahaminya. Selamat mendengarkan.
+
+Jangan lupa subscribe Catatan Asep Bagja di platform podcast favoritmu, bagikan juga tautan [asepbagja.com](https://asepbagja.com) ke sosial mediamu agar teman-teman lain bisa ikut mendengarkan. Tidak lupa, jika teman-teman ingin memberikan apresiasi lebih untuk podcast ini, kalian bisa kunjungi [karyakarsa.com/bepitulaz](https://karyakarsa.com/bepitulaz).
