@@ -85,3 +85,7 @@ rssLimit = 10
     url    = "/tentang-saya"
     name   = "Tentang saya"
     weight = 3
+  [[languages.id.menu.subscribe]]
+    url    = "https://langganan.asepbagja.com"
+    name   = "Berlangganan"
+    weight = 4
