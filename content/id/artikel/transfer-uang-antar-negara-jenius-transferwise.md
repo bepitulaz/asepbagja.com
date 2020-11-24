@@ -78,3 +78,9 @@ TransferWise memiliki kemampuan untuk mengirim uang dengan biaya murah ke 59 neg
 2. Kartu Jenius yang dapat digunakan di TransferWise adalah m-Card (kartu utama) karena saya sudah coba menggunakan e-Card (kartu virtual) dan selalu ditolak oleh sistem.
 
 Semoga artikel ini bermanfaat untuk teman-teman yang memiliki urusan bisnis di luar negeri atau mengirimkan uang ke kerabat di luar negeri.
+
+### Pembaruan artikel
+
+Per tanggal 24 November 2020, TransferWise sudah bisa kirim IDR ke luar negeri secara langsung. Tidak perlu lagi menggunakan balance Euro sebagai penengah. Berikut ini caranya, diambil dari *newsletter* TransferWise yang saya dapat. Saat saya coba, sepertinya ini baru bisa dilakukan via aplikasi mobile TransferWise, karena saya tes di versi website belum ada pilihan rekeningnya. Jangan lupa, untuk melakukannya tetap harus membuat akun [TransferWise](https://transferwise.com/u/asepp1) terlebih dahulu.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/peL7AvJbroU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
