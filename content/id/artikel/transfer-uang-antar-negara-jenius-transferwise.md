@@ -83,4 +83,4 @@ Semoga artikel ini bermanfaat untuk teman-teman yang memiliki urusan bisnis di l
 
 Per tanggal 24 November 2020, TransferWise sudah bisa kirim IDR ke luar negeri secara langsung. Tidak perlu lagi menggunakan balance Euro sebagai penengah. Berikut ini caranya, diambil dari *newsletter* TransferWise yang saya dapat. Saat saya coba, sepertinya ini baru bisa dilakukan via aplikasi mobile TransferWise, karena saya tes di versi website belum ada pilihan rekeningnya. Jangan lupa, untuk melakukannya tetap harus membuat akun [TransferWise](https://transferwise.com/u/asepp1) terlebih dahulu.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/peL7AvJbroU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< youtube peL7AvJbroU >}}
