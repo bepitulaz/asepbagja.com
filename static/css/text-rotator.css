@@ -1,3 +1,11 @@
+/*Wrapper*/
+.wrapper-animation {
+    margin: 100px auto;
+    padding: 40px 40px;
+    position: relative;
+    width: 70%;
+}
+
 /*Vertical Sliding*/
 .slidingVertical{
 	display: inline;
@@ -7,7 +15,6 @@
 	animation: topToBottom 12.5s linear infinite 0s;
 	-ms-animation: topToBottom 12.5s linear infinite 0s;
 	-webkit-animation: topToBottom 12.5s linear infinite 0s;
-	color: #00abe9;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
