@@ -13,6 +13,12 @@ aliases:
 - /id/artikel/transfer-uang-antar-negara-jenius-transferwise/
 ---
 
+### Pembaruan artikel
+
+*Per tanggal 24 November 2020, TransferWise sudah bisa kirim IDR ke luar negeri secara langsung. Jadi trik pada artikel ini tidak diperlukan lagi. Berikut ini caranya, diambil dari newsletter TransferWise yang saya dapat. Saat saya coba, sepertinya ini baru bisa dilakukan via aplikasi mobile TransferWise, karena saya tes di versi website belum ada pilihan rekeningnya. Jangan lupa, untuk melakukannya tetap harus membuat akun [TransferWise](https://transferwise.com/u/asepp1) terlebih dahulu.*
+
+{{< youtube peL7AvJbroU >}}
+
 Internet membuat batas antar negara seakan tidak ada. Walaupun tinggal di Indonesia, kita bisa mencari peluang-peluang bisnis dan pasar-pasar baru di luar Indonesia untuk memasarkan produk. Seperti saya yang memanfaatkan [Estonia e-Residency](/id/artikel/apa-itu-estonia-e-residency) untuk membangun perusahaan di Eropa. Tentu saja memiliki bisnis di luar negeri artinya harus berurusan dengan mata uang asing. Untuk kasus saya, saya harus berurusan dengan mata uang Euro dan kadang-kadang US Dollar.
 
 Situasi saya saat ini:
